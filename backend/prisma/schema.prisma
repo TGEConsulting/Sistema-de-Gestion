@@ -1,0 +1,786 @@
+// ============================================================================
+// Esquema de datos - Plataforma de Gestión SGC (documental, riesgos, NC,
+// auditorías, indicadores, personas, proveedores, comunicaciones)
+// ============================================================================
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ----------------------------------------------------------------------------
+// ENUMS
+// ----------------------------------------------------------------------------
+
+enum NombreRol {
+  ADMIN
+  AUDITOR
+  RESPONSABLE_PROCESO
+  LECTURA
+}
+
+enum EstadoDocumento {
+  BORRADOR
+  EN_REVISION
+  APROBADO
+  OBSOLETO
+}
+
+enum EstadoObjetivo {
+  PLANEADO
+  EN_PROCESO
+  LOGRADO
+  NO_LOGRADO
+  CANCELADO
+}
+
+enum TipoObjetivo {
+  ESTRATEGICO
+  OPERATIVO
+}
+
+enum EstadoActividad {
+  PENDIENTE
+  EN_PROCESO
+  COMPLETADA
+  ATRASADA
+}
+
+enum NivelRiesgo {
+  BAJO
+  MODERADO
+  ALTO
+  CRITICO
+}
+
+enum EstadoRiesgo {
+  IDENTIFICADO
+  EN_TRATAMIENTO
+  MITIGADO
+  CERRADO
+}
+
+enum EstadoTratamientoRiesgo {
+  PENDIENTE
+  EN_PROCESO
+  IMPLEMENTADO
+  VERIFICADO
+}
+
+enum OrigenNC {
+  AUDITORIA
+  RECLAMO
+  INCIDENTE
+  INSPECCION
+  AUTOEVALUACION
+}
+
+enum EstadoNC {
+  ABIERTA
+  EN_ANALISIS
+  ACCION_DEFINIDA
+  EN_IMPLEMENTACION
+  CERRADA
+  INEFICAZ
+}
+
+enum TipoAccion {
+  INMEDIATA
+  CORRECTIVA
+  PREVENTIVA
+}
+
+enum EstadoAccion {
+  PENDIENTE
+  EN_PROCESO
+  COMPLETADA
+  VENCIDA
+}
+
+enum TipoAuditoria {
+  INTERNA
+  EXTERNA
+  CERTIFICACION
+}
+
+enum EstadoAuditoria {
+  PROGRAMADA
+  EN_EJECUCION
+  FINALIZADA
+  CANCELADA
+}
+
+enum RespuestaChecklist {
+  CUMPLE
+  NO_CUMPLE
+  NO_APLICA
+  PENDIENTE
+}
+
+enum TipoHallazgo {
+  NO_CONFORMIDAD
+  OBSERVACION
+  OPORTUNIDAD_MEJORA
+  FORTALEZA
+}
+
+enum FrecuenciaIndicador {
+  DIARIA
+  SEMANAL
+  MENSUAL
+  TRIMESTRAL
+  SEMESTRAL
+  ANUAL
+}
+
+enum DireccionIndicador {
+  MAYOR_ES_MEJOR
+  MENOR_ES_MEJOR
+}
+
+enum TipoProveedor {
+  INSUMOS
+  SERVICIOS
+  TRANSPORTE
+  MAQUINARIA
+  OTRO
+}
+
+enum EstadoProveedor {
+  EN_EVALUACION
+  ACTIVO
+  SUSPENDIDO
+  INACTIVO
+}
+
+enum TipoNotificacion {
+  DOCUMENTO_POR_VENCER
+  NC_SIN_ATENDER
+  INDICADOR_SIN_CAPTURA
+  AUDITORIA_PROXIMA
+  TAREA_ASIGNADA
+  ACTIVIDAD_ATRASADA
+  ACCION_VENCIDA
+  RIESGO_SIN_TRATAMIENTO
+}
+
+enum EstadoTarea {
+  PENDIENTE
+  EN_PROCESO
+  COMPLETADA
+  VENCIDA
+}
+
+// ----------------------------------------------------------------------------
+// PERSONAS Y ROLES
+// ----------------------------------------------------------------------------
+
+model Area {
+  id          String   @id @default(cuid())
+  nombre      String   @unique
+  descripcion String?
+  activo      Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  deletedAt   DateTime?
+
+  puestos     Puesto[]
+  personas    Persona[]
+  documentos  Documento[]
+  objetivos   Objetivo[]
+  procesos    Proceso[]
+
+  @@map("areas")
+}
+
+model Puesto {
+  id        String   @id @default(cuid())
+  nombre    String
+  areaId    String
+  area      Area     @relation(fields: [areaId], references: [id])
+  activo    Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  deletedAt DateTime?
+
+  personas  Persona[]
+
+  @@map("puestos")
+}
+
+model Rol {
+  id          String    @id @default(cuid())
+  nombre      NombreRol @unique
+  descripcion String?
+  createdAt   DateTime  @default(now())
+
+  usuarios       Usuario[]
+  rolPermisos    RolPermiso[]
+
+  @@map("roles")
+}
+
+model Permiso {
+  id          String @id @default(cuid())
+  codigo      String @unique // ej: "documentos.crear", "riesgos.aprobar"
+  descripcion String?
+
+  rolPermisos RolPermiso[]
+
+  @@map("permisos")
+}
+
+model RolPermiso {
+  rolId     String
+  permisoId String
+  rol       Rol     @relation(fields: [rolId], references: [id], onDelete: Cascade)
+  permiso   Permiso @relation(fields: [permisoId], references: [id], onDelete: Cascade)
+
+  @@id([rolId, permisoId])
+  @@map("rol_permisos")
+}
+
+model Persona {
+  id        String   @id @default(cuid())
+  nombre    String
+  apellido  String
+  email     String?  @unique
+  telefono  String?
+  puestoId  String?
+  puesto    Puesto?  @relation(fields: [puestoId], references: [id])
+  areaId    String?
+  area      Area?    @relation(fields: [areaId], references: [id])
+  activo    Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  deletedAt DateTime?
+
+  usuario   Usuario?
+
+  @@map("personas")
+}
+
+model Usuario {
+  id            String    @id @default(cuid())
+  email         String    @unique
+  passwordHash  String
+  nombre        String
+  rolId         String
+  rol           Rol       @relation(fields: [rolId], references: [id])
+  personaId     String?   @unique
+  persona       Persona?  @relation(fields: [personaId], references: [id])
+  activo        Boolean   @default(true)
+  ultimoLogin   DateTime?
+  tokenVersion  Int       @default(0)
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  deletedAt     DateTime?
+
+  documentosResponsable      Documento[]            @relation("DocumentoResponsable")
+  versionesCreadas           VersionDocumento[]      @relation("VersionCreadaPor")
+  versionesAprobadas         VersionDocumento[]      @relation("VersionAprobadaPor")
+  evidenciasLectura          EvidenciaLectura[]
+  objetivosResponsable       Objetivo[]              @relation("ObjetivoResponsable")
+  planesResponsable          Plan[]                  @relation("PlanResponsable")
+  actividadesResponsable     Actividad[]             @relation("ActividadResponsable")
+  procesosResponsable        Proceso[]               @relation("ProcesoResponsable")
+  riesgosResponsable         Riesgo[]                @relation("RiesgoResponsable")
+  tratamientosResponsable    PlanTratamientoRiesgo[]  @relation("TratamientoResponsable")
+  ncResponsable              NoConformidad[]         @relation("NCResponsable")
+  accionesResponsable        AccionNC[]              @relation("AccionResponsable")
+  auditoriasLider            Auditoria[]             @relation("AuditoriaLider")
+  hallazgosResponsable       Hallazgo[]               @relation("HallazgoResponsable")
+  indicadoresResponsable     Indicador[]             @relation("IndicadorResponsable")
+  registrosCapturados        RegistroIndicador[]      @relation("RegistroCapturadoPor")
+  evaluacionesProveedor      EvaluacionProveedor[]    @relation("EvaluacionRealizadaPor")
+  notificaciones             Notificacion[]
+  tareasAsignadas            Tarea[]                  @relation("TareaAsignada")
+
+  @@map("usuarios")
+}
+
+// ----------------------------------------------------------------------------
+// GESTIÓN DOCUMENTAL
+// ----------------------------------------------------------------------------
+
+model TipoDocumento {
+  id          String   @id @default(cuid())
+  nombre      String   @unique
+  descripcion String?
+  documentos  Documento[]
+
+  @@map("tipos_documento")
+}
+
+model Documento {
+  id                  String          @id @default(cuid())
+  codigo              String          @unique
+  titulo              String
+  tipoDocumentoId     String
+  tipoDocumento       TipoDocumento   @relation(fields: [tipoDocumentoId], references: [id])
+  areaId              String
+  area                Area            @relation(fields: [areaId], references: [id])
+  responsableId       String
+  responsable         Usuario         @relation("DocumentoResponsable", fields: [responsableId], references: [id])
+  estado              EstadoDocumento @default(BORRADOR)
+  versionVigenteId    String?         @unique
+  versionVigente      VersionDocumento? @relation("VersionVigente", fields: [versionVigenteId], references: [id])
+  proximaRevision     DateTime?
+  createdAt           DateTime        @default(now())
+  updatedAt           DateTime        @updatedAt
+  deletedAt           DateTime?
+
+  versiones           VersionDocumento[] @relation("VersionesDelDocumento")
+  evidenciasLectura   EvidenciaLectura[]
+
+  @@index([estado])
+  @@index([areaId])
+  @@map("documentos")
+}
+
+model VersionDocumento {
+  id                String    @id @default(cuid())
+  documentoId       String
+  documento         Documento @relation("VersionesDelDocumento", fields: [documentoId], references: [id])
+  numeroVersion     Int
+  archivoUrl        String?
+  cambios           String?
+  estado            EstadoDocumento @default(EN_REVISION)
+  creadoPorId       String
+  creadoPor         Usuario   @relation("VersionCreadaPor", fields: [creadoPorId], references: [id])
+  aprobadoPorId     String?
+  aprobadoPor       Usuario?  @relation("VersionAprobadaPor", fields: [aprobadoPorId], references: [id])
+  fechaAprobacion   DateTime?
+  createdAt         DateTime  @default(now())
+
+  documentoVigentePara Documento? @relation("VersionVigente")
+  evidenciasLectura    EvidenciaLectura[]
+
+  @@unique([documentoId, numeroVersion])
+  @@map("versiones_documento")
+}
+
+model EvidenciaLectura {
+  id                  String            @id @default(cuid())
+  documentoId         String
+  documento           Documento         @relation(fields: [documentoId], references: [id])
+  versionDocumentoId  String
+  versionDocumento    VersionDocumento  @relation(fields: [versionDocumentoId], references: [id])
+  usuarioId           String
+  usuario             Usuario           @relation(fields: [usuarioId], references: [id])
+  medio               String?           // ej: "correo", "reunión", "firma digital"
+  fechaLectura        DateTime          @default(now())
+
+  @@map("evidencias_lectura")
+}
+
+// ----------------------------------------------------------------------------
+// OBJETIVOS Y PLANES
+// ----------------------------------------------------------------------------
+
+model Objetivo {
+  id            String         @id @default(cuid())
+  nombre        String
+  descripcion   String?
+  tipo          TipoObjetivo   @default(OPERATIVO)
+  areaId        String
+  area          Area           @relation(fields: [areaId], references: [id])
+  responsableId String
+  responsable   Usuario        @relation("ObjetivoResponsable", fields: [responsableId], references: [id])
+  fechaInicio   DateTime
+  fechaFin      DateTime
+  estado        EstadoObjetivo @default(PLANEADO)
+  createdAt     DateTime       @default(now())
+  updatedAt     DateTime       @updatedAt
+  deletedAt     DateTime?
+
+  planes        Plan[]
+
+  @@map("objetivos")
+}
+
+model Plan {
+  id            String          @id @default(cuid())
+  objetivoId    String
+  objetivo      Objetivo        @relation(fields: [objetivoId], references: [id])
+  nombre        String
+  descripcion   String?
+  responsableId String
+  responsable   Usuario         @relation("PlanResponsable", fields: [responsableId], references: [id])
+  fechaInicio   DateTime
+  fechaFin      DateTime
+  estado        EstadoObjetivo  @default(PLANEADO)
+  createdAt     DateTime        @default(now())
+  updatedAt     DateTime        @updatedAt
+  deletedAt     DateTime?
+
+  actividades   Actividad[]
+
+  @@map("planes")
+}
+
+model Actividad {
+  id                String          @id @default(cuid())
+  planId            String
+  plan              Plan            @relation(fields: [planId], references: [id])
+  nombre            String
+  descripcion       String?
+  responsableId     String
+  responsable       Usuario         @relation("ActividadResponsable", fields: [responsableId], references: [id])
+  fechaInicio       DateTime
+  fechaFin          DateTime
+  estado            EstadoActividad @default(PENDIENTE)
+  avancePorcentaje  Int             @default(0)
+  evidenciaUrl      String?
+  createdAt         DateTime        @default(now())
+  updatedAt         DateTime        @updatedAt
+  deletedAt         DateTime?
+
+  @@index([estado])
+  @@map("actividades")
+}
+
+// ----------------------------------------------------------------------------
+// GESTIÓN DE RIESGOS
+// ----------------------------------------------------------------------------
+
+model Proceso {
+  id            String   @id @default(cuid())
+  nombre        String
+  areaId        String
+  area          Area     @relation(fields: [areaId], references: [id])
+  responsableId String?
+  responsable   Usuario? @relation("ProcesoResponsable", fields: [responsableId], references: [id])
+  activo        Boolean  @default(true)
+
+  riesgos          Riesgo[]
+  noConformidades  NoConformidad[]
+  hallazgos        Hallazgo[]
+  indicadores      Indicador[]
+
+  @@map("procesos")
+}
+
+model CategoriaRiesgo {
+  id          String   @id @default(cuid())
+  nombre      String   @unique
+  descripcion String?
+  riesgos     Riesgo[]
+
+  @@map("categorias_riesgo")
+}
+
+model Riesgo {
+  id                  String       @id @default(cuid())
+  codigo              String       @unique
+  descripcion         String
+  procesoId           String
+  proceso             Proceso      @relation(fields: [procesoId], references: [id])
+  categoriaId         String
+  categoria           CategoriaRiesgo @relation(fields: [categoriaId], references: [id])
+  probabilidad        Int          // 1-5
+  impacto             Int          // 1-5
+  puntajeRiesgo        Int          // probabilidad * impacto, calculado en servicio
+  nivelRiesgo         NivelRiesgo  // calculado en servicio a partir de puntajeRiesgo
+  controlesExistentes String?
+  responsableId       String
+  responsable         Usuario      @relation("RiesgoResponsable", fields: [responsableId], references: [id])
+  estado              EstadoRiesgo @default(IDENTIFICADO)
+  createdAt           DateTime     @default(now())
+  updatedAt           DateTime     @updatedAt
+  deletedAt           DateTime?
+
+  planesTratamiento   PlanTratamientoRiesgo[]
+
+  @@index([nivelRiesgo])
+  @@index([estado])
+  @@map("riesgos")
+}
+
+model PlanTratamientoRiesgo {
+  id                String                  @id @default(cuid())
+  riesgoId          String
+  riesgo            Riesgo                  @relation(fields: [riesgoId], references: [id])
+  descripcion       String
+  responsableId     String
+  responsable       Usuario                 @relation("TratamientoResponsable", fields: [responsableId], references: [id])
+  fechaCompromiso   DateTime
+  estado            EstadoTratamientoRiesgo @default(PENDIENTE)
+  evidenciaUrl      String?
+  createdAt         DateTime                @default(now())
+  updatedAt         DateTime                @updatedAt
+
+  @@map("planes_tratamiento_riesgo")
+}
+
+// ----------------------------------------------------------------------------
+// NO CONFORMIDADES Y ACCIONES
+// ----------------------------------------------------------------------------
+
+model NoConformidad {
+  id                String    @id @default(cuid())
+  codigo            String    @unique
+  origen            OrigenNC
+  descripcion       String
+  procesoId         String?
+  proceso           Proceso?  @relation(fields: [procesoId], references: [id])
+  causaRaiz         String?
+  responsableId     String
+  responsable       Usuario   @relation("NCResponsable", fields: [responsableId], references: [id])
+  fechaDeteccion    DateTime  @default(now())
+  fechaCompromiso   DateTime?
+  estado            EstadoNC  @default(ABIERTA)
+  evidenciaCierre   String?
+  createdAt         DateTime  @default(now())
+  updatedAt         DateTime  @updatedAt
+  deletedAt         DateTime?
+
+  acciones          AccionNC[]
+  hallazgoOrigen    Hallazgo?
+
+  @@index([estado])
+  @@index([origen])
+  @@map("no_conformidades")
+}
+
+model AccionNC {
+  id                String       @id @default(cuid())
+  noConformidadId   String
+  noConformidad     NoConformidad @relation(fields: [noConformidadId], references: [id])
+  descripcion       String
+  tipo              TipoAccion
+  responsableId     String
+  responsable       Usuario      @relation("AccionResponsable", fields: [responsableId], references: [id])
+  fechaCompromiso   DateTime
+  fechaCierre       DateTime?
+  estado            EstadoAccion @default(PENDIENTE)
+  evidenciaUrl      String?
+  createdAt         DateTime     @default(now())
+  updatedAt         DateTime     @updatedAt
+
+  @@index([estado])
+  @@map("acciones_nc")
+}
+
+// ----------------------------------------------------------------------------
+// AUDITORÍAS
+// ----------------------------------------------------------------------------
+
+model ProgramaAuditoria {
+  id          String   @id @default(cuid())
+  anio        Int
+  nombre      String
+  descripcion String?
+
+  auditorias  Auditoria[]
+
+  @@map("programas_auditoria")
+}
+
+model Auditoria {
+  id              String          @id @default(cuid())
+  programaId      String?
+  programa        ProgramaAuditoria? @relation(fields: [programaId], references: [id])
+  tipo            TipoAuditoria
+  alcance         String
+  fechaInicio     DateTime
+  fechaFin        DateTime
+  liderAuditorId  String
+  liderAuditor    Usuario         @relation("AuditoriaLider", fields: [liderAuditorId], references: [id])
+  equipoAuditor   String?         // nombres libres del equipo, separado por coma
+  estado          EstadoAuditoria @default(PROGRAMADA)
+  createdAt       DateTime        @default(now())
+  updatedAt       DateTime        @updatedAt
+  deletedAt       DateTime?
+
+  checklists      Checklist[]
+  hallazgos       Hallazgo[]
+  informe         InformeAuditoria?
+
+  @@index([estado])
+  @@map("auditorias")
+}
+
+model Checklist {
+  id          String   @id @default(cuid())
+  auditoriaId String
+  auditoria   Auditoria @relation(fields: [auditoriaId], references: [id])
+  nombre      String
+
+  preguntas   PreguntaChecklist[]
+
+  @@map("checklists")
+}
+
+model PreguntaChecklist {
+  id            String              @id @default(cuid())
+  checklistId   String
+  checklist     Checklist           @relation(fields: [checklistId], references: [id])
+  texto         String
+  respuesta     RespuestaChecklist  @default(PENDIENTE)
+  observaciones String?
+  evidenciaUrl  String?
+
+  @@map("preguntas_checklist")
+}
+
+model Hallazgo {
+  id                String        @id @default(cuid())
+  auditoriaId       String
+  auditoria         Auditoria     @relation(fields: [auditoriaId], references: [id])
+  tipo              TipoHallazgo
+  descripcion       String
+  procesoId         String?
+  proceso           Proceso?      @relation(fields: [procesoId], references: [id])
+  noConformidadId   String?       @unique
+  noConformidad     NoConformidad? @relation(fields: [noConformidadId], references: [id])
+  responsableId     String?
+  responsable       Usuario?      @relation("HallazgoResponsable", fields: [responsableId], references: [id])
+  createdAt         DateTime      @default(now())
+
+  @@map("hallazgos")
+}
+
+model InformeAuditoria {
+  id            String    @id @default(cuid())
+  auditoriaId   String    @unique
+  auditoria     Auditoria @relation(fields: [auditoriaId], references: [id])
+  resumen       String
+  conclusiones  String?
+  archivoUrl    String?
+  fechaEmision  DateTime  @default(now())
+
+  @@map("informes_auditoria")
+}
+
+// ----------------------------------------------------------------------------
+// INDICADORES (KPI)
+// ----------------------------------------------------------------------------
+
+model Indicador {
+  id            String              @id @default(cuid())
+  nombre        String
+  descripcion   String?
+  formula       String?
+  frecuencia    FrecuenciaIndicador
+  meta          Float
+  unidad        String?
+  direccion     DireccionIndicador  @default(MAYOR_ES_MEJOR)
+  procesoId     String?
+  proceso       Proceso?            @relation(fields: [procesoId], references: [id])
+  responsableId String
+  responsable   Usuario             @relation("IndicadorResponsable", fields: [responsableId], references: [id])
+  activo        Boolean             @default(true)
+  createdAt     DateTime            @default(now())
+  updatedAt     DateTime            @updatedAt
+  deletedAt     DateTime?
+
+  registros     RegistroIndicador[]
+
+  @@map("indicadores")
+}
+
+model RegistroIndicador {
+  id              String    @id @default(cuid())
+  indicadorId     String
+  indicador       Indicador @relation(fields: [indicadorId], references: [id])
+  valor           Float
+  fecha           DateTime
+  observaciones   String?
+  capturadoPorId  String
+  capturadoPor    Usuario   @relation("RegistroCapturadoPor", fields: [capturadoPorId], references: [id])
+  createdAt       DateTime  @default(now())
+
+  @@unique([indicadorId, fecha])
+  @@map("registros_indicador")
+}
+
+// ----------------------------------------------------------------------------
+// PROVEEDORES / TERCEROS
+// ----------------------------------------------------------------------------
+
+model Proveedor {
+  id          String          @id @default(cuid())
+  nombre      String
+  taxId       String?
+  tipo        TipoProveedor
+  contacto    String?
+  email       String?
+  telefono    String?
+  estado      EstadoProveedor @default(EN_EVALUACION)
+  createdAt   DateTime        @default(now())
+  updatedAt   DateTime        @updatedAt
+  deletedAt   DateTime?
+
+  evaluaciones EvaluacionProveedor[]
+  documentos   DocumentoProveedor[]
+
+  @@map("proveedores")
+}
+
+model EvaluacionProveedor {
+  id              String    @id @default(cuid())
+  proveedorId     String
+  proveedor       Proveedor @relation(fields: [proveedorId], references: [id])
+  fecha           DateTime  @default(now())
+  puntuacion      Float
+  criterios       Json?     // detalle de criterios evaluados y su puntaje
+  resultado       String?
+  evaluadoPorId   String
+  evaluadoPor     Usuario   @relation("EvaluacionRealizadaPor", fields: [evaluadoPorId], references: [id])
+
+  @@map("evaluaciones_proveedor")
+}
+
+model DocumentoProveedor {
+  id                String    @id @default(cuid())
+  proveedorId       String
+  proveedor         Proveedor @relation(fields: [proveedorId], references: [id])
+  nombre            String
+  archivoUrl        String?
+  fechaVencimiento  DateTime?
+  createdAt         DateTime  @default(now())
+
+  @@map("documentos_proveedor")
+}
+
+// ----------------------------------------------------------------------------
+// COMUNICACIONES, ALERTAS Y TAREAS
+// ----------------------------------------------------------------------------
+
+model Notificacion {
+  id          String            @id @default(cuid())
+  usuarioId   String
+  usuario     Usuario           @relation(fields: [usuarioId], references: [id])
+  tipo        TipoNotificacion
+  titulo      String
+  mensaje     String
+  leida       Boolean           @default(false)
+  entidadTipo String?           // ej: "Documento", "NoConformidad"
+  entidadId   String?
+  createdAt   DateTime          @default(now())
+
+  @@index([usuarioId, leida])
+  @@map("notificaciones")
+}
+
+model Tarea {
+  id                String      @id @default(cuid())
+  titulo            String
+  descripcion       String?
+  asignadoAId       String
+  asignadoA         Usuario     @relation("TareaAsignada", fields: [asignadoAId], references: [id])
+  origenTipo        String?     // ej: "Documento", "Riesgo", "NoConformidad", "Auditoria", "Indicador"
+  origenId          String?
+  fechaVencimiento  DateTime?
+  estado            EstadoTarea @default(PENDIENTE)
+  createdAt         DateTime    @default(now())
+  updatedAt         DateTime    @updatedAt
+
+  @@index([asignadoAId, estado])
+  @@map("tareas")
+}

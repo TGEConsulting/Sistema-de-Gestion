@@ -1,7 +1,7 @@
 import type { Request, Response } from "express";
-import { enviarExcel } from "@/utils/excel";
-import { enviarInformeAuditoriaPdf } from "@/utils/pdf";
-import * as auditoriasService from "@/modules/auditorias/auditorias.service";
+import { enviarExcel } from "../../utils/excel";
+import { enviarInformeAuditoriaPdf } from "../../utils/pdf";
+import * as auditoriasService from "./auditorias.service";
 
 export async function listar(req: Request, res: Response) {
   res.json(await auditoriasService.listarAuditorias(req.query as never));

@@ -1,6 +1,6 @@
 import type { Request, Response } from "express";
-import { AppError } from "@/utils/AppError";
-import * as proveedoresService from "@/modules/proveedores/proveedores.service";
+import { AppError } from "../../utils/AppError";
+import * as proveedoresService from "./proveedores.service";
 
 export async function listar(req: Request, res: Response) {
   res.json(await proveedoresService.listarProveedores(req.query as never));

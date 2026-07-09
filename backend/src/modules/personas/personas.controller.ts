@@ -1,5 +1,5 @@
 import type { Request, Response } from "express";
-import * as personasService from "@/modules/personas/personas.service";
+import * as personasService from "./personas.service";
 
 export async function listar(req: Request, res: Response) {
   res.json(await personasService.listarPersonas(req.query as never));

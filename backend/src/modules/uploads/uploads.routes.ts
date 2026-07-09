@@ -1,8 +1,8 @@
 import { Router } from "express";
-import { authMiddleware } from "@/middleware/auth.middleware";
-import { AppError } from "@/utils/AppError";
-import { subirArchivo, uploadMiddleware } from "@/lib/storage";
-import { asyncHandler } from "@/utils/asyncHandler";
+import { authMiddleware } from "../../middleware/auth.middleware";
+import { AppError } from "../../utils/AppError";
+import { subirArchivo, uploadMiddleware } from "../../lib/storage";
+import { asyncHandler } from "../../utils/asyncHandler";
 
 export const uploadsRouter = Router();
 

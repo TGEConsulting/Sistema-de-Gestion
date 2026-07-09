@@ -1,14 +1,14 @@
 import { Router } from "express";
-import { asyncHandler } from "@/utils/asyncHandler";
-import { validate } from "@/middleware/validate.middleware";
-import { authMiddleware } from "@/middleware/auth.middleware";
-import { requireRole } from "@/middleware/rbac.middleware";
+import { asyncHandler } from "../../utils/asyncHandler";
+import { validate } from "../../middleware/validate.middleware";
+import { authMiddleware } from "../../middleware/auth.middleware";
+import { requireRole } from "../../middleware/rbac.middleware";
 import {
   actualizarAreaSchema,
   crearAreaSchema,
   listarAreasQuerySchema,
-} from "@/modules/personas/areas.validators";
-import * as areasController from "@/modules/personas/areas.controller";
+} from "./areas.validators";
+import * as areasController from "./areas.controller";
 
 export const areasRouter = Router();
 

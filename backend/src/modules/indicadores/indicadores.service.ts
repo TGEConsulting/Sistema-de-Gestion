@@ -1,13 +1,13 @@
-import { prisma } from "@/lib/prisma";
-import { AppError } from "@/utils/AppError";
-import { calcularSemaforo } from "@/modules/indicadores/indicador.utils";
-import { buildPaginatedResult, paginationArgs } from "@/utils/pagination";
+import { prisma } from "../../lib/prisma";
+import { AppError } from "../../utils/AppError";
+import { calcularSemaforo } from "./indicador.utils";
+import { buildPaginatedResult, paginationArgs } from "../../utils/pagination";
 import type {
   ActualizarIndicadorInput,
   CrearIndicadorInput,
   CrearRegistroInput,
   ListarIndicadoresQuery,
-} from "@/modules/indicadores/indicadores.validators";
+} from "./indicadores.validators";
 
 function conSemaforo<T extends { meta: number; direccion: "MAYOR_ES_MEJOR" | "MENOR_ES_MEJOR"; registros: { valor: number; fecha: Date }[] }>(
   indicador: T

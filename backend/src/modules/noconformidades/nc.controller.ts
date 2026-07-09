@@ -1,6 +1,6 @@
 import type { Request, Response } from "express";
-import { enviarExcel } from "@/utils/excel";
-import * as ncService from "@/modules/noconformidades/nc.service";
+import { enviarExcel } from "../../utils/excel";
+import * as ncService from "./nc.service";
 
 export async function listar(req: Request, res: Response) {
   res.json(await ncService.listarNC(req.query as never));

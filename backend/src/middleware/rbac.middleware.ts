@@ -1,6 +1,6 @@
 import type { NextFunction, Request, Response } from "express";
 import type { NombreRol } from "@prisma/client";
-import { AppError } from "@/utils/AppError";
+import { AppError } from "../utils/AppError";
 
 // Uso: router.post("/", authMiddleware, requireRole("ADMIN"), controller.crear)
 export function requireRole(...rolesPermitidos: NombreRol[]) {

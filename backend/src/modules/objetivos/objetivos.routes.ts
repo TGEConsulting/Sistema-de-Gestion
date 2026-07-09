@@ -1,14 +1,14 @@
 import { Router } from "express";
-import { asyncHandler } from "@/utils/asyncHandler";
-import { validate } from "@/middleware/validate.middleware";
-import { authMiddleware } from "@/middleware/auth.middleware";
-import { requireRole } from "@/middleware/rbac.middleware";
+import { asyncHandler } from "../../utils/asyncHandler";
+import { validate } from "../../middleware/validate.middleware";
+import { authMiddleware } from "../../middleware/auth.middleware";
+import { requireRole } from "../../middleware/rbac.middleware";
 import {
   actualizarObjetivoSchema,
   crearObjetivoSchema,
   listarObjetivosQuerySchema,
-} from "@/modules/objetivos/objetivos.validators";
-import * as objetivosController from "@/modules/objetivos/objetivos.controller";
+} from "./objetivos.validators";
+import * as objetivosController from "./objetivos.controller";
 
 export const objetivosRouter = Router();
 

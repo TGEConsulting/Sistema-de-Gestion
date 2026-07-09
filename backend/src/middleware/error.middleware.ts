@@ -1,5 +1,5 @@
 import type { NextFunction, Request, Response } from "express";
-import { AppError } from "@/utils/AppError";
+import { AppError } from "../utils/AppError";
 
 export function notFoundMiddleware(req: Request, res: Response) {
   res.status(404).json({ error: "Ruta no encontrada", requestId: req.requestId });

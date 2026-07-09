@@ -2,8 +2,8 @@ import path from "path";
 import crypto from "crypto";
 import multer from "multer";
 import { Storage } from "@google-cloud/storage";
-import { AppError } from "@/utils/AppError";
-import { env } from "@/config/env";
+import { AppError } from "../utils/AppError";
+import { env } from "../config/env";
 
 const TIPOS_PERMITIDOS = new Set([
   "application/pdf",

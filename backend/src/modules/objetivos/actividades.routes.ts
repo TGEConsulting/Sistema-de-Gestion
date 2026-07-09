@@ -1,15 +1,15 @@
 import { Router } from "express";
 import { z } from "zod";
-import { prisma } from "@/lib/prisma";
-import { asyncHandler } from "@/utils/asyncHandler";
-import { AppError } from "@/utils/AppError";
-import { validate } from "@/middleware/validate.middleware";
-import { authMiddleware } from "@/middleware/auth.middleware";
-import { requireRole } from "@/middleware/rbac.middleware";
+import { prisma } from "../../lib/prisma";
+import { asyncHandler } from "../../utils/asyncHandler";
+import { AppError } from "../../utils/AppError";
+import { validate } from "../../middleware/validate.middleware";
+import { authMiddleware } from "../../middleware/auth.middleware";
+import { requireRole } from "../../middleware/rbac.middleware";
 import {
   actualizarActividadSchema,
   crearActividadSchema,
-} from "@/modules/objetivos/actividades.validators";
+} from "./actividades.validators";
 
 export const actividadesRouter = Router();
 

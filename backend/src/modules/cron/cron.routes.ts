@@ -1,8 +1,8 @@
 import { Router } from "express";
-import { env } from "@/config/env";
-import { AppError } from "@/utils/AppError";
-import { asyncHandler } from "@/utils/asyncHandler";
-import { generarAlertas } from "@/modules/alertas/alertas.service";
+import { env } from "../../config/env";
+import { AppError } from "../../utils/AppError";
+import { asyncHandler } from "../../utils/asyncHandler";
+import { generarAlertas } from "../alertas/alertas.service";
 
 export const cronRouter = Router();
 

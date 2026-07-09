@@ -1,15 +1,15 @@
 import { Router } from "express";
-import { asyncHandler } from "@/utils/asyncHandler";
-import { validate } from "@/middleware/validate.middleware";
-import { authMiddleware } from "@/middleware/auth.middleware";
-import { requireRole } from "@/middleware/rbac.middleware";
+import { asyncHandler } from "../../utils/asyncHandler";
+import { validate } from "../../middleware/validate.middleware";
+import { authMiddleware } from "../../middleware/auth.middleware";
+import { requireRole } from "../../middleware/rbac.middleware";
 import {
   actualizarIndicadorSchema,
   crearIndicadorSchema,
   crearRegistroSchema,
   listarIndicadoresQuerySchema,
-} from "@/modules/indicadores/indicadores.validators";
-import * as indicadoresController from "@/modules/indicadores/indicadores.controller";
+} from "./indicadores.validators";
+import * as indicadoresController from "./indicadores.controller";
 
 export const indicadoresRouter = Router();
 

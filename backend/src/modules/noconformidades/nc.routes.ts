@@ -1,17 +1,17 @@
 import { Router } from "express";
 import { z } from "zod";
-import { asyncHandler } from "@/utils/asyncHandler";
-import { validate } from "@/middleware/validate.middleware";
-import { authMiddleware } from "@/middleware/auth.middleware";
-import { requireRole } from "@/middleware/rbac.middleware";
+import { asyncHandler } from "../../utils/asyncHandler";
+import { validate } from "../../middleware/validate.middleware";
+import { authMiddleware } from "../../middleware/auth.middleware";
+import { requireRole } from "../../middleware/rbac.middleware";
 import {
   actualizarAccionSchema,
   actualizarNCSchema,
   crearAccionSchema,
   crearNCSchema,
   listarNCQuerySchema,
-} from "@/modules/noconformidades/nc.validators";
-import * as ncController from "@/modules/noconformidades/nc.controller";
+} from "./nc.validators";
+import * as ncController from "./nc.controller";
 
 export const ncRouter = Router();
 

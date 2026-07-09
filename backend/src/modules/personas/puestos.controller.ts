@@ -1,5 +1,5 @@
 import type { Request, Response } from "express";
-import * as puestosService from "@/modules/personas/puestos.service";
+import * as puestosService from "./puestos.service";
 
 export async function listar(req: Request, res: Response) {
   const puestos = await puestosService.listarPuestos(

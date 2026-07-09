@@ -1,10 +1,10 @@
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 import { OAuth2Client } from "google-auth-library";
-import { prisma } from "@/lib/prisma";
-import { env } from "@/config/env";
-import { AppError } from "@/utils/AppError";
-import type { LoginInput } from "@/modules/auth/auth.validators";
+import { prisma } from "../../lib/prisma";
+import { env } from "../../config/env";
+import { AppError } from "../../utils/AppError";
+import type { LoginInput } from "./auth.validators";
 import type { NombreRol } from "@prisma/client";
 
 const googleClient = env.googleClientId ? new OAuth2Client(env.googleClientId) : null;

@@ -1,16 +1,16 @@
 import { Router } from "express";
-import { asyncHandler } from "@/utils/asyncHandler";
-import { validate } from "@/middleware/validate.middleware";
-import { authMiddleware } from "@/middleware/auth.middleware";
-import { requireRole } from "@/middleware/rbac.middleware";
+import { asyncHandler } from "../../utils/asyncHandler";
+import { validate } from "../../middleware/validate.middleware";
+import { authMiddleware } from "../../middleware/auth.middleware";
+import { requireRole } from "../../middleware/rbac.middleware";
 import {
   actualizarProveedorSchema,
   crearDocumentoProveedorSchema,
   crearEvaluacionSchema,
   crearProveedorSchema,
   listarProveedoresQuerySchema,
-} from "@/modules/proveedores/proveedores.validators";
-import * as proveedoresController from "@/modules/proveedores/proveedores.controller";
+} from "./proveedores.validators";
+import * as proveedoresController from "./proveedores.controller";
 
 export const proveedoresRouter = Router();
 

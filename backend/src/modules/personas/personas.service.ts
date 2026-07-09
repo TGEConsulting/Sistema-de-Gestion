@@ -1,11 +1,11 @@
-import { prisma } from "@/lib/prisma";
-import { AppError } from "@/utils/AppError";
-import { buildPaginatedResult, paginationArgs } from "@/utils/pagination";
+import { prisma } from "../../lib/prisma";
+import { AppError } from "../../utils/AppError";
+import { buildPaginatedResult, paginationArgs } from "../../utils/pagination";
 import type {
   ActualizarPersonaInput,
   CrearPersonaInput,
   ListarPersonasQuery,
-} from "@/modules/personas/personas.validators";
+} from "./personas.validators";
 
 export async function listarPersonas(filtros: ListarPersonasQuery) {
   const where = {

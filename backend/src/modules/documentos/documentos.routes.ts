@@ -1,17 +1,17 @@
 import { Router } from "express";
-import { asyncHandler } from "@/utils/asyncHandler";
-import { validate } from "@/middleware/validate.middleware";
-import { authMiddleware } from "@/middleware/auth.middleware";
-import { requireRole } from "@/middleware/rbac.middleware";
+import { asyncHandler } from "../../utils/asyncHandler";
+import { validate } from "../../middleware/validate.middleware";
+import { authMiddleware } from "../../middleware/auth.middleware";
+import { requireRole } from "../../middleware/rbac.middleware";
 import {
   actualizarDocumentoSchema,
   crearDocumentoSchema,
   crearVersionSchema,
   evidenciaLecturaSchema,
   listarDocumentosQuerySchema,
-} from "@/modules/documentos/documentos.validators";
-import * as documentosController from "@/modules/documentos/documentos.controller";
-import { tiposDocumentoRouter } from "@/modules/documentos/tipos-documento.routes";
+} from "./documentos.validators";
+import * as documentosController from "./documentos.controller";
+import { tiposDocumentoRouter } from "./tipos-documento.routes";
 
 export const documentosRouter = Router();
 

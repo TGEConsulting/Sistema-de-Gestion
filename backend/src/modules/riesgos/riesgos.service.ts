@@ -1,12 +1,12 @@
-import { prisma } from "@/lib/prisma";
-import { AppError } from "@/utils/AppError";
-import { calcularNivelRiesgo } from "@/modules/riesgos/riesgo.utils";
-import { buildPaginatedResult, paginationArgs } from "@/utils/pagination";
+import { prisma } from "../../lib/prisma";
+import { AppError } from "../../utils/AppError";
+import { calcularNivelRiesgo } from "./riesgo.utils";
+import { buildPaginatedResult, paginationArgs } from "../../utils/pagination";
 import type {
   ActualizarRiesgoInput,
   CrearRiesgoInput,
   ListarRiesgosQuery,
-} from "@/modules/riesgos/riesgos.validators";
+} from "./riesgos.validators";
 
 const DETALLE_INCLUDE = {
   proceso: { include: { area: true } },

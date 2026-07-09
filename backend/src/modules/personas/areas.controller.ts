@@ -1,5 +1,5 @@
 import type { Request, Response } from "express";
-import * as areasService from "@/modules/personas/areas.service";
+import * as areasService from "./areas.service";
 
 export async function listar(req: Request, res: Response) {
   const areas = await areasService.listarAreas(req.query as { activo?: boolean; q?: string });

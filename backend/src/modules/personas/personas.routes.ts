@@ -1,14 +1,14 @@
 import { Router } from "express";
-import { asyncHandler } from "@/utils/asyncHandler";
-import { validate } from "@/middleware/validate.middleware";
-import { authMiddleware } from "@/middleware/auth.middleware";
-import { requireRole } from "@/middleware/rbac.middleware";
+import { asyncHandler } from "../../utils/asyncHandler";
+import { validate } from "../../middleware/validate.middleware";
+import { authMiddleware } from "../../middleware/auth.middleware";
+import { requireRole } from "../../middleware/rbac.middleware";
 import {
   actualizarPersonaSchema,
   crearPersonaSchema,
   listarPersonasQuerySchema,
-} from "@/modules/personas/personas.validators";
-import * as personasController from "@/modules/personas/personas.controller";
+} from "./personas.validators";
+import * as personasController from "./personas.controller";
 
 export const personasRouter = Router();
 

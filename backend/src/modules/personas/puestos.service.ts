@@ -1,9 +1,9 @@
-import { prisma } from "@/lib/prisma";
-import { AppError } from "@/utils/AppError";
+import { prisma } from "../../lib/prisma";
+import { AppError } from "../../utils/AppError";
 import type {
   ActualizarPuestoInput,
   CrearPuestoInput,
-} from "@/modules/personas/puestos.validators";
+} from "./puestos.validators";
 
 export async function listarPuestos(filtros: { areaId?: string; activo?: boolean }) {
   return prisma.puesto.findMany({

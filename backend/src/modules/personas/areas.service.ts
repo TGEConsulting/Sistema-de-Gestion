@@ -1,9 +1,9 @@
-import { prisma } from "@/lib/prisma";
-import { AppError } from "@/utils/AppError";
+import { prisma } from "../../lib/prisma";
+import { AppError } from "../../utils/AppError";
 import type {
   ActualizarAreaInput,
   CrearAreaInput,
-} from "@/modules/personas/areas.validators";
+} from "./areas.validators";
 
 export async function listarAreas(filtros: { activo?: boolean; q?: string }) {
   return prisma.area.findMany({

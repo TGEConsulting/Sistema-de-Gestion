@@ -1,7 +1,7 @@
 import type { Request, Response } from "express";
-import { AppError } from "@/utils/AppError";
-import { enviarExcel } from "@/utils/excel";
-import * as indicadoresService from "@/modules/indicadores/indicadores.service";
+import { AppError } from "../../utils/AppError";
+import { enviarExcel } from "../../utils/excel";
+import * as indicadoresService from "./indicadores.service";
 
 export async function listar(req: Request, res: Response) {
   res.json(await indicadoresService.listarIndicadores(req.query as never));

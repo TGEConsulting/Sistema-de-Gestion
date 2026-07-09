@@ -1,13 +1,13 @@
-import { prisma } from "@/lib/prisma";
-import { AppError } from "@/utils/AppError";
-import { buildPaginatedResult, paginationArgs } from "@/utils/pagination";
+import { prisma } from "../../lib/prisma";
+import { AppError } from "../../utils/AppError";
+import { buildPaginatedResult, paginationArgs } from "../../utils/pagination";
 import type {
   ActualizarProveedorInput,
   CrearDocumentoProveedorInput,
   CrearEvaluacionInput,
   CrearProveedorInput,
   ListarProveedoresQuery,
-} from "@/modules/proveedores/proveedores.validators";
+} from "./proveedores.validators";
 
 const DETALLE_INCLUDE = {
   evaluaciones: {

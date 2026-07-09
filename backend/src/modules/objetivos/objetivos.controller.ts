@@ -1,5 +1,5 @@
 import type { Request, Response } from "express";
-import * as objetivosService from "@/modules/objetivos/objetivos.service";
+import * as objetivosService from "./objetivos.service";
 
 export async function listar(req: Request, res: Response) {
   res.json(await objetivosService.listarObjetivos(req.query as never));

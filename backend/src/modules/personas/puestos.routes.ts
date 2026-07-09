@@ -1,14 +1,14 @@
 import { Router } from "express";
-import { asyncHandler } from "@/utils/asyncHandler";
-import { validate } from "@/middleware/validate.middleware";
-import { authMiddleware } from "@/middleware/auth.middleware";
-import { requireRole } from "@/middleware/rbac.middleware";
+import { asyncHandler } from "../../utils/asyncHandler";
+import { validate } from "../../middleware/validate.middleware";
+import { authMiddleware } from "../../middleware/auth.middleware";
+import { requireRole } from "../../middleware/rbac.middleware";
 import {
   actualizarPuestoSchema,
   crearPuestoSchema,
   listarPuestosQuerySchema,
-} from "@/modules/personas/puestos.validators";
-import * as puestosController from "@/modules/personas/puestos.controller";
+} from "./puestos.validators";
+import * as puestosController from "./puestos.controller";
 
 export const puestosRouter = Router();
 

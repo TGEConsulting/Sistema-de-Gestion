@@ -1,9 +1,9 @@
-import { prisma } from "@/lib/prisma";
-import { AppError } from "@/utils/AppError";
+import { prisma } from "../../lib/prisma";
+import { AppError } from "../../utils/AppError";
 import type {
   ActualizarObjetivoInput,
   CrearObjetivoInput,
-} from "@/modules/objetivos/objetivos.validators";
+} from "./objetivos.validators";
 
 export async function listarObjetivos(filtros: { areaId?: string; estado?: string; tipo?: string }) {
   return prisma.objetivo.findMany({

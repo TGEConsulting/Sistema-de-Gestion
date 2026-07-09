@@ -1,7 +1,7 @@
 import type { Request, Response } from "express";
-import { AppError } from "@/utils/AppError";
-import { enviarExcel } from "@/utils/excel";
-import * as documentosService from "@/modules/documentos/documentos.service";
+import { AppError } from "../../utils/AppError";
+import { enviarExcel } from "../../utils/excel";
+import * as documentosService from "./documentos.service";
 
 export async function listar(req: Request, res: Response) {
   res.json(await documentosService.listarDocumentos(req.query as never));

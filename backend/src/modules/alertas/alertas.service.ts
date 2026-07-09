@@ -1,11 +1,11 @@
-import { prisma } from "@/lib/prisma";
+import { prisma } from "../../lib/prisma";
 import {
   esAccionVencida,
   esAuditoriaProxima,
   esDocumentoPorVencer,
   esIndicadorSinCaptura,
   esNCSinAtender,
-} from "@/modules/alertas/alertas.utils";
+} from "./alertas.utils";
 
 interface AlertaParams {
   usuarioId: string;

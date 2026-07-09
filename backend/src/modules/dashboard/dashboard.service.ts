@@ -1,5 +1,5 @@
-import { prisma } from "@/lib/prisma";
-import { calcularSemaforo } from "@/modules/indicadores/indicador.utils";
+import { prisma } from "../../lib/prisma";
+import { calcularSemaforo } from "../indicadores/indicador.utils";
 
 export async function obtenerResumen(usuarioId: string) {
   const [

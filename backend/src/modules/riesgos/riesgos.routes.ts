@@ -1,16 +1,16 @@
 import { Router } from "express";
-import { asyncHandler } from "@/utils/asyncHandler";
-import { validate } from "@/middleware/validate.middleware";
-import { authMiddleware } from "@/middleware/auth.middleware";
-import { requireRole } from "@/middleware/rbac.middleware";
+import { asyncHandler } from "../../utils/asyncHandler";
+import { validate } from "../../middleware/validate.middleware";
+import { authMiddleware } from "../../middleware/auth.middleware";
+import { requireRole } from "../../middleware/rbac.middleware";
 import {
   actualizarRiesgoSchema,
   actualizarTratamientoSchema,
   crearRiesgoSchema,
   crearTratamientoSchema,
   listarRiesgosQuerySchema,
-} from "@/modules/riesgos/riesgos.validators";
-import * as riesgosController from "@/modules/riesgos/riesgos.controller";
+} from "./riesgos.validators";
+import * as riesgosController from "./riesgos.controller";
 
 export const riesgosRouter = Router();
 

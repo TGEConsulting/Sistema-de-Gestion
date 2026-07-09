@@ -1,8 +1,8 @@
 import { Router } from "express";
-import { asyncHandler } from "@/utils/asyncHandler";
-import { validate } from "@/middleware/validate.middleware";
-import { authMiddleware } from "@/middleware/auth.middleware";
-import { requireRole } from "@/middleware/rbac.middleware";
+import { asyncHandler } from "../../utils/asyncHandler";
+import { validate } from "../../middleware/validate.middleware";
+import { authMiddleware } from "../../middleware/auth.middleware";
+import { requireRole } from "../../middleware/rbac.middleware";
 import {
   actualizarAuditoriaSchema,
   crearAuditoriaSchema,
@@ -11,8 +11,8 @@ import {
   crearInformeSchema,
   listarAuditoriasQuerySchema,
   responderPreguntaSchema,
-} from "@/modules/auditorias/auditorias.validators";
-import * as auditoriasController from "@/modules/auditorias/auditorias.controller";
+} from "./auditorias.validators";
+import * as auditoriasController from "./auditorias.controller";
 
 export const auditoriasRouter = Router();
 

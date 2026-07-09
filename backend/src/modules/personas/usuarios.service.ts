@@ -1,10 +1,10 @@
 import bcrypt from "bcryptjs";
-import { prisma } from "@/lib/prisma";
-import { AppError } from "@/utils/AppError";
+import { prisma } from "../../lib/prisma";
+import { AppError } from "../../utils/AppError";
 import type {
   ActualizarUsuarioInput,
   CrearUsuarioInput,
-} from "@/modules/personas/usuarios.validators";
+} from "./usuarios.validators";
 
 const SALT_ROUNDS = 10;
 

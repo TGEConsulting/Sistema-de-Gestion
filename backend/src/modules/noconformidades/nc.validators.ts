@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { paginationQuerySchema } from "@/utils/pagination";
+import { paginationQuerySchema } from "../../utils/pagination";
 
 export const crearNCSchema = z.object({
   codigo: z.string().min(2),

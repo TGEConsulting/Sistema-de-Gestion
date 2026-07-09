@@ -1,9 +1,9 @@
 import type { Request, Response } from "express";
 import jwt from "jsonwebtoken";
-import { env } from "@/config/env";
-import { AppError } from "@/utils/AppError";
-import { prisma } from "@/lib/prisma";
-import { asyncHandler } from "@/utils/asyncHandler";
+import { env } from "../config/env";
+import { AppError } from "../utils/AppError";
+import { prisma } from "../lib/prisma";
+import { asyncHandler } from "../utils/asyncHandler";
 import type { NombreRol } from "@prisma/client";
 
 export interface AuthPayload {

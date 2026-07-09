@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { paginationQuerySchema } from "@/utils/pagination";
+import { paginationQuerySchema } from "../../utils/pagination";
 
 const probabilidadImpacto = z.number().int().min(1).max(5);
 

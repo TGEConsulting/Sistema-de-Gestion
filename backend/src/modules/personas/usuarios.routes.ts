@@ -1,14 +1,14 @@
 import { Router } from "express";
-import { asyncHandler } from "@/utils/asyncHandler";
-import { validate } from "@/middleware/validate.middleware";
-import { authMiddleware } from "@/middleware/auth.middleware";
-import { requireRole } from "@/middleware/rbac.middleware";
+import { asyncHandler } from "../../utils/asyncHandler";
+import { validate } from "../../middleware/validate.middleware";
+import { authMiddleware } from "../../middleware/auth.middleware";
+import { requireRole } from "../../middleware/rbac.middleware";
 import {
   actualizarUsuarioSchema,
   cambiarPasswordSchema,
   crearUsuarioSchema,
-} from "@/modules/personas/usuarios.validators";
-import * as usuariosController from "@/modules/personas/usuarios.controller";
+} from "./usuarios.validators";
+import * as usuariosController from "./usuarios.controller";
 
 export const usuariosRouter = Router();
 

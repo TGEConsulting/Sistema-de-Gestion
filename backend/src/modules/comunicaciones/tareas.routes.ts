@@ -1,10 +1,10 @@
 import { Router } from "express";
 import { z } from "zod";
-import { prisma } from "@/lib/prisma";
-import { asyncHandler } from "@/utils/asyncHandler";
-import { AppError } from "@/utils/AppError";
-import { validate } from "@/middleware/validate.middleware";
-import { authMiddleware } from "@/middleware/auth.middleware";
+import { prisma } from "../../lib/prisma";
+import { asyncHandler } from "../../utils/asyncHandler";
+import { AppError } from "../../utils/AppError";
+import { validate } from "../../middleware/validate.middleware";
+import { authMiddleware } from "../../middleware/auth.middleware";
 
 const actualizarTareaSchema = z.object({
   estado: z.enum(["PENDIENTE", "EN_PROCESO", "COMPLETADA", "VENCIDA"]),

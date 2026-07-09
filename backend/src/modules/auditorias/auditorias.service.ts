@@ -1,6 +1,6 @@
-import { prisma } from "@/lib/prisma";
-import { AppError } from "@/utils/AppError";
-import { buildPaginatedResult, paginationArgs } from "@/utils/pagination";
+import { prisma } from "../../lib/prisma";
+import { AppError } from "../../utils/AppError";
+import { buildPaginatedResult, paginationArgs } from "../../utils/pagination";
 import type {
   ActualizarAuditoriaInput,
   CrearAuditoriaInput,
@@ -8,7 +8,7 @@ import type {
   CrearHallazgoInput,
   CrearInformeInput,
   ListarAuditoriasQuery,
-} from "@/modules/auditorias/auditorias.validators";
+} from "./auditorias.validators";
 
 const DETALLE_INCLUDE = {
   programa: true,

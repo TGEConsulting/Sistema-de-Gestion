@@ -1,6 +1,6 @@
 import type { Request, Response } from "express";
-import * as authService from "@/modules/auth/auth.service";
-import { AppError } from "@/utils/AppError";
+import * as authService from "./auth.service";
+import { AppError } from "../../utils/AppError";
 
 export async function loginController(req: Request, res: Response) {
   const result = await authService.login(req.body);

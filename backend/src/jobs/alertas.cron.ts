@@ -1,5 +1,5 @@
 import cron from "node-cron";
-import { generarAlertas } from "@/modules/alertas/alertas.service";
+import { generarAlertas } from "../modules/alertas/alertas.service";
 
 /** Corre todos los días a las 06:00 servidor para generar notificaciones automáticas. */
 export function iniciarCronAlertas() {

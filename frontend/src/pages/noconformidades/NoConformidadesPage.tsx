@@ -229,7 +229,7 @@ function DetalleNC({ ncId, usuarios, onCerrar, onCambio }: { ncId: string; usuar
                   <span className="mr-1 text-xs text-slate-400">[{a.tipo}]</span>
                   {a.descripcion}
                 </p>
-                <p className="text-xs text-slate-400">{a.responsable?.nombre} · vence {new Date(a.fechaCompromiso).toLocaleDateString()}</p>
+                <p className="text-xs text-slate-400">{a.responsable?.nombre} · vence {new Date(a.fechaCompromiso).toLocaleDateString("es-MX")}</p>
               </div>
               <select
                 className="rounded-md border border-slate-300 px-2 py-1 text-xs"

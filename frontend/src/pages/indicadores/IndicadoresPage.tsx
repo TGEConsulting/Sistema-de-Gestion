@@ -163,7 +163,7 @@ function DetalleIndicador({ indicadorId, onCerrar }: { indicadorId: string; onCe
   if (!indicador) return <p className="text-sm text-slate-400">Cargando...</p>;
 
   const datos = (indicador.registros ?? []).map((r) => ({
-    fecha: new Date(r.fecha).toLocaleDateString(),
+    fecha: new Date(r.fecha).toLocaleDateString("es-MX"),
     valor: r.valor,
   }));
 

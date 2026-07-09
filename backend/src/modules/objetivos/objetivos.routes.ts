@@ -2,7 +2,7 @@ import { Router } from "express";
 import { asyncHandler } from "../../utils/asyncHandler";
 import { validate } from "../../middleware/validate.middleware";
 import { authMiddleware } from "../../middleware/auth.middleware";
-import { requireRole } from "../../middleware/rbac.middleware";
+import { requirePermiso } from "../../middleware/rbac.middleware";
 import {
   actualizarObjetivoSchema,
   crearObjetivoSchema,
@@ -16,20 +16,21 @@ objetivosRouter.use(authMiddleware);
 
 objetivosRouter.get(
   "/",
+  requirePermiso("OBJETIVOS", "VER"),
   validate(listarObjetivosQuerySchema, "query"),
   asyncHandler(objetivosController.listar)
 );
-objetivosRouter.get("/:id", asyncHandler(objetivosController.obtener));
+objetivosRouter.get("/:id", requirePermiso("OBJETIVOS", "VER"), asyncHandler(objetivosController.obtener));
 objetivosRouter.post(
   "/",
-  requireRole("ADMIN", "RESPONSABLE_PROCESO"),
+  requirePermiso("OBJETIVOS", "EDITAR"),
   validate(crearObjetivoSchema),
   asyncHandler(objetivosController.crear)
 );
 objetivosRouter.put(
   "/:id",
-  requireRole("ADMIN", "RESPONSABLE_PROCESO"),
+  requirePermiso("OBJETIVOS", "EDITAR"),
   validate(actualizarObjetivoSchema),
   asyncHandler(objetivosController.actualizar)
 );
-objetivosRouter.delete("/:id", requireRole("ADMIN"), asyncHandler(objetivosController.eliminar));
+objetivosRouter.delete("/:id", requirePermiso("OBJETIVOS", "APROBAR"), asyncHandler(objetivosController.eliminar));

@@ -2,7 +2,7 @@ import { Router } from "express";
 import { asyncHandler } from "../../utils/asyncHandler";
 import { validate } from "../../middleware/validate.middleware";
 import { authMiddleware } from "../../middleware/auth.middleware";
-import { requireRole } from "../../middleware/rbac.middleware";
+import { requirePermiso } from "../../middleware/rbac.middleware";
 import {
   actualizarPersonaSchema,
   crearPersonaSchema,
@@ -16,20 +16,21 @@ personasRouter.use(authMiddleware);
 
 personasRouter.get(
   "/",
+  requirePermiso("PERSONAS", "VER"),
   validate(listarPersonasQuerySchema, "query"),
   asyncHandler(personasController.listar)
 );
-personasRouter.get("/:id", asyncHandler(personasController.obtener));
+personasRouter.get("/:id", requirePermiso("PERSONAS", "VER"), asyncHandler(personasController.obtener));
 personasRouter.post(
   "/",
-  requireRole("ADMIN"),
+  requirePermiso("PERSONAS", "EDITAR"),
   validate(crearPersonaSchema),
   asyncHandler(personasController.crear)
 );
 personasRouter.put(
   "/:id",
-  requireRole("ADMIN"),
+  requirePermiso("PERSONAS", "EDITAR"),
   validate(actualizarPersonaSchema),
   asyncHandler(personasController.actualizar)
 );
-personasRouter.delete("/:id", requireRole("ADMIN"), asyncHandler(personasController.eliminar));
+personasRouter.delete("/:id", requirePermiso("PERSONAS", "APROBAR"), asyncHandler(personasController.eliminar));

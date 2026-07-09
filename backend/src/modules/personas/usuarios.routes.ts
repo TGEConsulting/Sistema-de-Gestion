@@ -2,7 +2,7 @@ import { Router } from "express";
 import { asyncHandler } from "../../utils/asyncHandler";
 import { validate } from "../../middleware/validate.middleware";
 import { authMiddleware } from "../../middleware/auth.middleware";
-import { requireRole } from "../../middleware/rbac.middleware";
+import { requirePermiso } from "../../middleware/rbac.middleware";
 import {
   actualizarUsuarioSchema,
   cambiarPasswordSchema,
@@ -14,27 +14,28 @@ export const usuariosRouter = Router();
 
 usuariosRouter.use(authMiddleware);
 
-// Lectura disponible para cualquier usuario autenticado: se necesita para poblar
-// selectores de "responsable" al crear documentos, riesgos, NC, objetivos, etc.
+// Lectura disponible para cualquier usuario autenticado (sin gate de la matriz de permisos):
+// se necesita para poblar selectores de "responsable" al crear documentos, riesgos, NC,
+// objetivos, etc. en TODOS los módulos, no solo en Personas.
 usuariosRouter.get("/", asyncHandler(usuariosController.listar));
 usuariosRouter.get("/:id", asyncHandler(usuariosController.obtener));
 
 usuariosRouter.post(
   "/",
-  requireRole("ADMIN"),
+  requirePermiso("PERSONAS", "EDITAR"),
   validate(crearUsuarioSchema),
   asyncHandler(usuariosController.crear)
 );
 usuariosRouter.put(
   "/:id",
-  requireRole("ADMIN"),
+  requirePermiso("PERSONAS", "EDITAR"),
   validate(actualizarUsuarioSchema),
   asyncHandler(usuariosController.actualizar)
 );
 usuariosRouter.put(
   "/:id/password",
-  requireRole("ADMIN"),
+  requirePermiso("PERSONAS", "APROBAR"),
   validate(cambiarPasswordSchema),
   asyncHandler(usuariosController.cambiarPassword)
 );
-usuariosRouter.delete("/:id", requireRole("ADMIN"), asyncHandler(usuariosController.eliminar));
+usuariosRouter.delete("/:id", requirePermiso("PERSONAS", "APROBAR"), asyncHandler(usuariosController.eliminar));

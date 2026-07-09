@@ -3,7 +3,7 @@ import { z } from "zod";
 import { asyncHandler } from "../../utils/asyncHandler";
 import { validate } from "../../middleware/validate.middleware";
 import { authMiddleware } from "../../middleware/auth.middleware";
-import { requireRole } from "../../middleware/rbac.middleware";
+import { requirePermiso } from "../../middleware/rbac.middleware";
 import {
   actualizarAccionSchema,
   actualizarNCSchema,
@@ -17,43 +17,49 @@ export const ncRouter = Router();
 
 ncRouter.use(authMiddleware);
 
-ncRouter.get("/", validate(listarNCQuerySchema, "query"), asyncHandler(ncController.listar));
+ncRouter.get(
+  "/",
+  requirePermiso("NO_CONFORMIDADES", "VER"),
+  validate(listarNCQuerySchema, "query"),
+  asyncHandler(ncController.listar)
+);
 ncRouter.get(
   "/export",
+  requirePermiso("NO_CONFORMIDADES", "VER"),
   validate(listarNCQuerySchema, "query"),
   asyncHandler(ncController.exportar)
 );
-ncRouter.get("/:id", asyncHandler(ncController.obtener));
+ncRouter.get("/:id", requirePermiso("NO_CONFORMIDADES", "VER"), asyncHandler(ncController.obtener));
 ncRouter.post(
   "/",
-  requireRole("ADMIN", "AUDITOR", "RESPONSABLE_PROCESO"),
+  requirePermiso("NO_CONFORMIDADES", "EDITAR"),
   validate(crearNCSchema),
   asyncHandler(ncController.crear)
 );
 ncRouter.put(
   "/:id",
-  requireRole("ADMIN", "RESPONSABLE_PROCESO"),
+  requirePermiso("NO_CONFORMIDADES", "EDITAR"),
   validate(actualizarNCSchema),
   asyncHandler(ncController.actualizar)
 );
-ncRouter.delete("/:id", requireRole("ADMIN"), asyncHandler(ncController.eliminar));
+ncRouter.delete("/:id", requirePermiso("NO_CONFORMIDADES", "APROBAR"), asyncHandler(ncController.eliminar));
 
 ncRouter.post(
   "/:id/cerrar",
-  requireRole("ADMIN", "AUDITOR"),
+  requirePermiso("NO_CONFORMIDADES", "APROBAR"),
   validate(z.object({ evidenciaCierre: z.string().min(3) })),
   asyncHandler(ncController.cerrar)
 );
 
 ncRouter.post(
   "/:id/acciones",
-  requireRole("ADMIN", "RESPONSABLE_PROCESO"),
+  requirePermiso("NO_CONFORMIDADES", "EDITAR"),
   validate(crearAccionSchema),
   asyncHandler(ncController.agregarAccion)
 );
 ncRouter.put(
   "/:id/acciones/:accionId",
-  requireRole("ADMIN", "RESPONSABLE_PROCESO"),
+  requirePermiso("NO_CONFORMIDADES", "EDITAR"),
   validate(actualizarAccionSchema),
   asyncHandler(ncController.actualizarAccion)
 );

@@ -5,7 +5,7 @@ import { asyncHandler } from "../../utils/asyncHandler";
 import { AppError } from "../../utils/AppError";
 import { validate } from "../../middleware/validate.middleware";
 import { authMiddleware } from "../../middleware/auth.middleware";
-import { requireRole } from "../../middleware/rbac.middleware";
+import { requirePermiso } from "../../middleware/rbac.middleware";
 import {
   actualizarActividadSchema,
   crearActividadSchema,
@@ -17,6 +17,7 @@ actividadesRouter.use(authMiddleware);
 
 actividadesRouter.get(
   "/",
+  requirePermiso("OBJETIVOS", "VER"),
   validate(z.object({ planId: z.string().optional() }), "query"),
   asyncHandler(async (req, res) => {
     const { planId } = req.query as { planId?: string };
@@ -32,7 +33,7 @@ actividadesRouter.get(
 
 actividadesRouter.post(
   "/",
-  requireRole("ADMIN", "RESPONSABLE_PROCESO"),
+  requirePermiso("OBJETIVOS", "EDITAR"),
   validate(crearActividadSchema),
   asyncHandler(async (req, res) => {
     res.status(201).json(await prisma.actividad.create({ data: req.body }));
@@ -41,7 +42,7 @@ actividadesRouter.post(
 
 actividadesRouter.put(
   "/:id",
-  requireRole("ADMIN", "RESPONSABLE_PROCESO"),
+  requirePermiso("OBJETIVOS", "EDITAR"),
   validate(actualizarActividadSchema),
   asyncHandler(async (req, res) => {
     const existente = await prisma.actividad.findFirst({
@@ -54,7 +55,7 @@ actividadesRouter.put(
 
 actividadesRouter.delete(
   "/:id",
-  requireRole("ADMIN", "RESPONSABLE_PROCESO"),
+  requirePermiso("OBJETIVOS", "APROBAR"),
   asyncHandler(async (req, res) => {
     const existente = await prisma.actividad.findFirst({
       where: { id: req.params.id, deletedAt: null },

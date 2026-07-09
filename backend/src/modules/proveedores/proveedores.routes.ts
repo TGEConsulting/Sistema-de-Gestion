@@ -2,7 +2,7 @@ import { Router } from "express";
 import { asyncHandler } from "../../utils/asyncHandler";
 import { validate } from "../../middleware/validate.middleware";
 import { authMiddleware } from "../../middleware/auth.middleware";
-import { requireRole } from "../../middleware/rbac.middleware";
+import { requirePermiso } from "../../middleware/rbac.middleware";
 import {
   actualizarProveedorSchema,
   crearDocumentoProveedorSchema,
@@ -18,37 +18,38 @@ proveedoresRouter.use(authMiddleware);
 
 proveedoresRouter.get(
   "/",
+  requirePermiso("PROVEEDORES", "VER"),
   validate(listarProveedoresQuerySchema, "query"),
   asyncHandler(proveedoresController.listar)
 );
-proveedoresRouter.get("/:id", asyncHandler(proveedoresController.obtener));
+proveedoresRouter.get("/:id", requirePermiso("PROVEEDORES", "VER"), asyncHandler(proveedoresController.obtener));
 proveedoresRouter.post(
   "/",
-  requireRole("ADMIN", "RESPONSABLE_PROCESO"),
+  requirePermiso("PROVEEDORES", "EDITAR"),
   validate(crearProveedorSchema),
   asyncHandler(proveedoresController.crear)
 );
 proveedoresRouter.put(
   "/:id",
-  requireRole("ADMIN", "RESPONSABLE_PROCESO"),
+  requirePermiso("PROVEEDORES", "EDITAR"),
   validate(actualizarProveedorSchema),
   asyncHandler(proveedoresController.actualizar)
 );
 proveedoresRouter.delete(
   "/:id",
-  requireRole("ADMIN"),
+  requirePermiso("PROVEEDORES", "APROBAR"),
   asyncHandler(proveedoresController.eliminar)
 );
 
 proveedoresRouter.post(
   "/:id/evaluaciones",
-  requireRole("ADMIN", "AUDITOR", "RESPONSABLE_PROCESO"),
+  requirePermiso("PROVEEDORES", "EDITAR"),
   validate(crearEvaluacionSchema),
   asyncHandler(proveedoresController.agregarEvaluacion)
 );
 proveedoresRouter.post(
   "/:id/documentos",
-  requireRole("ADMIN", "RESPONSABLE_PROCESO"),
+  requirePermiso("PROVEEDORES", "EDITAR"),
   validate(crearDocumentoProveedorSchema),
   asyncHandler(proveedoresController.agregarDocumento)
 );

@@ -20,7 +20,9 @@ function Root() {
   // Sin Client ID configurado, se omite el provider en vez de romper la app:
   // el botón de Google simplemente no se muestra (ver Login.tsx).
   return googleClientId ? (
-    <GoogleOAuthProvider clientId={googleClientId}>{app}</GoogleOAuthProvider>
+    <GoogleOAuthProvider clientId={googleClientId} locale="es-419">
+      {app}
+    </GoogleOAuthProvider>
   ) : (
     app
   );

@@ -29,11 +29,11 @@ export function enviarInformeAuditoriaPdf(res: Response, auditoria: InformeAudit
   doc.text(`Tipo: ${auditoria.tipo}`);
   doc.text(`Alcance: ${auditoria.alcance}`);
   doc.text(
-    `Periodo: ${auditoria.fechaInicio.toLocaleDateString()} – ${auditoria.fechaFin.toLocaleDateString()}`
+    `Periodo: ${auditoria.fechaInicio.toLocaleDateString("es-MX")} – ${auditoria.fechaFin.toLocaleDateString("es-MX")}`
   );
   doc.text(`Líder auditor: ${auditoria.liderAuditor.nombre}`);
   if (auditoria.informe) {
-    doc.text(`Fecha de emisión: ${auditoria.informe.fechaEmision.toLocaleDateString()}`);
+    doc.text(`Fecha de emisión: ${auditoria.informe.fechaEmision.toLocaleDateString("es-MX")}`);
   }
   doc.moveDown();
 

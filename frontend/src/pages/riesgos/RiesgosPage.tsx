@@ -224,7 +224,7 @@ function DetalleRiesgo({ riesgoId, usuarios, onCerrar }: { riesgoId: string; usu
             <li key={t.id} className="flex items-center justify-between rounded-md border border-slate-200 p-2 text-sm">
               <div>
                 <p className="text-slate-700">{t.descripcion}</p>
-                <p className="text-xs text-slate-400">{t.responsable?.nombre} · vence {new Date(t.fechaCompromiso).toLocaleDateString()}</p>
+                <p className="text-xs text-slate-400">{t.responsable?.nombre} · vence {new Date(t.fechaCompromiso).toLocaleDateString("es-MX")}</p>
               </div>
               <select
                 className="rounded-md border border-slate-300 px-2 py-1 text-xs"

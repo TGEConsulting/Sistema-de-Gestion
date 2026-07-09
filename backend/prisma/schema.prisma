@@ -219,29 +219,39 @@ model Rol {
   createdAt   DateTime  @default(now())
 
   usuarios       Usuario[]
-  rolPermisos    RolPermiso[]
+  permisosModulo PermisoModulo[]
 
   @@map("roles")
 }
 
-model Permiso {
-  id          String @id @default(cuid())
-  codigo      String @unique // ej: "documentos.crear", "riesgos.aprobar"
-  descripcion String?
-
-  rolPermisos RolPermiso[]
-
-  @@map("permisos")
+enum ModuloSistema {
+  DOCUMENTOS
+  OBJETIVOS
+  RIESGOS
+  NO_CONFORMIDADES
+  AUDITORIAS
+  INDICADORES
+  PERSONAS
+  PROVEEDORES
+  COMUNICACIONES
 }
 
-model RolPermiso {
-  rolId     String
-  permisoId String
-  rol       Rol     @relation(fields: [rolId], references: [id], onDelete: Cascade)
-  permiso   Permiso @relation(fields: [permisoId], references: [id], onDelete: Cascade)
+enum NivelPermiso {
+  NINGUNO
+  VER
+  EDITAR
+  APROBAR
+}
 
-  @@id([rolId, permisoId])
-  @@map("rol_permisos")
+model PermisoModulo {
+  id     String        @id @default(cuid())
+  rolId  String
+  rol    Rol           @relation(fields: [rolId], references: [id], onDelete: Cascade)
+  modulo ModuloSistema
+  nivel  NivelPermiso  @default(NINGUNO)
+
+  @@unique([rolId, modulo])
+  @@map("permisos_modulo")
 }
 
 model Persona {

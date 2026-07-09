@@ -395,7 +395,7 @@ export function AuditoriasPage() {
   const columnas: Columna<Auditoria>[] = [
     { encabezado: "Tipo", render: (a) => a.tipo },
     { encabezado: "Alcance", render: (a) => a.alcance },
-    { encabezado: "Fecha inicio", render: (a) => new Date(a.fechaInicio).toLocaleDateString() },
+    { encabezado: "Fecha inicio", render: (a) => new Date(a.fechaInicio).toLocaleDateString("es-MX") },
     { encabezado: "Líder", render: (a) => a.liderAuditor?.nombre ?? "—" },
     { encabezado: "Estado", render: (a) => <Badge color={ESTADO_COLOR[a.estado]}>{a.estado}</Badge> },
     {

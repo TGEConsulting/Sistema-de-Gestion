@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import logoLaQuinta from "@/assets/logo-la-quinta.png";
+import { useAuth } from "@/context/AuthContext";
 
 const MODULOS = [
   { path: "/", label: "Dashboard", icon: "📊", end: true },
@@ -14,7 +15,12 @@ const MODULOS = [
   { path: "/comunicaciones", label: "Tareas y Alertas", icon: "🔔" },
 ];
 
+const MODULO_PERMISOS = { path: "/permisos", label: "Permisos", icon: "🔐", end: false };
+
 function Contenido({ onNavegar }: { onNavegar?: () => void }) {
+  const { usuario } = useAuth();
+  const modulos = usuario?.rol === "ADMIN" ? [...MODULOS, MODULO_PERMISOS] : MODULOS;
+
   return (
     <>
       <div className="flex h-16 items-center gap-2 border-b border-slate-200 px-5 dark:border-slate-700">
@@ -22,7 +28,7 @@ function Contenido({ onNavegar }: { onNavegar?: () => void }) {
         <span className="text-lg font-bold leading-tight text-brand-800 dark:text-brand-400">Gestión SGC</span>
       </div>
       <nav className="flex-1 space-y-1 overflow-y-auto p-3">
-        {MODULOS.map((modulo) => (
+        {modulos.map((modulo) => (
           <NavLink
             key={modulo.path}
             to={modulo.path}

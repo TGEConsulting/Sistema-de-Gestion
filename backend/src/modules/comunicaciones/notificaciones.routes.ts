@@ -5,6 +5,7 @@ import { asyncHandler } from "../../utils/asyncHandler";
 import { AppError } from "../../utils/AppError";
 import { validate } from "../../middleware/validate.middleware";
 import { authMiddleware } from "../../middleware/auth.middleware";
+import { requirePermiso } from "../../middleware/rbac.middleware";
 
 export const notificacionesRouter = Router();
 
@@ -12,6 +13,7 @@ notificacionesRouter.use(authMiddleware);
 
 notificacionesRouter.get(
   "/",
+  requirePermiso("COMUNICACIONES", "VER"),
   validate(z.object({ leida: z.coerce.boolean().optional() }), "query"),
   asyncHandler(async (req, res) => {
     if (!req.auth) throw AppError.unauthorized();
@@ -27,6 +29,7 @@ notificacionesRouter.get(
 
 notificacionesRouter.put(
   "/:id/leida",
+  requirePermiso("COMUNICACIONES", "EDITAR"),
   asyncHandler(async (req, res) => {
     if (!req.auth) throw AppError.unauthorized();
     const notificacion = await prisma.notificacion.findFirst({
@@ -41,6 +44,7 @@ notificacionesRouter.put(
 
 notificacionesRouter.put(
   "/marcar-todas-leidas",
+  requirePermiso("COMUNICACIONES", "EDITAR"),
   asyncHandler(async (req, res) => {
     if (!req.auth) throw AppError.unauthorized();
     await prisma.notificacion.updateMany({

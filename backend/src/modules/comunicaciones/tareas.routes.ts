@@ -5,6 +5,7 @@ import { asyncHandler } from "../../utils/asyncHandler";
 import { AppError } from "../../utils/AppError";
 import { validate } from "../../middleware/validate.middleware";
 import { authMiddleware } from "../../middleware/auth.middleware";
+import { requirePermiso } from "../../middleware/rbac.middleware";
 
 const actualizarTareaSchema = z.object({
   estado: z.enum(["PENDIENTE", "EN_PROCESO", "COMPLETADA", "VENCIDA"]),
@@ -16,6 +17,7 @@ tareasRouter.use(authMiddleware);
 
 tareasRouter.get(
   "/",
+  requirePermiso("COMUNICACIONES", "VER"),
   validate(z.object({ estado: z.string().optional() }), "query"),
   asyncHandler(async (req, res) => {
     if (!req.auth) throw AppError.unauthorized();
@@ -31,6 +33,7 @@ tareasRouter.get(
 
 tareasRouter.put(
   "/:id",
+  requirePermiso("COMUNICACIONES", "EDITAR"),
   validate(actualizarTareaSchema),
   asyncHandler(async (req, res) => {
     if (!req.auth) throw AppError.unauthorized();

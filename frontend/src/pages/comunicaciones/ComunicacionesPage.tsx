@@ -35,7 +35,7 @@ function TareasPanel() {
                 <p className="text-slate-700">{t.titulo}</p>
                 {t.descripcion && <p className="text-xs text-slate-400">{t.descripcion}</p>}
                 {t.fechaVencimiento && (
-                  <p className="text-xs text-slate-400">Vence: {new Date(t.fechaVencimiento).toLocaleDateString()}</p>
+                  <p className="text-xs text-slate-400">Vence: {new Date(t.fechaVencimiento).toLocaleDateString("es-MX")}</p>
                 )}
               </div>
               <select
@@ -109,7 +109,7 @@ function NotificacionesPanel() {
                   <p className="font-medium text-slate-700">{n.titulo}</p>
                 </div>
                 <p className="text-xs text-slate-400">{n.mensaje}</p>
-                <p className="text-xs text-slate-300">{new Date(n.createdAt).toLocaleString()}</p>
+                <p className="text-xs text-slate-300">{new Date(n.createdAt).toLocaleString("es-MX")}</p>
               </div>
               {!n.leida && (
                 <button onClick={() => marcarLeida(n.id)} className="whitespace-nowrap text-xs font-medium text-brand-600 hover:underline">

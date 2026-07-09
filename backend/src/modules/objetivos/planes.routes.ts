@@ -5,7 +5,7 @@ import { asyncHandler } from "../../utils/asyncHandler";
 import { AppError } from "../../utils/AppError";
 import { validate } from "../../middleware/validate.middleware";
 import { authMiddleware } from "../../middleware/auth.middleware";
-import { requireRole } from "../../middleware/rbac.middleware";
+import { requirePermiso } from "../../middleware/rbac.middleware";
 import { actualizarPlanSchema, crearPlanSchema } from "./planes.validators";
 
 export const planesRouter = Router();
@@ -14,6 +14,7 @@ planesRouter.use(authMiddleware);
 
 planesRouter.get(
   "/",
+  requirePermiso("OBJETIVOS", "VER"),
   validate(z.object({ objetivoId: z.string().optional() }), "query"),
   asyncHandler(async (req, res) => {
     const { objetivoId } = req.query as { objetivoId?: string };
@@ -29,7 +30,7 @@ planesRouter.get(
 
 planesRouter.post(
   "/",
-  requireRole("ADMIN", "RESPONSABLE_PROCESO"),
+  requirePermiso("OBJETIVOS", "EDITAR"),
   validate(crearPlanSchema),
   asyncHandler(async (req, res) => {
     res.status(201).json(await prisma.plan.create({ data: req.body }));
@@ -38,7 +39,7 @@ planesRouter.post(
 
 planesRouter.put(
   "/:id",
-  requireRole("ADMIN", "RESPONSABLE_PROCESO"),
+  requirePermiso("OBJETIVOS", "EDITAR"),
   validate(actualizarPlanSchema),
   asyncHandler(async (req, res) => {
     const existente = await prisma.plan.findFirst({ where: { id: req.params.id, deletedAt: null } });
@@ -49,7 +50,7 @@ planesRouter.put(
 
 planesRouter.delete(
   "/:id",
-  requireRole("ADMIN", "RESPONSABLE_PROCESO"),
+  requirePermiso("OBJETIVOS", "APROBAR"),
   asyncHandler(async (req, res) => {
     const existente = await prisma.plan.findFirst({ where: { id: req.params.id, deletedAt: null } });
     if (!existente) throw AppError.notFound("Plan no encontrado");

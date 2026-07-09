@@ -5,7 +5,7 @@ import { asyncHandler } from "../../utils/asyncHandler";
 import { AppError } from "../../utils/AppError";
 import { validate } from "../../middleware/validate.middleware";
 import { authMiddleware } from "../../middleware/auth.middleware";
-import { requireRole } from "../../middleware/rbac.middleware";
+import { requirePermiso } from "../../middleware/rbac.middleware";
 
 const crearSchema = z.object({
   anio: z.number().int().min(2000).max(2100),
@@ -19,6 +19,7 @@ programasAuditoriaRouter.use(authMiddleware);
 
 programasAuditoriaRouter.get(
   "/",
+  requirePermiso("AUDITORIAS", "VER"),
   asyncHandler(async (req, res) => {
     const { anio } = req.query as { anio?: string };
     res.json(
@@ -32,7 +33,7 @@ programasAuditoriaRouter.get(
 
 programasAuditoriaRouter.post(
   "/",
-  requireRole("ADMIN", "AUDITOR"),
+  requirePermiso("AUDITORIAS", "EDITAR"),
   validate(crearSchema),
   asyncHandler(async (req, res) => {
     res.status(201).json(await prisma.programaAuditoria.create({ data: req.body }));
@@ -41,7 +42,7 @@ programasAuditoriaRouter.post(
 
 programasAuditoriaRouter.put(
   "/:id",
-  requireRole("ADMIN", "AUDITOR"),
+  requirePermiso("AUDITORIAS", "EDITAR"),
   validate(crearSchema.partial()),
   asyncHandler(async (req, res) => {
     const existente = await prisma.programaAuditoria.findUnique({ where: { id: req.params.id } });
@@ -52,7 +53,7 @@ programasAuditoriaRouter.put(
 
 programasAuditoriaRouter.delete(
   "/:id",
-  requireRole("ADMIN"),
+  requirePermiso("AUDITORIAS", "APROBAR"),
   asyncHandler(async (req, res) => {
     const existente = await prisma.programaAuditoria.findUnique({ where: { id: req.params.id } });
     if (!existente) throw AppError.notFound("Programa de auditoría no encontrado");

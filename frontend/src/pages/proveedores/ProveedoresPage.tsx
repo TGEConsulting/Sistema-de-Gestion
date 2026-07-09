@@ -183,7 +183,7 @@ function DetalleProveedor({ proveedorId, onCerrar }: { proveedorId: string; onCe
           {(proveedor.evaluaciones ?? []).map((ev) => (
             <li key={ev.id} className="rounded-md border border-slate-200 p-2 text-sm">
               <span className="font-medium text-slate-700">{ev.puntuacion} pts</span>
-              <span className="ml-2 text-xs text-slate-400">{new Date(ev.fecha).toLocaleDateString()}</span>
+              <span className="ml-2 text-xs text-slate-400">{new Date(ev.fecha).toLocaleDateString("es-MX")}</span>
               {ev.resultado && <p className="text-xs text-slate-500">{ev.resultado}</p>}
             </li>
           ))}
@@ -200,7 +200,7 @@ function DetalleProveedor({ proveedorId, onCerrar }: { proveedorId: string; onCe
           {(proveedor.documentos ?? []).map((d) => (
             <li key={d.id} className="flex items-center justify-between rounded-md border border-slate-200 p-2 text-sm">
               <span className="text-slate-700">{d.nombre}</span>
-              {d.fechaVencimiento && <span className="text-xs text-slate-400">vence {new Date(d.fechaVencimiento).toLocaleDateString()}</span>}
+              {d.fechaVencimiento && <span className="text-xs text-slate-400">vence {new Date(d.fechaVencimiento).toLocaleDateString("es-MX")}</span>}
             </li>
           ))}
           {(proveedor.documentos ?? []).length === 0 && <p className="text-sm text-slate-400">Sin documentos aún.</p>}

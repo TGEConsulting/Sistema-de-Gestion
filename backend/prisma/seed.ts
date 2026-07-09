@@ -31,6 +31,56 @@ async function main() {
     }),
   ]);
 
+  console.log("Sembrando matriz de permisos por módulo...");
+  const MODULOS: Array<
+    "DOCUMENTOS" | "OBJETIVOS" | "RIESGOS" | "NO_CONFORMIDADES" | "AUDITORIAS" | "INDICADORES" | "PERSONAS" | "PROVEEDORES" | "COMUNICACIONES"
+  > = [
+    "DOCUMENTOS",
+    "OBJETIVOS",
+    "RIESGOS",
+    "NO_CONFORMIDADES",
+    "AUDITORIAS",
+    "INDICADORES",
+    "PERSONAS",
+    "PROVEEDORES",
+    "COMUNICACIONES",
+  ];
+
+  const APROBAR_AUDITOR = new Set(["AUDITORIAS", "NO_CONFORMIDADES", "DOCUMENTOS"]);
+  const EDITAR_AUDITOR = new Set(["PROVEEDORES"]);
+  const EDITAR_RESPONSABLE = new Set([
+    "DOCUMENTOS",
+    "OBJETIVOS",
+    "RIESGOS",
+    "NO_CONFORMIDADES",
+    "INDICADORES",
+    "PROVEEDORES",
+  ]);
+
+  const permisosDefault: Array<{ rolId: string; modulo: (typeof MODULOS)[number]; nivel: "VER" | "EDITAR" | "APROBAR" }> = [];
+  for (const modulo of MODULOS) {
+    permisosDefault.push({ rolId: rolAdmin.id, modulo, nivel: "APROBAR" });
+    permisosDefault.push({
+      rolId: rolAuditor.id,
+      modulo,
+      nivel: APROBAR_AUDITOR.has(modulo) ? "APROBAR" : EDITAR_AUDITOR.has(modulo) ? "EDITAR" : "VER",
+    });
+    permisosDefault.push({
+      rolId: rolResponsable.id,
+      modulo,
+      nivel: EDITAR_RESPONSABLE.has(modulo) ? "EDITAR" : "VER",
+    });
+    permisosDefault.push({ rolId: rolLectura.id, modulo, nivel: "VER" });
+  }
+
+  for (const permiso of permisosDefault) {
+    await prisma.permisoModulo.upsert({
+      where: { rolId_modulo: { rolId: permiso.rolId, modulo: permiso.modulo } },
+      update: {},
+      create: permiso,
+    });
+  }
+
   console.log("Sembrando áreas y puestos...");
   const areaCalidad = await prisma.area.upsert({
     where: { nombre: "Calidad" },

@@ -1,5 +1,29 @@
 export type NombreRol = "ADMIN" | "AUDITOR" | "RESPONSABLE_PROCESO" | "LECTURA";
 
+export type ModuloSistema =
+  | "DOCUMENTOS"
+  | "OBJETIVOS"
+  | "RIESGOS"
+  | "NO_CONFORMIDADES"
+  | "AUDITORIAS"
+  | "INDICADORES"
+  | "PERSONAS"
+  | "PROVEEDORES"
+  | "COMUNICACIONES";
+
+export type NivelPermiso = "NINGUNO" | "VER" | "EDITAR" | "APROBAR";
+
+export interface PermisoModuloItem {
+  modulo: ModuloSistema;
+  nivel: NivelPermiso;
+}
+
+export interface FilaPermisosRol {
+  rolId: string;
+  rol: NombreRol;
+  permisos: PermisoModuloItem[];
+}
+
 export interface PaginationMeta {
   page: number;
   pageSize: number;

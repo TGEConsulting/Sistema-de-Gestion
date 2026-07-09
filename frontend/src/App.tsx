@@ -12,6 +12,7 @@ import { IndicadoresPage } from "@/pages/indicadores/IndicadoresPage";
 import { PersonasPage } from "@/pages/personas/PersonasPage";
 import { ProveedoresPage } from "@/pages/proveedores/ProveedoresPage";
 import { ComunicacionesPage } from "@/pages/comunicaciones/ComunicacionesPage";
+import { PermisosPage } from "@/pages/permisos/PermisosPage";
 
 export default function App() {
   return (
@@ -30,6 +31,7 @@ export default function App() {
           <Route path="/personas" element={<PersonasPage />} />
           <Route path="/proveedores" element={<ProveedoresPage />} />
           <Route path="/comunicaciones" element={<ComunicacionesPage />} />
+          <Route path="/permisos" element={<PermisosPage />} />
         </Route>
       </Route>
 

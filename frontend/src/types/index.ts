@@ -114,6 +114,7 @@ export interface Usuario {
   email: string;
   rol: NombreRol;
   activo: boolean;
+  personaId: string | null;
 }
 
 export interface RefNombre {

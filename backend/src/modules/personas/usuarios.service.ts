@@ -1,6 +1,7 @@
 import bcrypt from "bcryptjs";
 import { prisma } from "../../lib/prisma";
 import { AppError } from "../../utils/AppError";
+import { enviarCorreoBienvenida } from "../../lib/email";
 import type {
   ActualizarUsuarioInput,
   CrearUsuarioInput,
@@ -65,6 +66,19 @@ export async function crearUsuario(input: CrearUsuarioInput) {
     },
     include: { rol: true },
   });
+
+  // Best-effort: si el correo falla (o Resend no está configurado) el usuario
+  // igual queda creado; el admin puede comunicarle la clave por otro medio.
+  try {
+    await enviarCorreoBienvenida({
+      email: usuario.email,
+      nombre: usuario.nombre,
+      password: input.password,
+      rol: usuario.rol.nombre,
+    });
+  } catch (err) {
+    console.error("No se pudo enviar el correo de bienvenida:", err);
+  }
 
   return serializar(usuario);
 }

@@ -18,7 +18,12 @@ export const listarPersonasQuerySchema = z
   .object({
     areaId: z.string().optional(),
     puestoId: z.string().optional(),
-    activo: z.coerce.boolean().optional(),
+    // z.coerce.boolean() convierte cualquier string no vacío (incluido "false") a `true`;
+    // se parsea el literal "true"/"false" en vez de confiar en la coerción de zod.
+    activo: z
+      .enum(["true", "false"])
+      .transform((v) => v === "true")
+      .optional(),
     q: z.string().optional(),
   })
   .merge(paginationQuerySchema);

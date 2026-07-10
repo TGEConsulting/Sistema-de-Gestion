@@ -26,5 +26,10 @@ export const env = {
   gcsCredentialsJson: process.env.GCS_CREDENTIALS_JSON,
 
   cronSecret: process.env.CRON_SECRET,
+
+  resendApiKey: process.env.RESEND_API_KEY,
+  resendFromEmail: process.env.RESEND_FROM_EMAIL ?? "onboarding@resend.dev",
+  appUrl: process.env.APP_URL ?? "http://localhost:5173",
+
   isVercel: process.env.VERCEL === "1",
 };

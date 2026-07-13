@@ -11,6 +11,7 @@ const MODULOS: ModuloSistema[] = [
   "PERSONAS",
   "PROVEEDORES",
   "COMUNICACIONES",
+  "GESTION_CAMBIOS",
 ];
 
 export async function obtenerMatriz() {

@@ -63,3 +63,17 @@ export function esAccionVencida(fechaCompromiso: Date, estado: string, hoy: Date
   if (estadosCerrados.includes(estado)) return false;
   return fechaCompromiso.getTime() < hoy.getTime();
 }
+
+/** Un cambio con plazo de transición dentro de `diasAnticipacion` (y que todavía no se
+ * implementó ni se canceló) genera recordatorio para ADMIN/AUDITOR. */
+export function esCambioTransicionProxima(
+  plazoTransicion: Date | null,
+  estado: string,
+  hoy: Date,
+  diasAnticipacion = 30
+): boolean {
+  if (!plazoTransicion) return false;
+  if (estado === "IMPLEMENTADO" || estado === "CANCELADO") return false;
+  const dias = diasEntre(hoy, plazoTransicion);
+  return dias <= diasAnticipacion;
+}

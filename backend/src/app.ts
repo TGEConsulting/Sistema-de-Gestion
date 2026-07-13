@@ -30,6 +30,7 @@ import { uploadsRouter } from "./modules/uploads/uploads.routes";
 import { busquedaRouter } from "./modules/busqueda/busqueda.routes";
 import { cronRouter } from "./modules/cron/cron.routes";
 import { permisosRouter } from "./modules/permisos/permisos.routes";
+import { cambiosRouter } from "./modules/cambios/cambios.routes";
 
 export function createApp() {
   const app = express();
@@ -68,6 +69,7 @@ export function createApp() {
   app.use("/api/busqueda", busquedaRouter);
   app.use("/api/cron", cronRouter);
   app.use("/api/permisos", permisosRouter);
+  app.use("/api/cambios", cambiosRouter);
 
   app.use(notFoundMiddleware);
   app.use(errorMiddleware);

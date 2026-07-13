@@ -2,6 +2,7 @@ import { prisma } from "../../lib/prisma";
 import {
   esAccionVencida,
   esAuditoriaProxima,
+  esCambioTransicionProxima,
   esDocumentoPorVencer,
   esIndicadorSinCaptura,
   esNCSinAtender,
@@ -163,6 +164,36 @@ async function generarAlertasAccionesVencidas(hoy: Date) {
   }
 }
 
+async function generarAlertasCambiosPorVencer(hoy: Date) {
+  const cambios = await prisma.gestionCambio.findMany({
+    where: { deletedAt: null, plazoTransicion: { not: null } },
+  });
+  if (cambios.length === 0) return;
+
+  // El plazo de transición (requisito 4 de FSSC) es responsabilidad de calidad/auditoría,
+  // no de un único "responsable" puntual como en el resto de las alertas: se avisa a todos
+  // los usuarios con rol ADMIN o AUDITOR.
+  const usuarios = await prisma.usuario.findMany({
+    where: { activo: true, deletedAt: null, rol: { nombre: { in: ["ADMIN", "AUDITOR"] } } },
+  });
+
+  for (const cambio of cambios) {
+    if (!esCambioTransicionProxima(cambio.plazoTransicion, cambio.estado, hoy)) continue;
+
+    for (const usuario of usuarios) {
+      await emitirAlerta({
+        usuarioId: usuario.id,
+        tipo: "CAMBIO_TRANSICION_PROXIMA",
+        titulo: "Plazo de transición próximo a vencer",
+        mensaje: `El cambio "${cambio.titulo}" (${cambio.codigo}) tiene plazo de transición el ${cambio.plazoTransicion!.toLocaleDateString("es-MX")}.`,
+        entidadTipo: "GestionCambio",
+        entidadId: cambio.id,
+        fechaVencimiento: cambio.plazoTransicion ?? undefined,
+      });
+    }
+  }
+}
+
 /** Punto de entrada único, pensado para invocarse desde un cron diario. */
 export async function generarAlertas(hoy: Date = new Date()) {
   await Promise.all([
@@ -171,5 +202,6 @@ export async function generarAlertas(hoy: Date = new Date()) {
     generarAlertasIndicadores(hoy),
     generarAlertasAuditorias(hoy),
     generarAlertasAccionesVencidas(hoy),
+    generarAlertasCambiosPorVencer(hoy),
   ]);
 }

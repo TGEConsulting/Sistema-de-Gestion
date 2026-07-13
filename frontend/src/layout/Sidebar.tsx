@@ -13,6 +13,7 @@ const MODULOS = [
   { path: "/personas", label: "Personas y Roles", icon: "👥" },
   { path: "/proveedores", label: "Proveedores", icon: "🚚" },
   { path: "/comunicaciones", label: "Tareas y Alertas", icon: "🔔" },
+  { path: "/cambios", label: "Gestión de Cambios", icon: "🔄" },
 ];
 
 const MODULO_PERMISOS = { path: "/permisos", label: "Permisos", icon: "🔐", end: false };

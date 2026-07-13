@@ -166,6 +166,8 @@ enum TipoNotificacion {
   ACTIVIDAD_ATRASADA
   ACCION_VENCIDA
   RIESGO_SIN_TRATAMIENTO
+  CAMBIO_COMUNICADO
+  CAMBIO_TRANSICION_PROXIMA
 }
 
 enum EstadoTarea {
@@ -234,6 +236,7 @@ enum ModuloSistema {
   PERSONAS
   PROVEEDORES
   COMUNICACIONES
+  GESTION_CAMBIOS
 }
 
 enum NivelPermiso {
@@ -309,6 +312,8 @@ model Usuario {
   evaluacionesProveedor      EvaluacionProveedor[]    @relation("EvaluacionRealizadaPor")
   notificaciones             Notificacion[]
   tareasAsignadas            Tarea[]                  @relation("TareaAsignada")
+  cambiosSolicitados         GestionCambio[]          @relation("CambioSolicitante")
+  cambiosComunicados         GestionCambio[]          @relation("CambioComunicadoPor")
 
   @@map("usuarios")
 }
@@ -471,6 +476,7 @@ model Proceso {
   noConformidades  NoConformidad[]
   hallazgos        Hallazgo[]
   indicadores      Indicador[]
+  cambios          GestionCambio[]
 
   @@map("procesos")
 }
@@ -574,6 +580,55 @@ model AccionNC {
 
   @@index([estado])
   @@map("acciones_nc")
+}
+
+// ----------------------------------------------------------------------------
+// GESTIÓN DE CAMBIOS (FSSC 22000)
+// ----------------------------------------------------------------------------
+
+enum CategoriaCambio {
+  MATERIA_PRIMA_PROCESO_EQUIPO
+  ETIQUETADO_DECLARACION
+  PPR_CONTROL_OPERACIONAL
+  REQUISITO_ESQUEMA_BOS
+  ALCANCE_CERTIFICACION
+}
+
+enum EstadoCambio {
+  BORRADOR
+  COMUNICADO
+  IMPLEMENTADO
+  CANCELADO
+}
+
+model GestionCambio {
+  id                      String          @id @default(cuid())
+  codigo                  String          @unique
+  titulo                  String
+  categoria               CategoriaCambio
+  descripcion             String
+  impactoInocuidad        String
+  impactoAlcance          Boolean         @default(false)
+  procesoId               String?
+  proceso                 Proceso?        @relation(fields: [procesoId], references: [id])
+  documentosRelacionados  String?
+  solicitanteId           String
+  solicitante             Usuario         @relation("CambioSolicitante", fields: [solicitanteId], references: [id])
+  fechaEfectiva           DateTime?
+  plazoTransicion         DateTime?
+  estado                  EstadoCambio    @default(BORRADOR)
+  comunicadoPorId         String?
+  comunicadoPor           Usuario?        @relation("CambioComunicadoPor", fields: [comunicadoPorId], references: [id])
+  fechaComunicacion       DateTime?
+  fechaImplementacion     DateTime?
+  evidenciaImplementacion String?
+  createdAt               DateTime        @default(now())
+  updatedAt               DateTime        @updatedAt
+  deletedAt               DateTime?
+
+  @@index([estado])
+  @@index([categoria])
+  @@map("gestion_cambios")
 }
 
 // ----------------------------------------------------------------------------

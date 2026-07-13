@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import {
   esAccionVencida,
   esAuditoriaProxima,
+  esCambioTransicionProxima,
   esDocumentoPorVencer,
   esIndicadorSinCaptura,
   esNCSinAtender,
@@ -73,5 +74,24 @@ describe("esAccionVencida", () => {
 
   it("es false si la fecha compromiso aún no llega", () => {
     expect(esAccionVencida(new Date("2026-08-01T00:00:00Z"), "PENDIENTE", HOY)).toBe(false);
+  });
+});
+
+describe("esCambioTransicionProxima", () => {
+  it("es true si faltan 30 días o menos y el cambio sigue activo", () => {
+    expect(esCambioTransicionProxima(new Date("2026-08-05T00:00:00Z"), "COMUNICADO", HOY)).toBe(true);
+  });
+
+  it("es false si faltan más de 30 días", () => {
+    expect(esCambioTransicionProxima(new Date("2026-09-01T00:00:00Z"), "COMUNICADO", HOY)).toBe(false);
+  });
+
+  it("es false si no tiene plazo de transición", () => {
+    expect(esCambioTransicionProxima(null, "COMUNICADO", HOY)).toBe(false);
+  });
+
+  it("es false si ya está implementado o cancelado", () => {
+    expect(esCambioTransicionProxima(new Date("2026-08-05T00:00:00Z"), "IMPLEMENTADO", HOY)).toBe(false);
+    expect(esCambioTransicionProxima(new Date("2026-08-05T00:00:00Z"), "CANCELADO", HOY)).toBe(false);
   });
 });

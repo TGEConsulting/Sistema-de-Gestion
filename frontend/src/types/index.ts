@@ -9,7 +9,8 @@ export type ModuloSistema =
   | "INDICADORES"
   | "PERSONAS"
   | "PROVEEDORES"
-  | "COMUNICACIONES";
+  | "COMUNICACIONES"
+  | "GESTION_CAMBIOS";
 
 export type NivelPermiso = "NINGUNO" | "VER" | "EDITAR" | "APROBAR";
 
@@ -386,4 +387,36 @@ export interface Proveedor {
   estado: EstadoProveedor;
   evaluaciones?: EvaluacionProveedor[];
   documentos?: DocumentoProveedor[];
+}
+
+export type CategoriaCambio =
+  | "MATERIA_PRIMA_PROCESO_EQUIPO"
+  | "ETIQUETADO_DECLARACION"
+  | "PPR_CONTROL_OPERACIONAL"
+  | "REQUISITO_ESQUEMA_BOS"
+  | "ALCANCE_CERTIFICACION";
+
+export type EstadoCambio = "BORRADOR" | "COMUNICADO" | "IMPLEMENTADO" | "CANCELADO";
+
+export interface GestionCambio {
+  id: string;
+  codigo: string;
+  titulo: string;
+  categoria: CategoriaCambio;
+  descripcion: string;
+  impactoInocuidad: string;
+  impactoAlcance: boolean;
+  procesoId: string | null;
+  proceso?: RefNombre | null;
+  documentosRelacionados: string | null;
+  solicitanteId: string;
+  solicitante?: RefNombre;
+  fechaEfectiva: string | null;
+  plazoTransicion: string | null;
+  estado: EstadoCambio;
+  comunicadoPorId: string | null;
+  comunicadoPor?: RefNombre | null;
+  fechaComunicacion: string | null;
+  fechaImplementacion: string | null;
+  evidenciaImplementacion: string | null;
 }

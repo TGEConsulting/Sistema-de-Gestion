@@ -13,6 +13,7 @@ import { PersonasPage } from "@/pages/personas/PersonasPage";
 import { ProveedoresPage } from "@/pages/proveedores/ProveedoresPage";
 import { ComunicacionesPage } from "@/pages/comunicaciones/ComunicacionesPage";
 import { PermisosPage } from "@/pages/permisos/PermisosPage";
+import { CambiosPage } from "@/pages/cambios/CambiosPage";
 
 export default function App() {
   return (
@@ -31,6 +32,7 @@ export default function App() {
           <Route path="/personas" element={<PersonasPage />} />
           <Route path="/proveedores" element={<ProveedoresPage />} />
           <Route path="/comunicaciones" element={<ComunicacionesPage />} />
+          <Route path="/cambios" element={<CambiosPage />} />
           <Route path="/permisos" element={<PermisosPage />} />
         </Route>
       </Route>

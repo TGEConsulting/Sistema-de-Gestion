@@ -345,6 +345,18 @@ model Documento {
   versionVigenteId    String?         @unique
   versionVigente      VersionDocumento? @relation("VersionVigente", fields: [versionVigenteId], references: [id])
   proximaRevision     DateTime?
+  // --- Metadatos del sistema documental (Norma Integrada / Lista Maestra PR-IMS-01-F01) ---
+  documentoPadreId    String?
+  documentoPadre      Documento?      @relation("DocumentoPadre", fields: [documentoPadreId], references: [id])
+  documentosHijos     Documento[]     @relation("DocumentoPadre")
+  nivel               Int?            // 1 manual/política, 2 procedimiento, 3 anexo/instructivo, 4 formato
+  revision            String?         // "00", "01"...
+  clausulas           String?         // cláusulas de la Norma Integrada que cubre
+  evidencias          String?         // n° de evidencias del Anexo B
+  participa           String?         // gerencias que participan (P)
+  autoriza            String?         // gerencia que autoriza (A)
+  carpeta             String?         // carpeta destino en el repositorio controlado
+  critico             Boolean         @default(false)
   createdAt           DateTime        @default(now())
   updatedAt           DateTime        @updatedAt
   deletedAt           DateTime?
@@ -354,6 +366,7 @@ model Documento {
 
   @@index([estado])
   @@index([areaId])
+  @@index([documentoPadreId])
   @@map("documentos")
 }
 

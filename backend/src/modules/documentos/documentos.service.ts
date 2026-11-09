@@ -29,6 +29,8 @@ function construirWhereDocumentos(filtros: Omit<ListarDocumentosQuery, "page" | 
     ...(filtros.areaId ? { areaId: filtros.areaId } : {}),
     ...(filtros.estado ? { estado: filtros.estado } : {}),
     ...(filtros.responsableId ? { responsableId: filtros.responsableId } : {}),
+    ...(filtros.documentoPadreId ? { documentoPadreId: filtros.documentoPadreId } : {}),
+    ...(filtros.nivel ? { nivel: filtros.nivel } : {}),
     ...(filtros.q
       ? {
           OR: [
@@ -97,6 +99,15 @@ export async function crearDocumento(input: CrearDocumentoInput, usuarioId: stri
         areaId: input.areaId,
         responsableId: input.responsableId,
         proximaRevision: input.proximaRevision,
+        documentoPadreId: input.documentoPadreId,
+        nivel: input.nivel,
+        revision: input.revision ?? "00",
+        clausulas: input.clausulas,
+        evidencias: input.evidencias,
+        participa: input.participa,
+        autoriza: input.autoriza,
+        carpeta: input.carpeta,
+        critico: input.critico ?? false,
         estado: "BORRADOR",
       },
     });

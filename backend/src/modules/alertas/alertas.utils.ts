@@ -77,3 +77,22 @@ export function esCambioTransicionProxima(
   const dias = diasEntre(hoy, plazoTransicion);
   return dias <= diasAnticipacion;
 }
+
+/** Un requisito legal/de esquema/de cliente requiere atención si su próxima evaluación de
+ * cumplimiento ocurre dentro de `diasAnticipacion` (o ya pasó), o si sigue "por evaluar"
+ * y su fecha de entrada en vigor está a `diasAnticipacion` o menos (p. ej., una norma nueva). */
+export function esRequisitoPorEvaluar(
+  estado: string,
+  proximaEvaluacion: Date | null,
+  fechaVigor: Date | null,
+  hoy: Date,
+  diasAnticipacion = 30
+): boolean {
+  if (estado === "NO_APLICA") return false;
+  if (proximaEvaluacion && diasEntre(hoy, proximaEvaluacion) <= diasAnticipacion) return true;
+  if (estado === "POR_EVALUAR" && fechaVigor) {
+    const dias = diasEntre(hoy, fechaVigor);
+    return dias <= diasAnticipacion && dias >= -diasAnticipacion;
+  }
+  return false;
+}

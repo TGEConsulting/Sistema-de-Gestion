@@ -29,6 +29,10 @@ documentosRouter.get(
   validate(listarDocumentosQuerySchema, "query"),
   asyncHandler(documentosController.exportar)
 );
+documentosRouter.get("/lista-maestra/export", requirePermiso("DOCUMENTOS", "VER"), asyncHandler(documentosController.exportarListaMaestra));
+documentosRouter.get("/paquete-esquema/esquemas", requirePermiso("DOCUMENTOS", "VER"), asyncHandler(documentosController.esquemas));
+documentosRouter.get("/paquete-esquema/export", requirePermiso("DOCUMENTOS", "VER"), asyncHandler(documentosController.exportarPaqueteEsquema));
+documentosRouter.get("/paquete-esquema", requirePermiso("DOCUMENTOS", "VER"), asyncHandler(documentosController.paqueteEsquema));
 documentosRouter.get("/:id", requirePermiso("DOCUMENTOS", "VER"), asyncHandler(documentosController.obtener));
 documentosRouter.post(
   "/",

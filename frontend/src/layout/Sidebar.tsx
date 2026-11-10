@@ -14,6 +14,9 @@ const MODULOS = [
   { path: "/proveedores", label: "Proveedores", icon: "🚚" },
   { path: "/comunicaciones", label: "Tareas y Alertas", icon: "🔔" },
   { path: "/cambios", label: "Gestión de Cambios", icon: "🔄" },
+  { path: "/requisitos", label: "Requisitos legales y cliente", icon: "⚖️" },
+  { path: "/matriz-comunicacion", label: "Matriz de comunicación", icon: "🔗" },
+  { path: "/paquete-esquema", label: "Paquete por esquema", icon: "🗂️" },
 ];
 
 const MODULO_PERMISOS = { path: "/permisos", label: "Permisos", icon: "🔐", end: false };

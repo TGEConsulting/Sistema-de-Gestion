@@ -26,6 +26,14 @@ Estado actual:
 - **Fase 6** (completa): login con Google, Google Cloud Storage para archivos, y empaquetado
   para desplegar en Vercel (frontend estático + backend como función serverless). Ver sección 10.
 
+- **Fase 7** (completa): integración del sistema documental de **Productos Lácteos La Quinta**
+  (Norma Integrada v29 / MN-IMS-01): metadatos de Lista Maestra en `Documento`, paquete de datos
+  semilla (`prisma/data/la-quinta`, `npm run db:seed:la-quinta`) y tres módulos nuevos:
+  **Requisitos legales, de esquema y de cliente** (PR-IMS-02-F01, con evaluación de cumplimiento y
+  alerta de vigencia), **Matriz de comunicación entre gerencias** (PR-IMS-04-F02, con revisión
+  cruzada por la gerencia contraparte) y **Paquete de evidencias por esquema** (PR-IMS-08-A02:
+  requisito del esquema → cláusula → documentos), más la exportación de la Lista Maestra.
+
 Los 8 módulos del MVP están completos de extremo a extremo (modelo de datos, API REST con
 autenticación y roles, y pantallas funcionales).
 

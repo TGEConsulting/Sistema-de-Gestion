@@ -1,0 +1,2337 @@
+[
+ {
+  "esquema": "ISO 22000:2018",
+  "referencia": "cl.1",
+  "clausula": "1"
+ },
+ {
+  "esquema": "ISO 22000:2018",
+  "referencia": "cl.4",
+  "clausula": "4"
+ },
+ {
+  "esquema": "ISO 22000:2018",
+  "referencia": "4.1",
+  "clausula": "4.1"
+ },
+ {
+  "esquema": "ISO 22000:2018",
+  "referencia": "4.2",
+  "clausula": "4.2"
+ },
+ {
+  "esquema": "ISO 22000:2018",
+  "referencia": "4.3",
+  "clausula": "4.3"
+ },
+ {
+  "esquema": "ISO 22000:2018",
+  "referencia": "4.4",
+  "clausula": "4.4"
+ },
+ {
+  "esquema": "ISO 22000:2018",
+  "referencia": "cl.5",
+  "clausula": "5"
+ },
+ {
+  "esquema": "ISO 22000:2018",
+  "referencia": "5.1",
+  "clausula": "5.1"
+ },
+ {
+  "esquema": "ISO 22000:2018",
+  "referencia": "5.2",
+  "clausula": "5.2"
+ },
+ {
+  "esquema": "ISO 22000:2018",
+  "referencia": "5.3",
+  "clausula": "5.3"
+ },
+ {
+  "esquema": "ISO 22000:2018",
+  "referencia": "5.3 (roles)",
+  "clausula": "5.4"
+ },
+ {
+  "esquema": "ISO 22000:2018",
+  "referencia": "cl.6",
+  "clausula": "6"
+ },
+ {
+  "esquema": "ISO 22000:2018",
+  "referencia": "6.1",
+  "clausula": "6.1"
+ },
+ {
+  "esquema": "ISO 22000:2018",
+  "referencia": "6.1",
+  "clausula": "6.1.1"
+ },
+ {
+  "esquema": "ISO 22000:2018",
+  "referencia": "6.1",
+  "clausula": "6.1.2"
+ },
+ {
+  "esquema": "ISO 22000:2018",
+  "referencia": "4.2",
+  "clausula": "6.1.3"
+ },
+ {
+  "esquema": "ISO 22000:2018",
+  "referencia": "6.2",
+  "clausula": "6.2"
+ },
+ {
+  "esquema": "ISO 22000:2018",
+  "referencia": "6.3",
+  "clausula": "6.3"
+ },
+ {
+  "esquema": "ISO 22000:2018",
+  "referencia": "cl.7",
+  "clausula": "7"
+ },
+ {
+  "esquema": "ISO 22000:2018",
+  "referencia": "7.1",
+  "clausula": "7.1"
+ },
+ {
+  "esquema": "ISO 22000:2018",
+  "referencia": "7.1.6",
+  "clausula": "7.1.6"
+ },
+ {
+  "esquema": "ISO 22000:2018",
+  "referencia": "7.2",
+  "clausula": "7.2"
+ },
+ {
+  "esquema": "ISO 22000:2018",
+  "referencia": "7.3",
+  "clausula": "7.3"
+ },
+ {
+  "esquema": "ISO 22000:2018",
+  "referencia": "7.4",
+  "clausula": "7.4"
+ },
+ {
+  "esquema": "ISO 22000:2018",
+  "referencia": "7.5",
+  "clausula": "7.5"
+ },
+ {
+  "esquema": "ISO 22000:2018",
+  "referencia": "cl.8",
+  "clausula": "8"
+ },
+ {
+  "esquema": "ISO 22000:2018",
+  "referencia": "8.1",
+  "clausula": "8.1"
+ },
+ {
+  "esquema": "ISO 22000:2018",
+  "referencia": "8.2",
+  "clausula": "8.2"
+ },
+ {
+  "esquema": "ISO 22000:2018",
+  "referencia": "8.2.4 h)",
+  "clausula": "8.2.16"
+ },
+ {
+  "esquema": "ISO 22000:2018",
+  "referencia": "8.3",
+  "clausula": "8.3"
+ },
+ {
+  "esquema": "ISO 22000:2018",
+  "referencia": "8.4",
+  "clausula": "8.4"
+ },
+ {
+  "esquema": "ISO 22000:2018",
+  "referencia": "8.4.2",
+  "clausula": "8.4.2"
+ },
+ {
+  "esquema": "ISO 22000:2018",
+  "referencia": "8.5",
+  "clausula": "8.5"
+ },
+ {
+  "esquema": "ISO 22000:2018",
+  "referencia": "8.5.2",
+  "clausula": "8.5.2"
+ },
+ {
+  "esquema": "ISO 22000:2018",
+  "referencia": "8.8 (verificación, requisito distinto)",
+  "clausula": "8.5.3"
+ },
+ {
+  "esquema": "ISO 22000:2018",
+  "referencia": "8.5.4",
+  "clausula": "8.5.4"
+ },
+ {
+  "esquema": "ISO 22000:2018",
+  "referencia": "8.6",
+  "clausula": "8.6"
+ },
+ {
+  "esquema": "ISO 22000:2018",
+  "referencia": "8.7",
+  "clausula": "8.7"
+ },
+ {
+  "esquema": "ISO 22000:2018",
+  "referencia": "8.8",
+  "clausula": "8.8"
+ },
+ {
+  "esquema": "ISO 22000:2018",
+  "referencia": "8.9",
+  "clausula": "8.9"
+ },
+ {
+  "esquema": "ISO 22000:2018",
+  "referencia": "8.9.5",
+  "clausula": "8.9.5"
+ },
+ {
+  "esquema": "ISO 22000:2018",
+  "referencia": "8.5 (integración con análisis de peligros)",
+  "clausula": "8.10"
+ },
+ {
+  "esquema": "ISO 22000:2018",
+  "referencia": "8.1/8.5 (integración con plan de control de peligros)",
+  "clausula": "8.11"
+ },
+ {
+  "esquema": "ISO 22000:2018",
+  "referencia": "cl.8",
+  "clausula": "8.13"
+ },
+ {
+  "esquema": "ISO 22000:2018",
+  "referencia": "7.4",
+  "clausula": "8.14"
+ },
+ {
+  "esquema": "ISO 22000:2018",
+  "referencia": "6.3",
+  "clausula": "8.16"
+ },
+ {
+  "esquema": "ISO 22000:2018",
+  "referencia": "cl.9",
+  "clausula": "9"
+ },
+ {
+  "esquema": "ISO 22000:2018",
+  "referencia": "9.1",
+  "clausula": "9.1"
+ },
+ {
+  "esquema": "ISO 22000:2018",
+  "referencia": "9.1",
+  "clausula": "9.1.2"
+ },
+ {
+  "esquema": "ISO 22000:2018",
+  "referencia": "9.1",
+  "clausula": "9.1.3"
+ },
+ {
+  "esquema": "ISO 22000:2018",
+  "referencia": "9.2",
+  "clausula": "9.2"
+ },
+ {
+  "esquema": "ISO 22000:2018",
+  "referencia": "9.3",
+  "clausula": "9.3"
+ },
+ {
+  "esquema": "ISO 22000:2018",
+  "referencia": "cl.10",
+  "clausula": "10"
+ },
+ {
+  "esquema": "ISO 22000:2018",
+  "referencia": "10.1",
+  "clausula": "10.1"
+ },
+ {
+  "esquema": "ISO 22000:2018",
+  "referencia": "10.2",
+  "clausula": "10.2"
+ },
+ {
+  "esquema": "ISO 22000:2018",
+  "referencia": "10.3",
+  "clausula": "10.3"
+ },
+ {
+  "esquema": "ISO 22000:2018",
+  "referencia": "10.1",
+  "clausula": "10.4"
+ },
+ {
+  "esquema": "FSSC 22000 v7",
+  "referencia": "(alcance y requisitos adicionales)",
+  "clausula": "1"
+ },
+ {
+  "esquema": "FSSC 22000 v7",
+  "referencia": "(general)",
+  "clausula": "4"
+ },
+ {
+  "esquema": "FSSC 22000 v7",
+  "referencia": "2.5.1",
+  "clausula": "4.1"
+ },
+ {
+  "esquema": "FSSC 22000 v7",
+  "referencia": "2.5.1",
+  "clausula": "4.2"
+ },
+ {
+  "esquema": "FSSC 22000 v7",
+  "referencia": "2.5.5 (exclusiones de alcance) / 2.5.18 (multisitio)",
+  "clausula": "4.3"
+ },
+ {
+  "esquema": "FSSC 22000 v7",
+  "referencia": "2.1",
+  "clausula": "4.4"
+ },
+ {
+  "esquema": "FSSC 22000 v7",
+  "referencia": "(general)",
+  "clausula": "5"
+ },
+ {
+  "esquema": "FSSC 22000 v7",
+  "referencia": "2.5.8 (cultura de calidad e inocuidad alimentaria)",
+  "clausula": "5.1"
+ },
+ {
+  "esquema": "FSSC 22000 v7",
+  "referencia": "2.5.9 a) i (política de calidad)",
+  "clausula": "5.2"
+ },
+ {
+  "esquema": "FSSC 22000 v7",
+  "referencia": "2.5.18.1 (función central, multisitio)",
+  "clausula": "5.3"
+ },
+ {
+  "esquema": "FSSC 22000 v7",
+  "referencia": "(general)",
+  "clausula": "6"
+ },
+ {
+  "esquema": "FSSC 22000 v7",
+  "referencia": "2.5.1",
+  "clausula": "6.1"
+ },
+ {
+  "esquema": "FSSC 22000 v7",
+  "referencia": "2.5.8 b) y 2.5.9 a) i (objetivos de calidad y de cultura)",
+  "clausula": "6.2"
+ },
+ {
+  "esquema": "FSSC 22000 v7",
+  "referencia": "2.5.13 a) y 2.5.15 b) (gestión de cambios)",
+  "clausula": "6.3"
+ },
+ {
+  "esquema": "FSSC 22000 v7",
+  "referencia": "(general)",
+  "clausula": "7"
+ },
+ {
+  "esquema": "FSSC 22000 v7",
+  "referencia": "2.5.1 a) (laboratorios competentes, ISO/IEC 17025)",
+  "clausula": "7.1"
+ },
+ {
+  "esquema": "FSSC 22000 v7",
+  "referencia": "2.5.1 (servicios y materiales comprados)",
+  "clausula": "7.1.6"
+ },
+ {
+  "esquema": "FSSC 22000 v7",
+  "referencia": "2.5.3 a) y 2.5.4 a) (competencia para TACCP y VACCP)",
+  "clausula": "7.2"
+ },
+ {
+  "esquema": "FSSC 22000 v7",
+  "referencia": "2.5.8 (cultura de calidad e inocuidad)",
+  "clausula": "7.3"
+ },
+ {
+  "esquema": "FSSC 22000 v7",
+  "referencia": "2.5.17 (requisitos de comunicación)",
+  "clausula": "7.4"
+ },
+ {
+  "esquema": "FSSC 22000 v7",
+  "referencia": "2.5.1",
+  "clausula": "7.5"
+ },
+ {
+  "esquema": "FSSC 22000 v7",
+  "referencia": "(general)",
+  "clausula": "8"
+ },
+ {
+  "esquema": "FSSC 22000 v7",
+  "referencia": "2.4 (aplicación obligatoria de la serie ISO 22002-x)",
+  "clausula": "8.1"
+ },
+ {
+  "esquema": "FSSC 22000 v7",
+  "referencia": "2.4",
+  "clausula": "8.2"
+ },
+ {
+  "esquema": "FSSC 22000 v7",
+  "referencia": "2.5.15 (gestión de equipos)",
+  "clausula": "8.2.5"
+ },
+ {
+  "esquema": "FSSC 22000 v7",
+  "referencia": "2.5.1 b) y d) (compras de emergencia y revisión de especificaciones)",
+  "clausula": "8.2.6"
+ },
+ {
+  "esquema": "FSSC 22000 v7",
+  "referencia": "2.5.11 (control de peligros y contaminación cruzada)",
+  "clausula": "8.2.7"
+ },
+ {
+  "esquema": "FSSC 22000 v7",
+  "referencia": "2.5.10 (transporte, almacenamiento y depósito)",
+  "clausula": "8.2.12"
+ },
+ {
+  "esquema": "FSSC 22000 v7",
+  "referencia": "2.5.2 (etiquetado de productos y materiales impresos)",
+  "clausula": "8.2.13"
+ },
+ {
+  "esquema": "FSSC 22000 v7",
+  "referencia": "2.5.3 y 2.5.4",
+  "clausula": "8.2.14"
+ },
+ {
+  "esquema": "FSSC 22000 v7",
+  "referencia": "2.5.6 (gestión de alérgenos)",
+  "clausula": "8.2.15"
+ },
+ {
+  "esquema": "FSSC 22000 v7",
+  "referencia": "2.5.11 d) (gestión de materias extrañas)",
+  "clausula": "8.2.16"
+ },
+ {
+  "esquema": "FSSC 22000 v7",
+  "referencia": "2.5.5",
+  "clausula": "8.3"
+ },
+ {
+  "esquema": "FSSC 22000 v7",
+  "referencia": "2.5.17 (notificación al OC en 3 días hábiles)",
+  "clausula": "8.4"
+ },
+ {
+  "esquema": "FSSC 22000 v7",
+  "referencia": "2.5.17 (requisitos de comunicación)",
+  "clausula": "8.4.2"
+ },
+ {
+  "esquema": "FSSC 22000 v7",
+  "referencia": "2.5.6 d) (validación de las medidas de control de alérgenos)",
+  "clausula": "8.5.3"
+ },
+ {
+  "esquema": "FSSC 22000 v7",
+  "referencia": "2.5.9 b) (calibración del equipo de control de calidad y cantidad)",
+  "clausula": "8.7"
+ },
+ {
+  "esquema": "FSSC 22000 v7",
+  "referencia": "2.5.12 (verificación de PPR) y 2.5.7 (monitoreo ambiental)",
+  "clausula": "8.8"
+ },
+ {
+  "esquema": "FSSC 22000 v7",
+  "referencia": "2.5.9 (control de calidad y liberación de producto)",
+  "clausula": "8.9"
+ },
+ {
+  "esquema": "FSSC 22000 v7",
+  "referencia": "2.5.17",
+  "clausula": "8.9.5"
+ },
+ {
+  "esquema": "FSSC 22000 v7",
+  "referencia": "2.5.13 (diseño y desarrollo de productos, incluidos los principios de diseño de envase)",
+  "clausula": "8.10"
+ },
+ {
+  "esquema": "FSSC 22000 v7",
+  "referencia": "2.5.9 b) y c) (control de cantidad, arranque y cambio de línea)",
+  "clausula": "8.11"
+ },
+ {
+  "esquema": "FSSC 22000 v7",
+  "referencia": "2.5.9 a) iii (análisis y evaluación de parámetros de calidad)",
+  "clausula": "8.12"
+ },
+ {
+  "esquema": "FSSC 22000 v7",
+  "referencia": "2.5.16 (pérdida y desperdicio de alimentos)",
+  "clausula": "8.13"
+ },
+ {
+  "esquema": "FSSC 22000 v7",
+  "referencia": "2.5.16 (pérdida y desperdicio)",
+  "clausula": "8.15"
+ },
+ {
+  "esquema": "FSSC 22000 v7",
+  "referencia": "(general)",
+  "clausula": "9"
+ },
+ {
+  "esquema": "FSSC 22000 v7",
+  "referencia": "2.5.9 a) iii",
+  "clausula": "9.1"
+ },
+ {
+  "esquema": "FSSC 22000 v7",
+  "referencia": "2.5.9 a) iii",
+  "clausula": "9.1.3"
+ },
+ {
+  "esquema": "FSSC 22000 v7",
+  "referencia": "2.5.9 a) iv y 2.5.18.2 (auditoría interna)",
+  "clausula": "9.2"
+ },
+ {
+  "esquema": "FSSC 22000 v7",
+  "referencia": "2.5.8 b) y 2.5.9 a) iii (entradas a la revisión por la dirección)",
+  "clausula": "9.3"
+ },
+ {
+  "esquema": "FSSC 22000 v7",
+  "referencia": "(general)",
+  "clausula": "10"
+ },
+ {
+  "esquema": "FSSC 22000 v7",
+  "referencia": "2.5.1",
+  "clausula": "10.1"
+ },
+ {
+  "esquema": "FSSC 22000 v7",
+  "referencia": "2.5.1",
+  "clausula": "10.2"
+ },
+ {
+  "esquema": "FSSC 22000 v7",
+  "referencia": "2.5.1",
+  "clausula": "10.3"
+ },
+ {
+  "esquema": "SQF Ed. 9",
+  "referencia": "Parte A",
+  "clausula": "1"
+ },
+ {
+  "esquema": "SQF Ed. 9",
+  "referencia": "(general)",
+  "clausula": "4"
+ },
+ {
+  "esquema": "SQF Ed. 9",
+  "referencia": "2.1.1",
+  "clausula": "4.1"
+ },
+ {
+  "esquema": "SQF Ed. 9",
+  "referencia": "2.1",
+  "clausula": "4.4"
+ },
+ {
+  "esquema": "SQF Ed. 9",
+  "referencia": "(general)",
+  "clausula": "5"
+ },
+ {
+  "esquema": "SQF Ed. 9",
+  "referencia": "2.1.1",
+  "clausula": "5.1"
+ },
+ {
+  "esquema": "SQF Ed. 9",
+  "referencia": "2.1.1",
+  "clausula": "5.2"
+ },
+ {
+  "esquema": "SQF Ed. 9",
+  "referencia": "2.1.2",
+  "clausula": "5.3"
+ },
+ {
+  "esquema": "SQF Ed. 9",
+  "referencia": "2.1.1",
+  "clausula": "6.2"
+ },
+ {
+  "esquema": "SQF Ed. 9",
+  "referencia": "(general)",
+  "clausula": "7"
+ },
+ {
+  "esquema": "SQF Ed. 9",
+  "referencia": "2.4",
+  "clausula": "7.1"
+ },
+ {
+  "esquema": "SQF Ed. 9",
+  "referencia": "2.3",
+  "clausula": "7.1.6"
+ },
+ {
+  "esquema": "SQF Ed. 9",
+  "referencia": "2.1.2",
+  "clausula": "7.2"
+ },
+ {
+  "esquema": "SQF Ed. 9",
+  "referencia": "2.2",
+  "clausula": "7.5"
+ },
+ {
+  "esquema": "SQF Ed. 9",
+  "referencia": "(general)",
+  "clausula": "8"
+ },
+ {
+  "esquema": "SQF Ed. 9",
+  "referencia": "2.1",
+  "clausula": "8.1"
+ },
+ {
+  "esquema": "SQF Ed. 9",
+  "referencia": "11",
+  "clausula": "8.2"
+ },
+ {
+  "esquema": "SQF Ed. 9",
+  "referencia": "2.5",
+  "clausula": "8.3"
+ },
+ {
+  "esquema": "SQF Ed. 9",
+  "referencia": "2.7",
+  "clausula": "8.4"
+ },
+ {
+  "esquema": "SQF Ed. 9",
+  "referencia": "2.4.2",
+  "clausula": "8.5"
+ },
+ {
+  "esquema": "SQF Ed. 9",
+  "referencia": "2.4.2",
+  "clausula": "8.5.4"
+ },
+ {
+  "esquema": "SQF Ed. 9",
+  "referencia": "2.4",
+  "clausula": "8.7"
+ },
+ {
+  "esquema": "SQF Ed. 9",
+  "referencia": "2.9",
+  "clausula": "8.9"
+ },
+ {
+  "esquema": "SQF Ed. 9",
+  "referencia": "2.6",
+  "clausula": "8.9.5"
+ },
+ {
+  "esquema": "SQF Ed. 9",
+  "referencia": "2.4.2 / 11",
+  "clausula": "8.11"
+ },
+ {
+  "esquema": "SQF Ed. 9",
+  "referencia": "(general)",
+  "clausula": "9"
+ },
+ {
+  "esquema": "SQF Ed. 9",
+  "referencia": "2.1.1",
+  "clausula": "9.1"
+ },
+ {
+  "esquema": "SQF Ed. 9",
+  "referencia": "2.8",
+  "clausula": "9.2"
+ },
+ {
+  "esquema": "SQF Ed. 9",
+  "referencia": "2.1.1",
+  "clausula": "9.3"
+ },
+ {
+  "esquema": "SQF Ed. 9",
+  "referencia": "(general)",
+  "clausula": "10"
+ },
+ {
+  "esquema": "SQF Ed. 9",
+  "referencia": "2.1.1",
+  "clausula": "10.1"
+ },
+ {
+  "esquema": "SQF Ed. 9",
+  "referencia": "2.1.1",
+  "clausula": "10.2"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "(Introducción)",
+  "clausula": "1"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "(general)",
+  "clausula": "4"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "1.1",
+  "clausula": "4.1"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "1.1",
+  "clausula": "4.2"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "1.1 y sección 9",
+  "clausula": "4.3"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "1.1",
+  "clausula": "4.4"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "(general)",
+  "clausula": "5"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "1.1",
+  "clausula": "5.1"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "1.1.1",
+  "clausula": "5.2"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "1.1.2",
+  "clausula": "5.3"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "(general)",
+  "clausula": "6"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "1.1",
+  "clausula": "6.1"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "1.1.1",
+  "clausula": "6.2"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "3.5",
+  "clausula": "6.3"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "(general)",
+  "clausula": "7"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "4",
+  "clausula": "7.1"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "3.5",
+  "clausula": "7.1.6"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "7.1",
+  "clausula": "7.2"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "7.1",
+  "clausula": "7.3"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "1.1.2",
+  "clausula": "7.4"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "1.1.2",
+  "clausula": "7.5"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "(general)",
+  "clausula": "8"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "1.1",
+  "clausula": "8.1"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "4",
+  "clausula": "8.2"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "4.1-4.3",
+  "clausula": "8.2.1"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "4.3",
+  "clausula": "8.2.2"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "4.7",
+  "clausula": "8.2.3"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "4.12",
+  "clausula": "8.2.4"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "4.8",
+  "clausula": "8.2.5"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "3.5 / 5.1",
+  "clausula": "8.2.6"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "4.9",
+  "clausula": "8.2.7"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "4.10",
+  "clausula": "8.2.8"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "4.11",
+  "clausula": "8.2.9"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "7",
+  "clausula": "8.2.10"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "6",
+  "clausula": "8.2.11"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "4.9 / 5.6",
+  "clausula": "8.2.12"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "5.1-5.2",
+  "clausula": "8.2.13"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "4.2 / 5.4",
+  "clausula": "8.2.14"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "5.3",
+  "clausula": "8.2.15"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "4.9",
+  "clausula": "8.2.16"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "3.9",
+  "clausula": "8.3"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "3.11",
+  "clausula": "8.4"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "3.11",
+  "clausula": "8.4.2"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "2",
+  "clausula": "8.5"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "secc.2",
+  "clausula": "8.5.2"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "secc. 2",
+  "clausula": "8.5.3"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "secc.2",
+  "clausula": "8.5.4"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "secc.2",
+  "clausula": "8.6"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "5.7",
+  "clausula": "8.7"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "secc.2 y 5",
+  "clausula": "8.8"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "3.10",
+  "clausula": "8.9"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "3.11",
+  "clausula": "8.9.5"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "5.1 (Product design/development)",
+  "clausula": "8.10"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "6 (Control del proceso)",
+  "clausula": "8.11"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "6.3 (control de cantidad y técnicas estadísticas)",
+  "clausula": "8.12"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "(general)",
+  "clausula": "9"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "1.1.4",
+  "clausula": "9.1"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "3.3",
+  "clausula": "9.2"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "1.1.4",
+  "clausula": "9.3"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "(general)",
+  "clausula": "10"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "3.10",
+  "clausula": "10.1"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "1.1.4",
+  "clausula": "10.2"
+ },
+ {
+  "esquema": "BRCGS FS v9",
+  "referencia": "1.1.4",
+  "clausula": "10.3"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "(Protocolo de auditoría)",
+  "clausula": "1"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "(general)",
+  "clausula": "4"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "1.2",
+  "clausula": "4.1"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "1.2",
+  "clausula": "4.2"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "2.2",
+  "clausula": "4.3"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "1.2",
+  "clausula": "4.4"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "(general)",
+  "clausula": "5"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "1.1",
+  "clausula": "5.1"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "1.1",
+  "clausula": "5.2"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "1.1",
+  "clausula": "5.3"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "(general)",
+  "clausula": "6"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "1.2",
+  "clausula": "6.1"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "1.1",
+  "clausula": "6.2"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "1.2",
+  "clausula": "6.3"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "(general)",
+  "clausula": "7"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "3",
+  "clausula": "7.1"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "4.4",
+  "clausula": "7.1.6"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "3.1-3.2",
+  "clausula": "7.2"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "3.3",
+  "clausula": "7.3"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "1.4",
+  "clausula": "7.4"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "1.2",
+  "clausula": "7.5"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "(general)",
+  "clausula": "8"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "4",
+  "clausula": "8.1"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "4",
+  "clausula": "8.2"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "4.1",
+  "clausula": "8.2.1"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "4.3",
+  "clausula": "8.2.2"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "4.5",
+  "clausula": "8.2.3"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "4.13",
+  "clausula": "8.2.4"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "4.6",
+  "clausula": "8.2.5"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "4.4",
+  "clausula": "8.2.6"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "4.9",
+  "clausula": "8.2.7"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "4.9",
+  "clausula": "8.2.8"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "4.14",
+  "clausula": "8.2.9"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "3.3",
+  "clausula": "8.2.10"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "4.12",
+  "clausula": "8.2.11"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "4.16",
+  "clausula": "8.2.12"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "5.5",
+  "clausula": "8.2.13"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "4.20-4.21",
+  "clausula": "8.2.14"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "4.19",
+  "clausula": "8.2.15"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "4.11",
+  "clausula": "8.2.16"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "4.18",
+  "clausula": "8.3"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "1.3",
+  "clausula": "8.4"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "1.3",
+  "clausula": "8.4.2"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "4.7",
+  "clausula": "8.5"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "4.7",
+  "clausula": "8.5.2"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "4.7",
+  "clausula": "8.5.3"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "4.7",
+  "clausula": "8.5.4"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "4.7",
+  "clausula": "8.6"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "4.17",
+  "clausula": "8.7"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "4.7-4.17",
+  "clausula": "8.8"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "5.9",
+  "clausula": "8.9"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "4.18",
+  "clausula": "8.9.5"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "4.2/4.4 (especificaciones)",
+  "clausula": "8.10"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "4.8-4.12",
+  "clausula": "8.11"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "IFS Food",
+  "clausula": "8.12"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "(general)",
+  "clausula": "9"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "5.1",
+  "clausula": "9.1"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "5.2",
+  "clausula": "9.2"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "1.1",
+  "clausula": "9.3"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "(general)",
+  "clausula": "10"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "5.9",
+  "clausula": "10.1"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "1.1",
+  "clausula": "10.2"
+ },
+ {
+  "esquema": "IFS Food V8",
+  "referencia": "1.1",
+  "clausula": "10.3"
+ },
+ {
+  "esquema": "ISO 22002-1:2025",
+  "referencia": "e ISO 22002-100 (alcance)",
+  "clausula": "1"
+ },
+ {
+  "esquema": "ISO 22002-1:2025",
+  "referencia": "(general)",
+  "clausula": "4"
+ },
+ {
+  "esquema": "ISO 22002-1:2025",
+  "referencia": "(general)",
+  "clausula": "7"
+ },
+ {
+  "esquema": "ISO 22002-1:2025",
+  "referencia": "(general)",
+  "clausula": "7.1"
+ },
+ {
+  "esquema": "ISO 22002-1:2025",
+  "referencia": "cl.4",
+  "clausula": "7.2"
+ },
+ {
+  "esquema": "ISO 22002-1:2025",
+  "referencia": "(general)",
+  "clausula": "8"
+ },
+ {
+  "esquema": "ISO 22002-1:2025",
+  "referencia": "(completo, cl.4-18)",
+  "clausula": "8.2"
+ },
+ {
+  "esquema": "ISO 22002-1:2025",
+  "referencia": "cl.4",
+  "clausula": "8.2.1"
+ },
+ {
+  "esquema": "ISO 22002-1:2025",
+  "referencia": "cl.5",
+  "clausula": "8.2.2"
+ },
+ {
+  "esquema": "ISO 22002-1:2025",
+  "referencia": "cl.6",
+  "clausula": "8.2.3"
+ },
+ {
+  "esquema": "ISO 22002-1:2025",
+  "referencia": "cl.7",
+  "clausula": "8.2.4"
+ },
+ {
+  "esquema": "ISO 22002-1:2025",
+  "referencia": "cl.8",
+  "clausula": "8.2.5"
+ },
+ {
+  "esquema": "ISO 22002-1:2025",
+  "referencia": "cl.9",
+  "clausula": "8.2.6"
+ },
+ {
+  "esquema": "ISO 22002-1:2025",
+  "referencia": "cl.10",
+  "clausula": "8.2.7"
+ },
+ {
+  "esquema": "ISO 22002-1:2025",
+  "referencia": "cl.11",
+  "clausula": "8.2.8"
+ },
+ {
+  "esquema": "ISO 22002-1:2025",
+  "referencia": "cl.12",
+  "clausula": "8.2.9"
+ },
+ {
+  "esquema": "ISO 22002-1:2025",
+  "referencia": "cl.13",
+  "clausula": "8.2.10"
+ },
+ {
+  "esquema": "ISO 22002-1:2025",
+  "referencia": "cl.14",
+  "clausula": "8.2.11"
+ },
+ {
+  "esquema": "ISO 22002-1:2025",
+  "referencia": "cl.16",
+  "clausula": "8.2.12"
+ },
+ {
+  "esquema": "ISO 22002-1:2025",
+  "referencia": "cl.17",
+  "clausula": "8.2.13"
+ },
+ {
+  "esquema": "ISO 22002-1:2025",
+  "referencia": ":2025 e ISO 22002-100:2025 (prevención de la contaminación)",
+  "clausula": "8.2.16"
+ },
+ {
+  "esquema": "ISO 22002-1:2025",
+  "referencia": ":2025 cl.15",
+  "clausula": "8.9.5"
+ },
+ {
+  "esquema": "ISO 22002-100:2025",
+  "referencia": "(general)",
+  "clausula": "4"
+ },
+ {
+  "esquema": "ISO 22002-100:2025",
+  "referencia": "4",
+  "clausula": "4.1"
+ },
+ {
+  "esquema": "ISO 22002-100:2025",
+  "referencia": "4",
+  "clausula": "6.1"
+ },
+ {
+  "esquema": "ISO 22002-100:2025",
+  "referencia": "(general)",
+  "clausula": "7"
+ },
+ {
+  "esquema": "ISO 22002-100:2025",
+  "referencia": "(general)",
+  "clausula": "7.1"
+ },
+ {
+  "esquema": "ISO 22002-100:2025",
+  "referencia": "(general)",
+  "clausula": "8"
+ },
+ {
+  "esquema": "ISO 22002-100:2025",
+  "referencia": "(completo)",
+  "clausula": "8.2"
+ },
+ {
+  "esquema": "ISO 22002-100:2025",
+  "referencia": "cl.4",
+  "clausula": "8.2.1"
+ },
+ {
+  "esquema": "ISO 22002-100:2025",
+  "referencia": "cl.5",
+  "clausula": "8.2.2"
+ },
+ {
+  "esquema": "ISO 22002-100:2025",
+  "referencia": "cl.6",
+  "clausula": "8.2.3"
+ },
+ {
+  "esquema": "ISO 22002-100:2025",
+  "referencia": "cl.9",
+  "clausula": "8.2.4"
+ },
+ {
+  "esquema": "ISO 22002-100:2025",
+  "referencia": "cl.8",
+  "clausula": "8.2.5"
+ },
+ {
+  "esquema": "ISO 22002-100:2025",
+  "referencia": "cl.9",
+  "clausula": "8.2.6"
+ },
+ {
+  "esquema": "ISO 22002-100:2025",
+  "referencia": "cl.7",
+  "clausula": "8.2.7"
+ },
+ {
+  "esquema": "ISO 22002-100:2025",
+  "referencia": "cl.10",
+  "clausula": "8.2.8"
+ },
+ {
+  "esquema": "ISO 22002-100:2025",
+  "referencia": "cl.14",
+  "clausula": "8.2.9"
+ },
+ {
+  "esquema": "ISO 22002-100:2025",
+  "referencia": "cl.13",
+  "clausula": "8.2.10"
+ },
+ {
+  "esquema": "ISO 22002-100:2025",
+  "referencia": ":2025 cl.16.2 (defensa alimentaria) y cl.16.3 (mitigación del fraude alimentario)",
+  "clausula": "8.2.14"
+ },
+ {
+  "esquema": "ISO 22002-100:2025",
+  "referencia": "cl.13",
+  "clausula": "8.2.15"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "(Introducción y Manual)",
+  "clausula": "1"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "(general)",
+  "clausula": "4"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "Introducción",
+  "clausula": "4.1"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "Introducción",
+  "clausula": "4.2"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "Anexo 3 (esquemas de certificación reconocidos)",
+  "clausula": "4.3"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "Anexo 1, secc. 1 (Sistema de gestión de calidad) y secc. 2 (Manual de Calidad)",
+  "clausula": "4.4"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "(general)",
+  "clausula": "5"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "Anexo 1, secc. 1 (Sistema de gestión de calidad) y secc. 2 (Manual de Calidad)",
+  "clausula": "5.1"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "Anexo 1, secc. 1 (Sistema de gestión de calidad) y secc. 2 (Manual de Calidad)",
+  "clausula": "5.2"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "Anexo 1, secc. 5 (Personal) (independencia Fabricación/Calidad)",
+  "clausula": "5.3"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "(general)",
+  "clausula": "6"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "Anexo 1, secc. 1 (Sistema de gestión de calidad) y secc. 2 (Manual de Calidad)",
+  "clausula": "6.1"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "Anexo 1, secc. 1 (Sistema de gestión de calidad) y secc. 2 (Manual de Calidad)",
+  "clausula": "6.2"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "Anexo 1, secc. 7 (Conformidad de producto), secc. 10 (Actividades subcontratadas) y secc. 14 (Etiquetado de producto) (gestión del cambio)",
+  "clausula": "6.3"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "(general)",
+  "clausula": "7"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "Anexo 1, secc. 4 (Análisis de peligros y PCC) y secc. Calibración, Calificación y Validación",
+  "clausula": "7.1"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "Anexo 1, secc. 7 (Conformidad de producto), secc. 10 (Actividades subcontratadas) y secc. 14 (Etiquetado de producto) (clasificación y aprobación de proveedores)",
+  "clausula": "7.1.6"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "Anexo 1, secc. 5 (Personal)",
+  "clausula": "7.2"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "Anexo 1, secc. 5 (Personal)",
+  "clausula": "7.3"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "Anexo 1, secc. 1 (Sistema de gestión de calidad) y secc. 2 (Manual de Calidad)",
+  "clausula": "7.4"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "Anexo 1, secc. 1 (Sistema de gestión de calidad) y secc. 2 (Manual de Calidad)",
+  "clausula": "7.5"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "(general)",
+  "clausula": "8"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "Anexo 1, secc. 7 (Conformidad de producto), secc. 10 (Actividades subcontratadas) y secc. 14 (Etiquetado de producto)",
+  "clausula": "8.1"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "Anexo 1, secc. 4 (Análisis de peligros y PCC) y secc. 6 (Instalaciones y equipo)",
+  "clausula": "8.2"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "Anexo 1, secc. 6 (Instalaciones y equipo)",
+  "clausula": "8.2.1"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "Anexo 1, secc. 6 (Instalaciones y equipo)",
+  "clausula": "8.2.2"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "Anexo 1, secc. 6 (Instalaciones y equipo)",
+  "clausula": "8.2.3"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "Anexo 1, secc. 6 (Instalaciones y equipo)",
+  "clausula": "8.2.4"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "Anexo 1, secc. 6 (Instalaciones y equipo)",
+  "clausula": "8.2.5"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "Anexo 1, secc. 7 (Conformidad de producto), secc. 10 (Actividades subcontratadas) y secc. 14 (Etiquetado de producto)",
+  "clausula": "8.2.6"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "Anexo 1, secc. 6 (Instalaciones y equipo)",
+  "clausula": "8.2.7"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "Anexo 1, secc. 6 (Instalaciones y equipo)",
+  "clausula": "8.2.8"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "Anexo 1, secc. 6 (Instalaciones y equipo)",
+  "clausula": "8.2.9"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "Anexo 1, secc. 5 (Personal)",
+  "clausula": "8.2.10"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "Anexo 1, secc. 7 (Conformidad de producto), secc. 10 (Actividades subcontratadas) y secc. 14 (Etiquetado de producto)",
+  "clausula": "8.2.11"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "Anexo 1, secc. 6 (Instalaciones y equipo)",
+  "clausula": "8.2.12"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "Anexo 1, secc. 7 (Conformidad de producto), secc. 10 (Actividades subcontratadas) y secc. 14 (Etiquetado de producto)",
+  "clausula": "8.2.13"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "Anexo 1, secc. 6 (Instalaciones y equipo)",
+  "clausula": "8.2.14"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "Anexo 1, secc. 6 (Instalaciones y equipo)",
+  "clausula": "8.2.15"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "Anexo 1, secc. 7 (Conformidad de producto), secc. 10 (Actividades subcontratadas) y secc. 14 (Etiquetado de producto) (digitalización de trazabilidad <4h)",
+  "clausula": "8.3"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "Anexo 1, secc. 7 (Conformidad de producto), secc. 10 (Actividades subcontratadas) y secc. 14 (Etiquetado de producto)",
+  "clausula": "8.4"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "Anexo 1, secc. 7 (Conformidad de producto), secc. 10 (Actividades subcontratadas) y secc. 14 (Etiquetado de producto)",
+  "clausula": "8.4.2"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "Anexo 1, secc. 4 (Análisis de peligros y PCC) y secc. Calibración, Calificación y Validación",
+  "clausula": "8.5"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "Anexo 1, secc. 4 (Análisis de peligros y PCC) y secc. Calibración, Calificación y Validación",
+  "clausula": "8.5.2"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "Anexo 1, secc. 4 (Análisis de peligros y PCC) y secc. Calibración, Calificación y Validación",
+  "clausula": "8.5.4"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "Anexo 1, secc. 4 (Análisis de peligros y PCC) y secc. Calibración, Calificación y Validación",
+  "clausula": "8.7"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "Anexo 1, secc. 4 (Análisis de peligros y PCC) y secc. Calibración, Calificación y Validación",
+  "clausula": "8.8"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "Manejo de no conformidades y calificación del proveedor (NC Crítica/Mayor/Menor y calificación de proveedor)",
+  "clausula": "8.9"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "Anexo 1, secc. 7 (Conformidad de producto), secc. 10 (Actividades subcontratadas) y secc. 14 (Etiquetado de producto)",
+  "clausula": "8.9.5"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "(PMV, panel sensorial, aprobación de producto nuevo)",
+  "clausula": "8.10"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "Anexo 1, secc. 4 (Análisis de peligros y PCC) y secc. Calibración, Calificación y Validación",
+  "clausula": "8.11"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "— Anexo 1, sección 1 (Sistema de gestión de calidad), requisito \"Control Estadístico de Proceso\"; reforzado en sección 5 (Calibración, Calificación y Validación), inciso f) \"Control de las Operaciones de Fabricación\"",
+  "clausula": "8.12"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "Anexo 1, secc. 7 (Conformidad de producto), secc. 10 (Actividades subcontratadas) y secc. 14 (Etiquetado de producto)",
+  "clausula": "8.14"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "(general)",
+  "clausula": "9"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "Anexo 1, secc. 5 (Personal)",
+  "clausula": "9.1"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "Anexo 1, secc. 5 (Personal)",
+  "clausula": "9.2"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "Anexo 1, secc. 1 (Sistema de gestión de calidad) y secc. 2 (Manual de Calidad)",
+  "clausula": "9.3"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "(general)",
+  "clausula": "10"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "Manejo de no conformidades y calificación del proveedor",
+  "clausula": "10.1"
+ },
+ {
+  "esquema": "Tiendas 3B V2025",
+  "referencia": "Anexo 1, secc. 1 (Sistema de gestión de calidad) y secc. 2 (Manual de Calidad) (mejora continua)",
+  "clausula": "10.2"
+ },
+ {
+  "esquema": "ISO 9001:2015",
+  "referencia": "4.1",
+  "clausula": "4.1"
+ },
+ {
+  "esquema": "ISO 9001:2015",
+  "referencia": "4.2",
+  "clausula": "4.2"
+ },
+ {
+  "esquema": "ISO 9001:2015",
+  "referencia": "4.3",
+  "clausula": "4.3"
+ },
+ {
+  "esquema": "ISO 9001:2015",
+  "referencia": "4.4",
+  "clausula": "4.4"
+ },
+ {
+  "esquema": "ISO 9001:2015",
+  "referencia": "5.1.1 y 5.1.2",
+  "clausula": "5.1"
+ },
+ {
+  "esquema": "ISO 9001:2015",
+  "referencia": "5.2",
+  "clausula": "5.2"
+ },
+ {
+  "esquema": "ISO 9001:2015",
+  "referencia": "5.3",
+  "clausula": "5.3"
+ },
+ {
+  "esquema": "ISO 9001:2015",
+  "referencia": "6.1",
+  "clausula": "6.1"
+ },
+ {
+  "esquema": "ISO 9001:2015",
+  "referencia": "8.2.2",
+  "clausula": "6.1.3"
+ },
+ {
+  "esquema": "ISO 9001:2015",
+  "referencia": "6.2",
+  "clausula": "6.2"
+ },
+ {
+  "esquema": "ISO 9001:2015",
+  "referencia": "6.3",
+  "clausula": "6.3"
+ },
+ {
+  "esquema": "ISO 9001:2015",
+  "referencia": "7.1.1 a 7.1.5",
+  "clausula": "7.1"
+ },
+ {
+  "esquema": "ISO 9001:2015",
+  "referencia": "8.4",
+  "clausula": "7.1.6"
+ },
+ {
+  "esquema": "ISO 9001:2015",
+  "referencia": "7.2 y 7.1.6",
+  "clausula": "7.2"
+ },
+ {
+  "esquema": "ISO 9001:2015",
+  "referencia": "7.3",
+  "clausula": "7.3"
+ },
+ {
+  "esquema": "ISO 9001:2015",
+  "referencia": "7.4",
+  "clausula": "7.4"
+ },
+ {
+  "esquema": "ISO 9001:2015",
+  "referencia": "7.5",
+  "clausula": "7.5"
+ },
+ {
+  "esquema": "ISO 9001:2015",
+  "referencia": "8.1",
+  "clausula": "8.1"
+ },
+ {
+  "esquema": "ISO 9001:2015",
+  "referencia": "8.5.4",
+  "clausula": "8.2.12"
+ },
+ {
+  "esquema": "ISO 9001:2015",
+  "referencia": "8.5.2",
+  "clausula": "8.3"
+ },
+ {
+  "esquema": "ISO 9001:2015",
+  "referencia": "7.1.5 y 9.1.1",
+  "clausula": "8.7"
+ },
+ {
+  "esquema": "ISO 9001:2015",
+  "referencia": "9.1.1",
+  "clausula": "8.8"
+ },
+ {
+  "esquema": "ISO 9001:2015",
+  "referencia": "8.6 y 8.7",
+  "clausula": "8.9"
+ },
+ {
+  "esquema": "ISO 9001:2015",
+  "referencia": "8.7",
+  "clausula": "8.9.5"
+ },
+ {
+  "esquema": "ISO 9001:2015",
+  "referencia": "8.3",
+  "clausula": "8.10"
+ },
+ {
+  "esquema": "ISO 9001:2015",
+  "referencia": "8.5.1",
+  "clausula": "8.11"
+ },
+ {
+  "esquema": "ISO 9001:2015",
+  "referencia": "8.5.3 (propiedad del cliente)",
+  "clausula": "8.14"
+ },
+ {
+  "esquema": "ISO 9001:2015",
+  "referencia": "9.1.1",
+  "clausula": "9.1"
+ },
+ {
+  "esquema": "ISO 9001:2015",
+  "referencia": "9.1.3",
+  "clausula": "9.1.3"
+ },
+ {
+  "esquema": "ISO 9001:2015",
+  "referencia": "9.2",
+  "clausula": "9.2"
+ },
+ {
+  "esquema": "ISO 9001:2015",
+  "referencia": "9.3",
+  "clausula": "9.3"
+ },
+ {
+  "esquema": "ISO 9001:2015",
+  "referencia": "10.2",
+  "clausula": "10.1"
+ },
+ {
+  "esquema": "ISO 9001:2015",
+  "referencia": "10.3",
+  "clausula": "10.2"
+ },
+ {
+  "esquema": "ISO 9001:2015",
+  "referencia": "10.3",
+  "clausula": "10.3"
+ },
+ {
+  "esquema": "ISO 14001:2026",
+  "referencia": "4.1",
+  "clausula": "4.1"
+ },
+ {
+  "esquema": "ISO 14001:2026",
+  "referencia": "4.2",
+  "clausula": "4.2"
+ },
+ {
+  "esquema": "ISO 14001:2026",
+  "referencia": "4.3",
+  "clausula": "4.3"
+ },
+ {
+  "esquema": "ISO 14001:2026",
+  "referencia": "4.4",
+  "clausula": "4.4"
+ },
+ {
+  "esquema": "ISO 14001:2026",
+  "referencia": "5.1",
+  "clausula": "5.1"
+ },
+ {
+  "esquema": "ISO 14001:2026",
+  "referencia": "5.2",
+  "clausula": "5.2"
+ },
+ {
+  "esquema": "ISO 14001:2026",
+  "referencia": "5.3",
+  "clausula": "5.3"
+ },
+ {
+  "esquema": "ISO 14001:2026",
+  "referencia": "6.1.1 y 6.1.4",
+  "clausula": "6.1"
+ },
+ {
+  "esquema": "ISO 14001:2026",
+  "referencia": "6.1.4 (riesgos y oportunidades)",
+  "clausula": "6.1.1"
+ },
+ {
+  "esquema": "ISO 14001:2026",
+  "referencia": "6.1.3",
+  "clausula": "6.1.3"
+ },
+ {
+  "esquema": "ISO 14001:2026",
+  "referencia": "6.2",
+  "clausula": "6.2"
+ },
+ {
+  "esquema": "ISO 14001:2026",
+  "referencia": "6.3",
+  "clausula": "6.3"
+ },
+ {
+  "esquema": "ISO 14001:2026",
+  "referencia": "7.1",
+  "clausula": "7.1"
+ },
+ {
+  "esquema": "ISO 14001:2026",
+  "referencia": "8.1",
+  "clausula": "7.1.6"
+ },
+ {
+  "esquema": "ISO 14001:2026",
+  "referencia": "7.2",
+  "clausula": "7.2"
+ },
+ {
+  "esquema": "ISO 14001:2026",
+  "referencia": "7.3",
+  "clausula": "7.3"
+ },
+ {
+  "esquema": "ISO 14001:2026",
+  "referencia": "7.4",
+  "clausula": "7.4"
+ },
+ {
+  "esquema": "ISO 14001:2026",
+  "referencia": "7.5",
+  "clausula": "7.5"
+ },
+ {
+  "esquema": "ISO 14001:2026",
+  "referencia": "8.1",
+  "clausula": "8.1"
+ },
+ {
+  "esquema": "ISO 14001:2026",
+  "referencia": "8.2",
+  "clausula": "8.4"
+ },
+ {
+  "esquema": "ISO 14001:2026",
+  "referencia": "8.2",
+  "clausula": "8.4.2"
+ },
+ {
+  "esquema": "ISO 14001:2026",
+  "referencia": "9.1.1",
+  "clausula": "8.8"
+ },
+ {
+  "esquema": "ISO 14001:2026",
+  "referencia": "8.1",
+  "clausula": "8.10"
+ },
+ {
+  "esquema": "ISO 14001:2026",
+  "referencia": "6.1.2 (ciclo de vida)",
+  "clausula": "8.15"
+ },
+ {
+  "esquema": "ISO 14001:2026",
+  "referencia": "9.1.1",
+  "clausula": "9.1"
+ },
+ {
+  "esquema": "ISO 14001:2026",
+  "referencia": "9.1.2",
+  "clausula": "9.1.2"
+ },
+ {
+  "esquema": "ISO 14001:2026",
+  "referencia": "9.2",
+  "clausula": "9.2"
+ },
+ {
+  "esquema": "ISO 14001:2026",
+  "referencia": "9.3",
+  "clausula": "9.3"
+ },
+ {
+  "esquema": "ISO 14001:2026",
+  "referencia": "10.2",
+  "clausula": "10.1"
+ },
+ {
+  "esquema": "ISO 14001:2026",
+  "referencia": "10.1",
+  "clausula": "10.2"
+ },
+ {
+  "esquema": "ISO 14001:2026",
+  "referencia": "10.1",
+  "clausula": "10.3"
+ },
+ {
+  "esquema": "ISO 45001:2018",
+  "referencia": "4.1",
+  "clausula": "4.1"
+ },
+ {
+  "esquema": "ISO 45001:2018",
+  "referencia": "4.2",
+  "clausula": "4.2"
+ },
+ {
+  "esquema": "ISO 45001:2018",
+  "referencia": "4.3",
+  "clausula": "4.3"
+ },
+ {
+  "esquema": "ISO 45001:2018",
+  "referencia": "4.4",
+  "clausula": "4.4"
+ },
+ {
+  "esquema": "ISO 45001:2018",
+  "referencia": "5.1",
+  "clausula": "5.1"
+ },
+ {
+  "esquema": "ISO 45001:2018",
+  "referencia": "5.2",
+  "clausula": "5.2"
+ },
+ {
+  "esquema": "ISO 45001:2018",
+  "referencia": "5.3",
+  "clausula": "5.3"
+ },
+ {
+  "esquema": "ISO 45001:2018",
+  "referencia": "5.1 (liderazgo)",
+  "clausula": "5.4"
+ },
+ {
+  "esquema": "ISO 45001:2018",
+  "referencia": "6.1.1",
+  "clausula": "6.1"
+ },
+ {
+  "esquema": "ISO 45001:2018",
+  "referencia": "8.1.2 (jerarquía de controles)",
+  "clausula": "6.1.2"
+ },
+ {
+  "esquema": "ISO 45001:2018",
+  "referencia": "6.1.3",
+  "clausula": "6.1.3"
+ },
+ {
+  "esquema": "ISO 45001:2018",
+  "referencia": "6.2.1 y 6.2.2",
+  "clausula": "6.2"
+ },
+ {
+  "esquema": "ISO 45001:2018",
+  "referencia": "8.1.3",
+  "clausula": "6.3"
+ },
+ {
+  "esquema": "ISO 45001:2018",
+  "referencia": "7.1",
+  "clausula": "7.1"
+ },
+ {
+  "esquema": "ISO 45001:2018",
+  "referencia": "8.1.4",
+  "clausula": "7.1.6"
+ },
+ {
+  "esquema": "ISO 45001:2018",
+  "referencia": "7.2",
+  "clausula": "7.2"
+ },
+ {
+  "esquema": "ISO 45001:2018",
+  "referencia": "7.3",
+  "clausula": "7.3"
+ },
+ {
+  "esquema": "ISO 45001:2018",
+  "referencia": "7.4",
+  "clausula": "7.4"
+ },
+ {
+  "esquema": "ISO 45001:2018",
+  "referencia": "7.5",
+  "clausula": "7.5"
+ },
+ {
+  "esquema": "ISO 45001:2018",
+  "referencia": "8.1.1",
+  "clausula": "8.1"
+ },
+ {
+  "esquema": "ISO 45001:2018",
+  "referencia": "8.2",
+  "clausula": "8.4"
+ },
+ {
+  "esquema": "ISO 45001:2018",
+  "referencia": "8.2",
+  "clausula": "8.4.2"
+ },
+ {
+  "esquema": "ISO 45001:2018",
+  "referencia": "9.1.1",
+  "clausula": "8.8"
+ },
+ {
+  "esquema": "ISO 45001:2018",
+  "referencia": "8.1.4 (compras y contratistas)",
+  "clausula": "8.16"
+ },
+ {
+  "esquema": "ISO 45001:2018",
+  "referencia": "9.1.1",
+  "clausula": "9.1"
+ },
+ {
+  "esquema": "ISO 45001:2018",
+  "referencia": "9.1.2",
+  "clausula": "9.1.2"
+ },
+ {
+  "esquema": "ISO 45001:2018",
+  "referencia": "9.2",
+  "clausula": "9.2"
+ },
+ {
+  "esquema": "ISO 45001:2018",
+  "referencia": "9.3",
+  "clausula": "9.3"
+ },
+ {
+  "esquema": "ISO 45001:2018",
+  "referencia": "10.2",
+  "clausula": "10.1"
+ },
+ {
+  "esquema": "ISO 45001:2018",
+  "referencia": "10.3",
+  "clausula": "10.2"
+ },
+ {
+  "esquema": "ISO 45001:2018",
+  "referencia": "10.3",
+  "clausula": "10.3"
+ },
+ {
+  "esquema": "ISO 45001:2018",
+  "referencia": "6.1.2",
+  "clausula": "10.4"
+ }
+]

@@ -30,6 +30,9 @@ type RiesgoJ = { n: number; tipo: string; fuente: string; dueno: string; descrip
 type ObjJ = { codigo: string; sistema: string; objetivo: string; indicador: string; unidad: string; meta: string; responsable: string; plazo: string; plan: string };
 type KpiJ = { procedimiento: string; indicador: string; formula: string; meta: string; frecuencia: string };
 type HallJ = { n: string; area: string; clausula: string; clasificacion: string; descripcion: string; causa: string; accion: string; responsable: string; folioNC: string | null };
+type ReqJ = { tipo: string; sistema: string; requisito: string; fuente: string; apartado: string; cumplimiento: string; evidencia: string | null; area: string; dueno: string; vigor: string | null; confirmacion: string };
+type ComJ = { procedimiento: string; titulo: string; area: string; entrega: string; recibe: string; plazo: string };
+type EsqJ = { esquema: string; referencia: string; clausula: string };
 type AudJ = { codigo: string; fecha: string; alcance: string; lider: string; resumen: string; hallazgos: HallJ[] };
 
 // Sigla usada en los códigos (MFG, SD, RD) ↔ sigla corta usada en textos (Mfg, S&D, R&D)
@@ -245,6 +248,58 @@ async function main() {
       });
     }
   }
+  // 8. Requisitos legales, de esquema y de cliente (PR-IMS-02-F01)
+  console.log("Requisitos legales, de esquema y de cliente...");
+  const tipoReq = (t: string) => (t === "Legal" ? "LEGAL" : t === "Esquema" || t === "Esquema GFSI" ? "ESQUEMA" : t === "Cliente" || t === "Tiendas 3B" ? "CLIENTE" : "OTRO");
+  let nr = 0;
+  for (const r of read<ReqJ[]>("requisitos.json")) {
+    const existente = await prisma.requisito.findFirst({ where: { requisito: r.requisito, deletedAt: null } });
+    if (existente) continue;
+    const sigla = TEXTO_SIGLA[r.area] ?? r.area;
+    await prisma.requisito.create({
+      data: {
+        tipo: tipoReq(r.tipo), sistema: r.sistema, requisito: r.requisito, fuente: r.fuente, apartado: r.apartado,
+        comoSeCumple: r.cumplimiento, documentos: r.evidencia ?? undefined,
+        areaId: areaId[sigla] ?? null, responsableId: userId[TEXTO_SIGLA[r.dueno] ?? r.dueno] ?? null,
+        fechaVigor: r.vigor ? new Date(r.vigor) : null, vigenciaConfirmada: r.confirmacion,
+        estado: "POR_EVALUAR", proximaEvaluacion: new Date("2026-12-15"),
+      },
+    });
+    nr++;
+  }
+  console.log(`  ${nr} requisitos`);
+
+  // 9. Matriz de comunicación entre gerencias (PR-IMS-04-F02)
+  console.log("Matriz de comunicación...");
+  const areaPorTexto = (txt: string): string | null => {
+    for (const [sig, nombre] of Object.entries(SIGLA_TEXTO)) {
+      if (txt.includes(`(${sig})`) || txt.includes(`(${nombre})`) || txt === sig || txt === nombre) return areaId[sig] ?? null;
+    }
+    for (const a of areas) if (txt.includes(a.nombre)) return areaId[a.sigla];
+    return null;
+  };
+  let nc = 0;
+  for (const c of read<ComJ[]>("comunicaciones.json")) {
+    const duena = areaId[areaDeCodigo(c.procedimiento)];
+    if (!duena) continue;
+    const existente = await prisma.comunicacionInterfaz.findFirst({ where: { documentoCodigo: c.procedimiento, contraparteTexto: c.area, entrega: c.entrega ?? undefined, deletedAt: null } });
+    if (existente) continue;
+    await prisma.comunicacionInterfaz.create({
+      data: { documentoCodigo: c.procedimiento, documentoTitulo: c.titulo, areaDuenaId: duena, areaContraparteId: areaPorTexto(c.area), contraparteTexto: c.area, entrega: c.entrega, recibe: c.recibe, plazo: c.plazo },
+    });
+    nc++;
+  }
+  console.log(`  ${nc} interfaces`);
+
+  // 10. Referencias de esquemas ↔ cláusulas (paquete por esquema PR-IMS-08-A02)
+  console.log("Referencias de esquemas...");
+  let ne = 0;
+  for (const e of read<EsqJ[]>("esquemas.json")) {
+    await prisma.esquemaReferencia.upsert({ where: { esquema_referencia_clausula: { esquema: e.esquema, referencia: e.referencia, clausula: e.clausula } }, update: {}, create: e });
+    ne++;
+  }
+  console.log(`  ${ne} referencias`);
+
   console.log("Listo. Usuarios por gerencia: gerente.<sigla>@laquinta.local / LaQuinta2026! (cambiar en producción).");
 }
 

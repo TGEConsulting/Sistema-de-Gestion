@@ -15,6 +15,8 @@ const MODULOS: { valor: ModuloSistema; etiqueta: string }[] = [
   { valor: "PROVEEDORES", etiqueta: "Proveedores" },
   { valor: "COMUNICACIONES", etiqueta: "Tareas y Alertas" },
   { valor: "GESTION_CAMBIOS", etiqueta: "Gestión de Cambios" },
+  { valor: "REQUISITOS", etiqueta: "Requisitos legales y de cliente" },
+  { valor: "MATRIZ_COMUNICACION", etiqueta: "Matriz de comunicación" },
 ];
 
 const NIVELES: { valor: NivelPermiso; etiqueta: string }[] = [

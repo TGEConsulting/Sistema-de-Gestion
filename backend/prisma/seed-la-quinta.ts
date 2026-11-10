@@ -18,6 +18,12 @@ import path from "node:path";
 const prisma = new PrismaClient();
 const DATA = path.join(__dirname, "data", "la-quinta");
 const read = <T>(f: string): T => JSON.parse(fs.readFileSync(path.join(DATA, f), "utf-8")) as T;
+/** Fecha ISO válida → Date; vacío, "SD" (sin dato) o texto no parseable → null. */
+const fechaValida = (v: string | null | undefined): Date | null => {
+  if (!v) return null;
+  const d = new Date(v);
+  return Number.isNaN(d.getTime()) ? null : d;
+};
 
 type AreaJ = { sigla: string; nombre: string; descripcion: string };
 type DocJ = {
@@ -261,7 +267,7 @@ async function main() {
         tipo: tipoReq(r.tipo), sistema: r.sistema, requisito: r.requisito, fuente: r.fuente, apartado: r.apartado,
         comoSeCumple: r.cumplimiento, documentos: r.evidencia ?? undefined,
         areaId: areaId[sigla] ?? null, responsableId: userId[TEXTO_SIGLA[r.dueno] ?? r.dueno] ?? null,
-        fechaVigor: r.vigor ? new Date(r.vigor) : null, vigenciaConfirmada: r.confirmacion,
+        fechaVigor: fechaValida(r.vigor), vigenciaConfirmada: r.confirmacion,
         estado: "POR_EVALUAR", proximaEvaluacion: new Date("2026-12-15"),
       },
     });

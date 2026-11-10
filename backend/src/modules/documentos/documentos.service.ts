@@ -7,6 +7,7 @@ import type {
   CrearVersionInput,
   ListarDocumentosQuery,
 } from "./documentos.validators";
+import { clausulasDe, cubreClausula } from "./documentos.utils";
 
 const DETALLE_INCLUDE = {
   tipoDocumento: true,
@@ -29,6 +30,8 @@ function construirWhereDocumentos(filtros: Omit<ListarDocumentosQuery, "page" | 
     ...(filtros.areaId ? { areaId: filtros.areaId } : {}),
     ...(filtros.estado ? { estado: filtros.estado } : {}),
     ...(filtros.responsableId ? { responsableId: filtros.responsableId } : {}),
+    ...(filtros.documentoPadreId ? { documentoPadreId: filtros.documentoPadreId } : {}),
+    ...(filtros.nivel ? { nivel: filtros.nivel } : {}),
     ...(filtros.q
       ? {
           OR: [
@@ -97,6 +100,15 @@ export async function crearDocumento(input: CrearDocumentoInput, usuarioId: stri
         areaId: input.areaId,
         responsableId: input.responsableId,
         proximaRevision: input.proximaRevision,
+        documentoPadreId: input.documentoPadreId,
+        nivel: input.nivel,
+        revision: input.revision ?? "00",
+        clausulas: input.clausulas,
+        evidencias: input.evidencias,
+        participa: input.participa,
+        autoriza: input.autoriza,
+        carpeta: input.carpeta,
+        critico: input.critico ?? false,
         estado: "BORRADOR",
       },
     });
@@ -210,5 +222,88 @@ export async function registrarEvidenciaLectura(
 
   return prisma.evidenciaLectura.create({
     data: { documentoId, versionDocumentoId: versionId, usuarioId, medio },
+  });
+}
+
+// ----------------------------------------------------------------------------
+// Lista Maestra (PR-IMS-01-F01) y paquete por esquema (PR-IMS-08-A02)
+// ----------------------------------------------------------------------------
+
+const ESTADO_LM: Record<string, string> = {
+  BORRADOR: "Por elaborar",
+  EN_REVISION: "En revisión",
+  APROBADO: "Emitido",
+  OBSOLETO: "Obsoleto",
+};
+
+/** Todos los documentos vivos con los metadatos de la Lista Maestra, ordenados por código. */
+export async function listaMaestra() {
+  const docs = await prisma.documento.findMany({
+    where: { deletedAt: null },
+    include: {
+      tipoDocumento: true,
+      area: true,
+      responsable: { select: { nombre: true } },
+      documentoPadre: { select: { codigo: true } },
+      versionVigente: { select: { numeroVersion: true, fechaAprobacion: true } },
+    },
+    orderBy: { codigo: "asc" },
+  });
+  return docs.map((d) => ({
+    codigo: d.codigo,
+    titulo: d.titulo,
+    tipo: d.tipoDocumento.nombre,
+    nivel: d.nivel,
+    padre: d.documentoPadre?.codigo ?? null,
+    area: d.area.nombre,
+    responsable: d.responsable.nombre,
+    participa: d.participa,
+    autoriza: d.autoriza,
+    clausulas: d.clausulas,
+    evidencias: d.evidencias,
+    critico: d.critico,
+    carpeta: d.carpeta,
+    revision: d.revision,
+    estado: ESTADO_LM[d.estado] ?? d.estado,
+    fechaEmision: d.versionVigente?.fechaAprobacion ?? null,
+    proximaRevision: d.proximaRevision,
+  }));
+}
+
+
+export async function listarEsquemas() {
+  const filas = await prisma.esquemaReferencia.groupBy({ by: ["esquema"], _count: { _all: true }, orderBy: { esquema: "asc" } });
+  return filas.map((f) => ({ esquema: f.esquema, referencias: f._count._all }));
+}
+
+/** Paquete de evidencias por esquema: para cada requisito del esquema, los documentos
+ * (padres e hijos) cuya columna de cláusulas lo cubre, con su estado y carpeta. */
+export async function paquetePorEsquema(esquema: string) {
+  const [referencias, docs] = await Promise.all([
+    prisma.esquemaReferencia.findMany({ where: { esquema }, orderBy: { id: "asc" } }),
+    prisma.documento.findMany({
+      where: { deletedAt: null },
+      select: { codigo: true, titulo: true, clausulas: true, nivel: true, estado: true, carpeta: true, documentoPadreId: true, id: true },
+      orderBy: { codigo: "asc" },
+    }),
+  ]);
+  if (referencias.length === 0) throw AppError.notFound("Esquema sin referencias cargadas");
+
+  const porId = new Map(docs.map((d) => [d.id, d]));
+  return referencias.map((ref) => {
+    const padres = docs.filter((d) => !d.documentoPadreId && clausulasDe(d.clausulas).some((c) => cubreClausula(c, ref.clausula)));
+    const padresIds = new Set(padres.map((p) => p.id));
+    const hijos = docs.filter((d) => d.documentoPadreId && padresIds.has(d.documentoPadreId));
+    const todos = [...padres, ...hijos];
+    const listo = todos.length > 0 && todos.every((d) => d.estado === "EN_REVISION" || d.estado === "APROBADO");
+    return {
+      esquema,
+      referencia: ref.referencia,
+      clausula: ref.clausula,
+      documentos: padres.map((d) => ({ codigo: d.codigo, titulo: d.titulo, estado: d.estado, carpeta: d.carpeta })),
+      registros: hijos.map((d) => ({ codigo: d.codigo, titulo: d.titulo, estado: d.estado, carpeta: porId.get(d.id)?.carpeta ?? null })),
+      carpetas: [...new Set(todos.map((d) => d.carpeta).filter(Boolean))],
+      estado: todos.length === 0 ? "SIN_DOCUMENTO" : listo ? "LISTO" : "PENDIENTE",
+    };
   });
 }

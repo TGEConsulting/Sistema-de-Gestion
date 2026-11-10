@@ -6,6 +6,7 @@ import {
   esDocumentoPorVencer,
   esIndicadorSinCaptura,
   esNCSinAtender,
+  esRequisitoPorEvaluar,
 } from "./alertas.utils";
 
 interface AlertaParams {
@@ -194,6 +195,22 @@ async function generarAlertasCambiosPorVencer(hoy: Date) {
   }
 }
 
+async function generarAlertasRequisitos(hoy: Date) {
+  const requisitos = await prisma.requisito.findMany({ where: { deletedAt: null, responsableId: { not: null } } });
+  for (const r of requisitos) {
+    if (!esRequisitoPorEvaluar(r.estado, r.proximaEvaluacion, r.fechaVigor, hoy)) continue;
+    await emitirAlerta({
+      usuarioId: r.responsableId!,
+      tipo: "REQUISITO_POR_EVALUAR",
+      titulo: "Requisito por evaluar",
+      mensaje: `Evaluar el cumplimiento de "${r.requisito.slice(0, 120)}"${r.fechaVigor ? ` (en vigor desde ${r.fechaVigor.toLocaleDateString("es-MX")})` : ""}.`,
+      entidadTipo: "Requisito",
+      entidadId: r.id,
+      fechaVencimiento: r.proximaEvaluacion ?? r.fechaVigor ?? undefined,
+    });
+  }
+}
+
 /** Punto de entrada único, pensado para invocarse desde un cron diario. */
 export async function generarAlertas(hoy: Date = new Date()) {
   await Promise.all([
@@ -203,5 +220,6 @@ export async function generarAlertas(hoy: Date = new Date()) {
     generarAlertasAuditorias(hoy),
     generarAlertasAccionesVencidas(hoy),
     generarAlertasCambiosPorVencer(hoy),
+    generarAlertasRequisitos(hoy),
   ]);
 }

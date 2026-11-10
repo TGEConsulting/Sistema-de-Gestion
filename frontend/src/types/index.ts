@@ -10,7 +10,9 @@ export type ModuloSistema =
   | "PERSONAS"
   | "PROVEEDORES"
   | "COMUNICACIONES"
-  | "GESTION_CAMBIOS";
+  | "GESTION_CAMBIOS"
+  | "REQUISITOS"
+  | "MATRIZ_COMUNICACION";
 
 export type NivelPermiso = "NINGUNO" | "VER" | "EDITAR" | "APROBAR";
 
@@ -419,4 +421,79 @@ export interface GestionCambio {
   fechaComunicacion: string | null;
   fechaImplementacion: string | null;
   evidenciaImplementacion: string | null;
+}
+
+// --- Requisitos legales, de esquema y de cliente (PR-IMS-02-F01) ---
+export type TipoRequisito = "LEGAL" | "ESQUEMA" | "CLIENTE" | "OTRO";
+export type EstadoCumplimientoRequisito = "POR_EVALUAR" | "CUMPLE" | "PARCIAL" | "NO_CUMPLE" | "NO_APLICA";
+
+export interface Requisito {
+  id: string;
+  tipo: TipoRequisito;
+  sistema: string | null;
+  requisito: string;
+  fuente: string | null;
+  apartado: string | null;
+  comoSeCumple: string | null;
+  documentos: string | null;
+  areaId: string | null;
+  area?: RefNombre | null;
+  responsableId: string | null;
+  responsable?: RefNombre | null;
+  fechaVigor: string | null;
+  vigenciaConfirmada: string | null;
+  estado: EstadoCumplimientoRequisito;
+  evidencia: string | null;
+  proximaEvaluacion: string | null;
+}
+
+export interface ResumenRequisitos {
+  porEstado: Partial<Record<EstadoCumplimientoRequisito, number>>;
+  porTipo: Partial<Record<TipoRequisito, number>>;
+}
+
+// --- Matriz de comunicación entre gerencias (PR-IMS-04-F02) ---
+export type EstadoInterfaz = "PROPUESTA" | "ACEPTADA" | "CON_AJUSTE" | "RECHAZADA";
+
+export interface ComunicacionInterfaz {
+  id: string;
+  documentoCodigo: string;
+  documentoTitulo: string | null;
+  areaDuenaId: string;
+  areaDuena?: RefNombre;
+  areaContraparteId: string | null;
+  areaContraparte?: RefNombre | null;
+  contraparteTexto: string;
+  entrega: string | null;
+  recibe: string | null;
+  plazo: string | null;
+  estado: EstadoInterfaz;
+  observacion: string | null;
+}
+
+export interface ResumenInterfazArea {
+  areaId: string;
+  area: string;
+  total: number;
+  comoDuena: number;
+  comoContraparte: number;
+  aceptadas: number;
+  pendientes: number;
+  conAjuste: number;
+}
+
+// --- Paquete por esquema (PR-IMS-08-A02) ---
+export interface EsquemaDisponible {
+  esquema: string;
+  referencias: number;
+}
+
+export interface FilaPaqueteEsquema {
+  esquema: string;
+  referencia: string;
+  clausula: string;
+  documentos: { codigo: string; titulo: string; estado: string; carpeta: string | null }[];
+  registros: { codigo: string; titulo: string; estado: string; carpeta: string | null }[];
+  carpetas: string[];
+  estado: "LISTO" | "PENDIENTE" | "SIN_DOCUMENTO";
 }

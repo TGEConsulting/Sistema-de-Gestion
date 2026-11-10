@@ -33,7 +33,7 @@ async function main() {
 
   console.log("Sembrando matriz de permisos por módulo...");
   const MODULOS: Array<
-    "DOCUMENTOS" | "OBJETIVOS" | "RIESGOS" | "NO_CONFORMIDADES" | "AUDITORIAS" | "INDICADORES" | "PERSONAS" | "PROVEEDORES" | "COMUNICACIONES" | "GESTION_CAMBIOS"
+    "DOCUMENTOS" | "OBJETIVOS" | "RIESGOS" | "NO_CONFORMIDADES" | "AUDITORIAS" | "INDICADORES" | "PERSONAS" | "PROVEEDORES" | "COMUNICACIONES" | "GESTION_CAMBIOS" | "REQUISITOS" | "MATRIZ_COMUNICACION"
   > = [
     "DOCUMENTOS",
     "OBJETIVOS",
@@ -45,9 +45,11 @@ async function main() {
     "PROVEEDORES",
     "COMUNICACIONES",
     "GESTION_CAMBIOS",
+    "REQUISITOS",
+    "MATRIZ_COMUNICACION",
   ];
 
-  const APROBAR_AUDITOR = new Set(["AUDITORIAS", "NO_CONFORMIDADES", "DOCUMENTOS", "GESTION_CAMBIOS"]);
+  const APROBAR_AUDITOR = new Set(["AUDITORIAS", "NO_CONFORMIDADES", "DOCUMENTOS", "GESTION_CAMBIOS", "REQUISITOS", "MATRIZ_COMUNICACION"]);
   const EDITAR_AUDITOR = new Set(["PROVEEDORES"]);
   const EDITAR_RESPONSABLE = new Set([
     "DOCUMENTOS",
@@ -57,6 +59,8 @@ async function main() {
     "INDICADORES",
     "PROVEEDORES",
     "GESTION_CAMBIOS",
+    "REQUISITOS",
+    "MATRIZ_COMUNICACION",
   ]);
 
   const permisosDefault: Array<{ rolId: string; modulo: (typeof MODULOS)[number]; nivel: "VER" | "EDITAR" | "APROBAR" }> = [];

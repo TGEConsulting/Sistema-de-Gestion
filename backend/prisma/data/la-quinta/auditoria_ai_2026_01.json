@@ -1,0 +1,196 @@
+{
+ "codigo": "AI-2026-01",
+ "fecha": "2026-11-09",
+ "alcance": "Auditoría documental de escritorio de los 201 documentos de la Lista Maestra frente a la Norma Integrada v29 (MN-IMS-01)",
+ "lider": "TGE Consultoría — Edgar Torres Gutiérrez",
+ "resumen": "Sistema documental completo y coherente; 0 NC mayores, 4 NC menores, 10 observaciones, 3 oportunidades de mejora. El sistema no está aún implementado.",
+ "hallazgos": [
+  {
+   "n": "AI-2026-01-H01",
+   "area": "FS",
+   "clausula": "8.5.2 / PR-FS-01-F01 hoja 6 Peligros",
+   "clasificacion": "NC menor",
+   "descripcion": "Dos peligros físicos evaluados como significativos (recepción de leche: materias extrañas, riesgo 15; moldeo/prensado: fragmentos de plástico) quedan controlados solo por PPR sin justificación documentada; el árbol de decisión (hoja 7) no registra la justificación. La propia herramienta lo marca «Revisar: significativo sin PCC/PPRO».",
+   "causa": "El análisis se precargó a partir de la herramienta HACCP anterior (escala 3×3 convertida a 5×5) sin que el equipo HACCP haya sesionado para validar la categorización.",
+   "accion": "Sesión del equipo HACCP: reevaluar severidad/probabilidad o definir PPRO (filtro/tamiz en recepción; inspección de moldes) con criterio de acción, y documentar la justificación en la hoja 7.",
+   "responsable": "FS",
+   "folioNC": "NC-2026-D01"
+  },
+  {
+   "n": "AI-2026-01-H02",
+   "area": "IMS",
+   "clausula": "6.1.3 / PR-IMS-02-F01",
+   "clasificacion": "NC menor",
+   "descripcion": "53 requisitos legales precargados tienen «Vigencia de la norma confirmada = Por confirmar»; la evaluación de cumplimiento (9.1.2) no puede iniciarse sin confirmar la versión vigente en DOF.",
+   "causa": "La precarga se hizo desde fuentes secundarias el 06/11; la confirmación en DOF corresponde al dueño técnico (10 días hábiles según PR-IMS-02).",
+   "accion": "Confirmar en DOF / Catálogo Mexicano de Normas la versión vigente de cada NOM y registrar fecha y fuente; abrir acción para las que cambiaron.",
+   "responsable": "IMS",
+   "folioNC": "NC-2026-D02"
+  },
+  {
+   "n": "AI-2026-01-H03",
+   "area": "S&D",
+   "clausula": "4.2 / PR-IMS-02-F01 (requisitos de cliente)",
+   "clasificacion": "Observación",
+   "descripcion": "Los 31 requisitos de Tiendas 3B, Alpura, Yakult, Mondelēz y Schreiber están registrados con estado «Por evaluar»; faltan cláusulas del contrato Tiendas 3B y confirmar versiones vigentes (Spec Mondelēz v3.0 2022, Manual v4.0 2021, Alpura v02 2019).",
+   "causa": "Captura reciente (09/11) desde los archivos en Biblioteca SGI; S&D aún no valida con los clientes.",
+   "accion": "S&D solicita a cada cliente la versión vigente de especificación/manual, captura las cláusulas del contrato 3B y QC/FS evalúan el cumplimiento fila por fila.",
+   "responsable": "S&D",
+   "folioNC": null
+  },
+  {
+   "n": "AI-2026-01-H04",
+   "area": "IMS",
+   "clausula": "4.3 / PR-IMS-05-F03",
+   "clasificacion": "Observación",
+   "descripcion": "El alcance certificado lista productos y líneas «Por confirmar» (presentaciones, clientes, domicilio del sitio); la categoría C I y el alcance declarado deben confirmarse con la operación real antes de la solicitud al organismo.",
+   "causa": "Documento propuesto por TGE con información parcial de la planta.",
+   "accion": "Mfg y S&D completan productos, presentaciones y líneas; CEO aprueba el alcance; IMS verifica coincidencia con MN-IMS-01 y la solicitud de certificación.",
+   "responsable": "IMS",
+   "folioNC": null
+  },
+  {
+   "n": "AI-2026-01-H05",
+   "area": "CEO",
+   "clausula": "5.2 / PL-CEO-01, PL-CEO-05",
+   "clasificacion": "NC menor",
+   "descripcion": "La política integrada y la política de desperdicio están en Rev 00 «En revisión» sin firma del CEO ni evidencia de comunicación al personal (PR-HR-02-F03 hoja 2 vacía).",
+   "causa": "Decisión de firmar todo el paquete al final del plan (T24, 26-27/11).",
+   "accion": "Firmar ambas políticas y registrar la comunicación (tableros, inducción) antes de la auditoría documental de cierre.",
+   "responsable": "CEO",
+   "folioNC": "NC-2026-D03"
+  },
+  {
+   "n": "AI-2026-01-H06",
+   "area": "IMS",
+   "clausula": "6.2 / PR-IMS-07-F01",
+   "clasificacion": "Observación",
+   "descripcion": "Los 8 objetivos 2027 son propuesta sin aprobación del CEO; las metas de quejas, agua y merma dependen de la línea base 2026 aún no capturada.",
+   "causa": "Objetivos redactados el 06/11 antes del cierre de datos 2026.",
+   "accion": "Capturar línea base 2026 en diciembre; aprobar objetivos y metas en la reunión de liderazgo; registrar fecha de aprobación.",
+   "responsable": "IMS",
+   "folioNC": null
+  },
+  {
+   "n": "AI-2026-01-H07",
+   "area": "IMS",
+   "clausula": "9.2 / PR-IMS-08-F01",
+   "clasificacion": "NC menor",
+   "descripcion": "No existe ningún auditor interno calificado registrado (formación ISO 19011/FSSC, auditoría observada); el programa 2027 (PR-IMS-08-A01) asigna auditorías sin auditores disponibles.",
+   "causa": "El sistema se encuentra en fase documental; la formación de auditores no se ha programado.",
+   "accion": "HR programa curso de auditor interno ISO 19011 + FSSC 22000 v7 (T1 2027) y una auditoría observada; registrar en PR-IMS-08-F01 antes de la primera auditoría del programa.",
+   "responsable": "HR",
+   "folioNC": "NC-2026-D04"
+  },
+  {
+   "n": "AI-2026-01-H08",
+   "area": "IMS",
+   "clausula": "7.5 / PR-IMS-01-F01",
+   "clasificacion": "Observación",
+   "descripcion": "Dos documentos existentes siguen con código anterior y estado «Existente por actualizar»: PR-MFG-16 (TPM) y PL-SCM-03 (política de almacén); 13 requisitos de esquema que los citan aparecen «Pendiente» en el paquete por esquema.",
+   "causa": "Decisión de conservar el número; los archivos no han sido entregados para alinear encabezado y referencias.",
+   "accion": "Mfg y SCM entregan los archivos; IMS actualiza encabezado (Rev 00, siglas) y referencias, y los coloca en 05_Operacion_PPR / 07_Operacion.",
+   "responsable": "IMS",
+   "folioNC": null
+  },
+  {
+   "n": "AI-2026-01-H09",
+   "area": "Todas",
+   "clausula": "7.5 / Lista Maestra",
+   "clasificacion": "Observación",
+   "descripcion": "199 documentos Rev 00 en estado «En revisión»: ninguno cuenta aún con revisión de interfaces por la gerencia receptora ni firma de quien autoriza; la Lista Maestra no puede pasar a «Emitido».",
+   "causa": "Plan: revisión cruzada (T20) y firmas al final (T24).",
+   "accion": "Cada gerencia revisa sus interfaces en PR-IMS-04-F02 y los documentos donde es P; IMS consolida observaciones (T22); firmas 26-27/11.",
+   "responsable": "IMS",
+   "folioNC": null
+  },
+  {
+   "n": "AI-2026-01-H10",
+   "area": "Mfg",
+   "clausula": "8.1 / PL-MFG-01 a 04",
+   "clasificacion": "Observación",
+   "descripcion": "Los SOP operativos (recetas, instructivos de equipo, POES por equipo) que los PL de criterios mínimos exigen a las áreas no están emitidos ni listados en la Lista Maestra; sin ellos la certificación no demuestra implementación.",
+   "causa": "Alcance acordado: TGE elabora el sistema de gestión; los SOP los escriben las áreas.",
+   "accion": "Cada gerencia inventaría sus SOP necesarios y solicita códigos vía PR-IMS-01-F04; IMS incorpora a la Lista Maestra con fecha compromiso.",
+   "responsable": "Mfg",
+   "folioNC": null
+  },
+  {
+   "n": "AI-2026-01-H11",
+   "area": "PFM",
+   "clausula": "8.2.4 / PR-PFM-02-A01, PR-PFM-02-F02",
+   "clasificacion": "Observación",
+   "descripcion": "El inventario de equipos (10 equipos tipo) y la lista de lubricantes H1 están precargados sin códigos reales de equipo, marcas ni certificados NSF; las fechas de última ejecución están vacías, por lo que los vencimientos no calculan.",
+   "causa": "Precarga genérica de TGE; PFM no ha entregado inventario.",
+   "accion": "PFM captura inventario real, criticidad validada por FS, últimas ejecuciones y certificados NSF.",
+   "responsable": "PFM",
+   "folioNC": null
+  },
+  {
+   "n": "AI-2026-01-H12",
+   "area": "HR",
+   "clausula": "7.2 / PR-HR-02-F01, F04",
+   "clasificacion": "Observación",
+   "descripcion": "La matriz de competencias tiene 8 puestos tipo sin personas asignadas; el registro de alérgenos y cartas de control (F04) está vacío: no hay evidencia de capacitación vigente del personal.",
+   "causa": "Fase documental.",
+   "accion": "HR carga plantilla por persona y programa las sesiones de alérgenos y cartas de control (plan A01, T1 2027).",
+   "responsable": "HR",
+   "folioNC": null
+  },
+  {
+   "n": "AI-2026-01-H13",
+   "area": "FS",
+   "clausula": "8.9.5 / PR-FS-10-A01",
+   "clasificacion": "Observación",
+   "descripcion": "El plan de comunicación de recall tiene contactos «Por confirmar» (autoridad, clientes, laboratorio, transportistas) y no se ha realizado simulacro.",
+   "causa": "Datos de contacto no entregados.",
+   "accion": "FS y S&D completan directorio; simulacro de recall + trazabilidad en diciembre 2026 (PR-SCM-03-F01).",
+   "responsable": "FS",
+   "folioNC": null
+  },
+  {
+   "n": "AI-2026-01-H14",
+   "area": "EHS",
+   "clausula": "6.1.2 / PR-EHS-01-F01, PR-EHS-02-F01",
+   "clasificacion": "Observación",
+   "descripcion": "Las matrices de aspectos ambientales e IPERC están precargadas con áreas y actividades tipo; falta la participación registrada de los trabajadores (PR-HR-01-F02) y la validación en sitio.",
+   "causa": "Fase documental.",
+   "accion": "Taller IPERC y aspectos por área con trabajadores; registrar en PR-HR-01-F02.",
+   "responsable": "EHS",
+   "folioNC": null
+  },
+  {
+   "n": "AI-2026-01-H15",
+   "area": "IMS",
+   "clausula": "4.1 / PR-IMS-05-F01, PR-IMS-06-F01",
+   "clasificacion": "Oportunidad de mejora",
+   "descripcion": "FODA/PESTEL y la matriz de 14 riesgos son propuestas de TGE; conviene validarlas en taller con el CEO y las gerencias para que reflejen el juicio de la Dirección y queden en minuta.",
+   "causa": "—",
+   "accion": "Taller de contexto y riesgos (30/11 según minuta propuesta).",
+   "responsable": "IMS",
+   "folioNC": null
+  },
+  {
+   "n": "AI-2026-01-H16",
+   "area": "QC",
+   "clausula": "8.7 / PR-QC-05-A01, PR-PFM-02-F02",
+   "clasificacion": "Oportunidad de mejora",
+   "descripcion": "Los instrumentos de PCC (termómetro registrador de pasteurización) aparecen tanto en el programa de calibración de QC como en el de PFM; definir un solo inventario maestro de instrumentos para evitar doble registro.",
+   "causa": "—",
+   "accion": "QC mantiene el inventario maestro; PFM referencia.",
+   "responsable": "QC",
+   "folioNC": null
+  },
+  {
+   "n": "AI-2026-01-H17",
+   "area": "IMS",
+   "clausula": "7.4 / PR-IMS-04-F02",
+   "clasificacion": "Oportunidad de mejora",
+   "descripcion": "La matriz de comunicación (498 filas generadas desde interfaces) es exhaustiva pero extensa; preparar vistas filtradas por gerencia para la revisión cruzada.",
+   "causa": "—",
+   "accion": "IMS genera tabla dinámica por gerencia en la misma hoja.",
+   "responsable": "IMS",
+   "folioNC": null
+  }
+ ]
+}

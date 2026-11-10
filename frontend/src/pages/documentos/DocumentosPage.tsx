@@ -329,6 +329,13 @@ export function DocumentosPage() {
             Exportar a Excel
           </button>
           <button
+            onClick={() => descargarArchivo("/documentos/lista-maestra/export", {}, "PR-IMS-01-F01 Lista Maestra.xlsx")}
+            className="rounded-md border border-slate-200 px-3 py-1.5 text-sm text-slate-600 hover:bg-slate-50"
+            title="Lista Maestra con cláusulas, evidencias, gerencias L/P/A, carpeta y estado"
+          >
+            Lista Maestra
+          </button>
+          <button
             onClick={() => setMostrarForm(true)}
             className="rounded-md bg-brand-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-brand-700"
           >

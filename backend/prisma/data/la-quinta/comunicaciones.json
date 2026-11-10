@@ -1,0 +1,2106 @@
+[
+ {
+  "procedimiento": "PR-CEO-01",
+  "titulo": "Liderazgo, cultura de inocuidad y asignación de recursos",
+  "area": "Integrated Management System (IMS)",
+  "entrega": "Plan de cultura, registro de recursos, actas, informe de eficacia",
+  "recibe": "Decisiones y recursos aprobados",
+  "plazo": "Mensual; anual"
+ },
+ {
+  "procedimiento": "PR-CEO-01",
+  "titulo": "Liderazgo, cultura de inocuidad y asignación de recursos",
+  "area": "Human Resources (HR)",
+  "entrega": "Ejecución de campañas, capacitación, comunicación de la política, encuesta",
+  "recibe": "Plan de cultura aprobado",
+  "plazo": "Según plan"
+ },
+ {
+  "procedimiento": "PR-CEO-01",
+  "titulo": "Liderazgo, cultura de inocuidad y asignación de recursos",
+  "area": "Todos los gerentes",
+  "entrega": "Participación en reuniones de liderazgo; ejecución en sus áreas",
+  "recibe": "Acuerdos con responsable y fecha",
+  "plazo": "Mensual"
+ },
+ {
+  "procedimiento": "PR-CEO-01",
+  "titulo": "Liderazgo, cultura de inocuidad y asignación de recursos",
+  "area": "Management Systems (QMS)",
+  "entrega": "Indicadores de inocuidad, calidad, ambiente y SST para las reuniones",
+  "recibe": "Decisiones de la Dirección",
+  "plazo": "Mensual"
+ },
+ {
+  "procedimiento": "PR-PFM-01",
+  "titulo": "Diseño, construcción y mantenimiento de instalaciones y servicios",
+  "area": "Food Safety (FS)",
+  "entrega": "Validación de zonificación y diseño higiénico; verificación de PPR",
+  "recibe": "Planos y proyectos",
+  "plazo": "Antes de cada obra; anual"
+ },
+ {
+  "procedimiento": "PR-PFM-01",
+  "titulo": "Diseño, construcción y mantenimiento de instalaciones y servicios",
+  "area": "Quality Control (QC)",
+  "entrega": "Liberación higiénica tras obras y reparaciones; análisis de agua y aire",
+  "recibe": "Aviso de término de obra o reparación",
+  "plazo": "Antes de reanudar"
+ },
+ {
+  "procedimiento": "PR-PFM-01",
+  "titulo": "Diseño, construcción y mantenimiento de instalaciones y servicios",
+  "area": "Environment, Health, and Safety (EHS)",
+  "entrega": "Evaluación de riesgos de obra; control de contratistas; permisos",
+  "recibe": "Alcance de la obra",
+  "plazo": "Antes de iniciar"
+ },
+ {
+  "procedimiento": "PR-PFM-01",
+  "titulo": "Diseño, construcción y mantenimiento de instalaciones y servicios",
+  "area": "Manufacturing (Mfg)",
+  "entrega": "Programación de obras y reparaciones; protección del producto",
+  "recibe": "Plan de obra",
+  "plazo": "Según programa"
+ },
+ {
+  "procedimiento": "PR-PFM-02",
+  "titulo": "Mantenimiento preventivo y correctivo de equipos",
+  "area": "Manufacturing (Mfg)",
+  "entrega": "Reporte de fallas, mantenimiento autónomo (TPM), programación de paros",
+  "recibe": "Programa y equipos liberados",
+  "plazo": "Diario; programa mensual"
+ },
+ {
+  "procedimiento": "PR-PFM-02",
+  "titulo": "Mantenimiento preventivo y correctivo de equipos",
+  "area": "Quality Control (QC)",
+  "entrega": "Liberación higiénica; calibración de instrumentos",
+  "recibe": "Aviso de término de intervención",
+  "plazo": "Antes de reanudar"
+ },
+ {
+  "procedimiento": "PR-PFM-02",
+  "titulo": "Mantenimiento preventivo y correctivo de equipos",
+  "area": "Food Safety (FS)",
+  "entrega": "Validación de riesgo en equipos en contacto con producto; verificación de PPR 5",
+  "recibe": "Intervenciones de riesgo",
+  "plazo": "Antes de intervenir"
+ },
+ {
+  "procedimiento": "PR-PFM-02",
+  "titulo": "Mantenimiento preventivo y correctivo de equipos",
+  "area": "Supply Chain Management (SCM)",
+  "entrega": "Refacciones, lubricantes y materiales grado alimenticio; contratistas",
+  "recibe": "Especificaciones",
+  "plazo": "Antes de comprar"
+ },
+ {
+  "procedimiento": "PR-PFM-02",
+  "titulo": "Mantenimiento preventivo y correctivo de equipos",
+  "area": "Environment, Health, and Safety (EHS)",
+  "entrega": "Permisos de trabajo, LOTO, residuos de mantenimiento",
+  "recibe": "Intervenciones de alto riesgo",
+  "plazo": "Antes de cada trabajo"
+ },
+ {
+  "procedimiento": "PR-PFM-03",
+  "titulo": "Gestión de proyectos y de cambios en equipos e instalaciones",
+  "area": "Food Safety (FS) · QC",
+  "entrega": "Requisitos higiénicos, calificación, validación, actualización HACCP",
+  "recibe": "Especificación y protocolos",
+  "plazo": "Antes de comprar; antes de producir"
+ },
+ {
+  "procedimiento": "PR-PFM-03",
+  "titulo": "Gestión de proyectos y de cambios en equipos e instalaciones",
+  "area": "Environment, Health, and Safety (EHS)",
+  "entrega": "Riesgos de SST y ambiente del equipo y de la instalación; permisos",
+  "recibe": "Especificación y plan",
+  "plazo": "Antes de comprar; antes de instalar"
+ },
+ {
+  "procedimiento": "PR-PFM-03",
+  "titulo": "Gestión de proyectos y de cambios en equipos e instalaciones",
+  "area": "Manufacturing (Mfg)",
+  "entrega": "Requisitos de usuario; participación en OQ/PQ; capacitación",
+  "recibe": "Plan y cronograma",
+  "plazo": "Según plan"
+ },
+ {
+  "procedimiento": "PR-PFM-03",
+  "titulo": "Gestión de proyectos y de cambios en equipos e instalaciones",
+  "area": "Supply Chain Management (SCM)",
+  "entrega": "Compra y documentación del proveedor",
+  "recibe": "Especificación aprobada",
+  "plazo": "Antes de comprar"
+ },
+ {
+  "procedimiento": "PR-PFM-03",
+  "titulo": "Gestión de proyectos y de cambios en equipos e instalaciones",
+  "area": "Integrated Management System (IMS) · CEO",
+  "entrega": "Gestión del cambio y autorización",
+  "recibe": "Solicitud y plan",
+  "plazo": "Antes de comprar"
+ },
+ {
+  "procedimiento": "PR-MFG-01",
+  "titulo": "Reacción ante tendencias y puntos fuera de control del proceso",
+  "area": "Quality Control (QC)",
+  "entrega": "Define cartas, límites, reglas; revisa capacidad; capacita",
+  "recibe": "Señales y reacciones registradas",
+  "plazo": "Semanal"
+ },
+ {
+  "procedimiento": "PR-MFG-01",
+  "titulo": "Reacción ante tendencias y puntos fuera de control del proceso",
+  "area": "Project & Facilities Management (PFM)",
+  "entrega": "Corrección de causas de equipo e instrumentos",
+  "recibe": "Señales persistentes",
+  "plazo": "Mismo turno"
+ },
+ {
+  "procedimiento": "PR-MFG-01",
+  "titulo": "Reacción ante tendencias y puntos fuera de control del proceso",
+  "area": "Food Safety (FS)",
+  "entrega": "Coherencia con PCC/PPRO",
+  "recibe": "Variables de inocuidad",
+  "plazo": "Al definir cartas"
+ },
+ {
+  "procedimiento": "PR-MFG-01",
+  "titulo": "Reacción ante tendencias y puntos fuera de control del proceso",
+  "area": "Human Resources (HR)",
+  "entrega": "Capacitación en cartas de control",
+  "recibe": "Contenidos de QC",
+  "plazo": "Inducción y anual"
+ },
+ {
+  "procedimiento": "PL-MFG-01",
+  "titulo": "Criterios mínimos de control operacional de producción",
+  "area": "Quality Control (QC)",
+  "entrega": "Validación de parámetros; revisión de BPR; liberación de lote y de línea",
+  "recibe": "SOP, BPR y listas",
+  "plazo": "Por lote y cambio"
+ },
+ {
+  "procedimiento": "PL-MFG-01",
+  "titulo": "Criterios mínimos de control operacional de producción",
+  "area": "Food Safety (FS)",
+  "entrega": "PCC/PPRO y límites en SOP; capacitación en HACCP",
+  "recibe": "SOP en borrador",
+  "plazo": "Antes de emitir"
+ },
+ {
+  "procedimiento": "PL-MFG-01",
+  "titulo": "Criterios mínimos de control operacional de producción",
+  "area": "Research and Development (R&D)",
+  "entrega": "Receta maestra",
+  "recibe": "Formato de receta",
+  "plazo": "Por producto y cambio"
+ },
+ {
+  "procedimiento": "PL-MFG-01",
+  "titulo": "Criterios mínimos de control operacional de producción",
+  "area": "Supply Chain Management (SCM)",
+  "entrega": "Materiales liberados; devolución de material gráfico",
+  "recibe": "Requisiciones y devoluciones",
+  "plazo": "Por lote"
+ },
+ {
+  "procedimiento": "PL-MFG-01",
+  "titulo": "Criterios mínimos de control operacional de producción",
+  "area": "Human Resources (HR)",
+  "entrega": "Capacitación en SOP",
+  "recibe": "Lista de operadores por línea",
+  "plazo": "Inducción y cambios"
+ },
+ {
+  "procedimiento": "PL-MFG-02",
+  "titulo": "Criterios mínimos de reproceso",
+  "area": "Quality Control (QC)",
+  "entrega": "Autorización y verificación de cada reproceso",
+  "recibe": "Matriz y registro",
+  "plazo": "Por lote"
+ },
+ {
+  "procedimiento": "PL-MFG-02",
+  "titulo": "Criterios mínimos de reproceso",
+  "area": "Food Safety (FS)",
+  "entrega": "Compatibilidad de alérgenos y riesgo; reprocesos fuera de matriz",
+  "recibe": "Solicitud",
+  "plazo": "Antes de reprocesar"
+ },
+ {
+  "procedimiento": "PL-MFG-02",
+  "titulo": "Criterios mínimos de reproceso",
+  "area": "Supply Chain Management (SCM)",
+  "entrega": "Trazabilidad del material reincorporado",
+  "recibe": "Lotes de origen",
+  "plazo": "Por lote"
+ },
+ {
+  "procedimiento": "PL-MFG-02",
+  "titulo": "Criterios mínimos de reproceso",
+  "area": "Environment, Health, and Safety (EHS)",
+  "entrega": "Indicador de reproceso y desperdicio",
+  "recibe": "Registro mensual",
+  "plazo": "Mensual"
+ },
+ {
+  "procedimiento": "PL-MFG-03",
+  "titulo": "Criterios mínimos de detección de cuerpos extraños y control de utensilios",
+  "area": "Food Safety (FS)",
+  "entrega": "Sensibilidad, evaluación de riesgos, validación",
+  "recibe": "Registros de verificación",
+  "plazo": "Mensual (verificación PR-FS-03)"
+ },
+ {
+  "procedimiento": "PL-MFG-03",
+  "titulo": "Criterios mínimos de detección de cuerpos extraños y control de utensilios",
+  "area": "Quality Control (QC)",
+  "entrega": "Revisión de registros y liberación; producto rechazado",
+  "recibe": "Registros por lote",
+  "plazo": "Por lote"
+ },
+ {
+  "procedimiento": "PL-MFG-03",
+  "titulo": "Criterios mínimos de detección de cuerpos extraños y control de utensilios",
+  "area": "Project & Facilities Management (PFM)",
+  "entrega": "Mantenimiento y calibración de detectores; control de herramientas",
+  "recibe": "Fallas",
+  "plazo": "Según programa"
+ },
+ {
+  "procedimiento": "PL-MFG-03",
+  "titulo": "Criterios mínimos de detección de cuerpos extraños y control de utensilios",
+  "area": "Human Resources (HR)",
+  "entrega": "Capacitación",
+  "recibe": "Contenidos",
+  "plazo": "Inducción y anual"
+ },
+ {
+  "procedimiento": "PL-MFG-04",
+  "titulo": "Criterios mínimos de gestión de excedentes, subproductos y merma",
+  "area": "Quality Control (QC)",
+  "entrega": "Aptitud del subproducto y excedente",
+  "recibe": "Criterios",
+  "plazo": "Por lote"
+ },
+ {
+  "procedimiento": "PL-MFG-04",
+  "titulo": "Criterios mínimos de gestión de excedentes, subproductos y merma",
+  "area": "Supply Chain Management (SCM)",
+  "entrega": "Destino y entrega con acuerdo",
+  "recibe": "Volúmenes y aptitud",
+  "plazo": "Diario / semanal"
+ },
+ {
+  "procedimiento": "PL-MFG-04",
+  "titulo": "Criterios mínimos de gestión de excedentes, subproductos y merma",
+  "area": "Environment, Health, and Safety (EHS)",
+  "entrega": "Indicadores de merma y desperdicio; objetivos",
+  "recibe": "Registros mensuales",
+  "plazo": "Mensual"
+ },
+ {
+  "procedimiento": "PL-MFG-04",
+  "titulo": "Criterios mínimos de gestión de excedentes, subproductos y merma",
+  "area": "Food Safety (FS)",
+  "entrega": "PPR aplicables a subproductos; evaluación de riesgos (PPR 11)",
+  "recibe": "SOP",
+  "plazo": "Anual"
+ },
+ {
+  "procedimiento": "PR-HR-01",
+  "titulo": "Consulta y participación de los trabajadores",
+  "area": "Environment, Health, and Safety (EHS)",
+  "entrega": "Comisión, IPERC, investigaciones, programas de SST",
+  "recibe": "Registros de participación",
+  "plazo": "Mensual"
+ },
+ {
+  "procedimiento": "PR-HR-01",
+  "titulo": "Consulta y participación de los trabajadores",
+  "area": "Food Safety (FS)",
+  "entrega": "Participación en inocuidad (reportes, equipo)",
+  "recibe": "Mecanismos",
+  "plazo": "Continuo"
+ },
+ {
+  "procedimiento": "PR-HR-01",
+  "titulo": "Consulta y participación de los trabajadores",
+  "area": "Executive Management (CEO)",
+  "entrega": "Respuesta a propuestas; eliminación de obstáculos; recursos",
+  "recibe": "Propuestas y obstáculos",
+  "plazo": "10 días hábiles"
+ },
+ {
+  "procedimiento": "PR-HR-01",
+  "titulo": "Consulta y participación de los trabajadores",
+  "area": "Gerentes y supervisores",
+  "entrega": "Consulta en decisiones de su área; facilitación",
+  "recibe": "Mecanismos y plazos",
+  "plazo": "Continuo"
+ },
+ {
+  "procedimiento": "PR-HR-01",
+  "titulo": "Consulta y participación de los trabajadores",
+  "area": "Integrated Management System (IMS)",
+  "entrega": "Resultados para la revisión por la dirección",
+  "recibe": "Informe",
+  "plazo": "Anual"
+ },
+ {
+  "procedimiento": "PR-HR-02",
+  "titulo": "Competencia, formación y toma de conciencia",
+  "area": "Todos los gerentes",
+  "entrega": "Definición de competencias, inducción al puesto, verificación en puesto, instructores técnicos",
+  "recibe": "Matriz, plan, formatos",
+  "plazo": "Anual; por contratación"
+ },
+ {
+  "procedimiento": "PR-HR-02",
+  "titulo": "Competencia, formación y toma de conciencia",
+  "area": "Food Safety (FS) · QC · EHS",
+  "entrega": "Contenidos de HACCP, PPR, alérgenos, cartas de control, SST, ambiente",
+  "recibe": "Calendario",
+  "plazo": "Según plan"
+ },
+ {
+  "procedimiento": "PR-HR-02",
+  "titulo": "Competencia, formación y toma de conciencia",
+  "area": "Integrated Management System (IMS)",
+  "entrega": "Política, sistema, cambios que requieren capacitación",
+  "recibe": "Registros",
+  "plazo": "Por cambio"
+ },
+ {
+  "procedimiento": "PR-HR-02",
+  "titulo": "Competencia, formación y toma de conciencia",
+  "area": "Executive Management (CEO)",
+  "entrega": "Aprobación de recursos del plan",
+  "recibe": "Plan anual",
+  "plazo": "Anual"
+ },
+ {
+  "procedimiento": "PR-SCM-01",
+  "titulo": "Aprobación y evaluación de proveedores y contratistas",
+  "area": "Quality Control (QC) · Food Safety (FS)",
+  "entrega": "Riesgo del material, auditorías, verificación analítica, CoA",
+  "recibe": "Lista de proveedores y estatus",
+  "plazo": "Por aprobación; anual"
+ },
+ {
+  "procedimiento": "PR-SCM-01",
+  "titulo": "Aprobación y evaluación de proveedores y contratistas",
+  "area": "Environment, Health, and Safety (EHS)",
+  "entrega": "Requisitos ambientales y de SST a proveedores y contratistas; evaluación de contratistas",
+  "recibe": "Contratos y órdenes",
+  "plazo": "Antes de contratar"
+ },
+ {
+  "procedimiento": "PR-SCM-01",
+  "titulo": "Aprobación y evaluación de proveedores y contratistas",
+  "area": "Sales and Distribution (S&D)",
+  "entrega": "Transportistas de producto terminado",
+  "recibe": "Evaluación",
+  "plazo": "Anual"
+ },
+ {
+  "procedimiento": "PR-SCM-01",
+  "titulo": "Aprobación y evaluación de proveedores y contratistas",
+  "area": "Management Systems (QMS)",
+  "entrega": "Autorización de estatus",
+  "recibe": "Calificación y evidencia",
+  "plazo": "Por aprobación y reevaluación"
+ },
+ {
+  "procedimiento": "PR-SCM-01",
+  "titulo": "Aprobación y evaluación de proveedores y contratistas",
+  "area": "Integrated Management System (IMS)",
+  "entrega": "Cambios de proveedor (gestión del cambio); requisitos legales",
+  "recibe": "Solicitudes",
+  "plazo": "Por cambio"
+ },
+ {
+  "procedimiento": "PR-SCM-02",
+  "titulo": "Compras en situación de emergencia",
+  "area": "Quality Control (QC) · FS",
+  "entrega": "Evaluación de riesgo, inspección reforzada, liberación",
+  "recibe": "Solicitud y documentos del proveedor",
+  "plazo": "Antes de comprar; en recepción"
+ },
+ {
+  "procedimiento": "PR-SCM-02",
+  "titulo": "Compras en situación de emergencia",
+  "area": "Management Systems (QMS)",
+  "entrega": "Autorización",
+  "recibe": "Justificación",
+  "plazo": "Antes de la orden"
+ },
+ {
+  "procedimiento": "PR-SCM-02",
+  "titulo": "Compras en situación de emergencia",
+  "area": "Manufacturing (Mfg)",
+  "entrega": "Uso controlado y trazabilidad",
+  "recibe": "Material liberado",
+  "plazo": "Por lote"
+ },
+ {
+  "procedimiento": "PR-SCM-02",
+  "titulo": "Compras en situación de emergencia",
+  "area": "Executive Management (CEO)",
+  "entrega": "Información",
+  "recibe": "Resumen",
+  "plazo": "Reunión de liderazgo"
+ },
+ {
+  "procedimiento": "PR-SCM-03",
+  "titulo": "Trazabilidad un paso atrás y un paso adelante",
+  "area": "Manufacturing (Mfg)",
+  "entrega": "Registro de lotes consumidos y producidos",
+  "recibe": "Lotes de materiales liberados",
+  "plazo": "Por lote"
+ },
+ {
+  "procedimiento": "PR-SCM-03",
+  "titulo": "Trazabilidad un paso atrás y un paso adelante",
+  "area": "Sales and Distribution (S&D)",
+  "entrega": "Trazabilidad hacia adelante y devoluciones",
+  "recibe": "Lotes y clientes",
+  "plazo": "Por entrega"
+ },
+ {
+  "procedimiento": "PR-SCM-03",
+  "titulo": "Trazabilidad un paso atrás y un paso adelante",
+  "area": "Food Safety (FS)",
+  "entrega": "Simulacros de recall; uso en incidentes",
+  "recibe": "Datos de trazabilidad en ≤ 4 h",
+  "plazo": "Semestral; por evento"
+ },
+ {
+  "procedimiento": "PR-SCM-03",
+  "titulo": "Trazabilidad un paso atrás y un paso adelante",
+  "area": "Quality Control (QC)",
+  "entrega": "Verificación de registros; estado de lotes",
+  "recibe": "Sistema",
+  "plazo": "Por lote"
+ },
+ {
+  "procedimiento": "PR-SCM-03",
+  "titulo": "Trazabilidad un paso atrás y un paso adelante",
+  "area": "Project & Facilities Management (PFM)",
+  "entrega": "Respaldo y disponibilidad del sistema",
+  "recibe": "Requisitos",
+  "plazo": "Diario"
+ },
+ {
+  "procedimiento": "PL-SCM-01",
+  "titulo": "Criterios mínimos de recepción e inspección de materiales",
+  "area": "Quality Control (QC)",
+  "entrega": "Inspección, pruebas y liberación",
+  "recibe": "Materiales recibidos con documentos",
+  "plazo": "Por recepción"
+ },
+ {
+  "procedimiento": "PL-SCM-01",
+  "titulo": "Criterios mínimos de recepción e inspección de materiales",
+  "area": "Food Safety (FS)",
+  "entrega": "Criterios de inocuidad y fraude en recepción",
+  "recibe": "SOP",
+  "plazo": "Anual"
+ },
+ {
+  "procedimiento": "PL-SCM-01",
+  "titulo": "Criterios mínimos de recepción e inspección de materiales",
+  "area": "Manufacturing (Mfg)",
+  "entrega": "Uso solo de material liberado",
+  "recibe": "Estado en sistema",
+  "plazo": "Por lote"
+ },
+ {
+  "procedimiento": "PL-SCM-01",
+  "titulo": "Criterios mínimos de recepción e inspección de materiales",
+  "area": "Supply Chain Management (SCM) — compras",
+  "entrega": "Estatus del proveedor; no conformidades al proveedor",
+  "recibe": "Registros de recepción",
+  "plazo": "Por evento"
+ },
+ {
+  "procedimiento": "PR-SD-01",
+  "titulo": "Requisitos del cliente y comunicación con el cliente",
+  "area": "Quality Control (QC) · FS",
+  "entrega": "Capacidad técnica, especificación, requisitos de inocuidad del cliente",
+  "recibe": "Requisitos recibidos",
+  "plazo": "Antes de aceptar"
+ },
+ {
+  "procedimiento": "PR-SD-01",
+  "titulo": "Requisitos del cliente y comunicación con el cliente",
+  "area": "Manufacturing (Mfg) · SCM",
+  "entrega": "Capacidad de producción, materiales y entrega",
+  "recibe": "Requisitos y volúmenes",
+  "plazo": "Antes de aceptar"
+ },
+ {
+  "procedimiento": "PR-SD-01",
+  "titulo": "Requisitos del cliente y comunicación con el cliente",
+  "area": "Integrated Management System (IMS)",
+  "entrega": "Registro en matriz de requisitos; gestión del cambio; auditorías",
+  "recibe": "Requisitos y cambios",
+  "plazo": "5 días hábiles"
+ },
+ {
+  "procedimiento": "PR-SD-01",
+  "titulo": "Requisitos del cliente y comunicación con el cliente",
+  "area": "Research and Development (R&D)",
+  "entrega": "Desarrollo o cambio de producto solicitado por el cliente",
+  "recibe": "Requisito del cliente",
+  "plazo": "Antes de aceptar"
+ },
+ {
+  "procedimiento": "PR-SD-02",
+  "titulo": "Actividades posteriores a la entrega",
+  "area": "Quality Control (QC)",
+  "entrega": "Disposición de devoluciones",
+  "recibe": "Devolución registrada y retenida",
+  "plazo": "Antes de cualquier uso"
+ },
+ {
+  "procedimiento": "PR-SD-02",
+  "titulo": "Actividades posteriores a la entrega",
+  "area": "Food Safety (FS)",
+  "entrega": "Riesgo de inocuidad; retiros",
+  "recibe": "Causas de devolución",
+  "plazo": "Por evento"
+ },
+ {
+  "procedimiento": "PR-SD-02",
+  "titulo": "Actividades posteriores a la entrega",
+  "area": "Supply Chain Management (SCM)",
+  "entrega": "Logística inversa",
+  "recibe": "Devoluciones programadas",
+  "plazo": "Por evento"
+ },
+ {
+  "procedimiento": "PR-SD-02",
+  "titulo": "Actividades posteriores a la entrega",
+  "area": "Environment, Health, and Safety (EHS)",
+  "entrega": "Destino de producto destruido o valorizado",
+  "recibe": "Cantidades",
+  "plazo": "Mensual"
+ },
+ {
+  "procedimiento": "PR-SD-03",
+  "titulo": "Medición de la satisfacción del cliente",
+  "area": "Quality Control (QC)",
+  "entrega": "Quejas, devoluciones, conformidad de lotes",
+  "recibe": "Indicadores definidos",
+  "plazo": "Mensual"
+ },
+ {
+  "procedimiento": "PR-SD-03",
+  "titulo": "Medición de la satisfacción del cliente",
+  "area": "Supply Chain Management (SCM) · logística",
+  "entrega": "Entregas a tiempo y completas",
+  "recibe": "Datos de embarques",
+  "plazo": "Mensual"
+ },
+ {
+  "procedimiento": "PR-SD-03",
+  "titulo": "Medición de la satisfacción del cliente",
+  "area": "Integrated Management System (IMS)",
+  "entrega": "Revisión por la dirección; mejora",
+  "recibe": "Informe semestral",
+  "plazo": "Semestral"
+ },
+ {
+  "procedimiento": "PR-SD-03",
+  "titulo": "Medición de la satisfacción del cliente",
+  "area": "Executive Management (CEO)",
+  "entrega": "Decisiones sobre clientes y recursos",
+  "recibe": "Informe",
+  "plazo": "Semestral"
+ },
+ {
+  "procedimiento": "PL-SD-01",
+  "titulo": "Criterios mínimos de almacenamiento, rotación y transporte de producto",
+  "area": "Quality Control (QC)",
+  "entrega": "Verificación de condiciones; evaluación ante desviaciones; liberación",
+  "recibe": "Registros",
+  "plazo": "Diario; por evento"
+ },
+ {
+  "procedimiento": "PL-SD-01",
+  "titulo": "Criterios mínimos de almacenamiento, rotación y transporte de producto",
+  "area": "Project & Facilities Management (PFM)",
+  "entrega": "Mantenimiento de cámaras, registradores y alarmas; calibración",
+  "recibe": "Desviaciones",
+  "plazo": "Inmediato"
+ },
+ {
+  "procedimiento": "PL-SD-01",
+  "titulo": "Criterios mínimos de almacenamiento, rotación y transporte de producto",
+  "area": "Supply Chain Management (SCM)",
+  "entrega": "Almacén de materiales; transportistas",
+  "recibe": "SOP coherentes",
+  "plazo": "Anual"
+ },
+ {
+  "procedimiento": "PL-SD-01",
+  "titulo": "Criterios mínimos de almacenamiento, rotación y transporte de producto",
+  "area": "Food Safety (FS)",
+  "entrega": "Criterios de inocuidad en almacén y transporte (PPR 13)",
+  "recibe": "SOP",
+  "plazo": "Anual"
+ },
+ {
+  "procedimiento": "PR-RD-01",
+  "titulo": "Desarrollo de nuevos productos y cambios de formulación",
+  "area": "Food Safety (FS)",
+  "entrega": "Análisis de riesgos desde diseño, HACCP, validación, aprobación de lanzamiento",
+  "recibe": "Formulación y proceso por etapa",
+  "plazo": "Gates 2, 4 y 5"
+ },
+ {
+  "procedimiento": "PR-RD-01",
+  "titulo": "Desarrollo de nuevos productos y cambios de formulación",
+  "area": "Quality Control (QC)",
+  "entrega": "Especificación, vida de anaquel, sensorial, revisión legal y etiquetado",
+  "recibe": "Formulación, muestras, artes",
+  "plazo": "Gates 2 a 5"
+ },
+ {
+  "procedimiento": "PR-RD-01",
+  "titulo": "Desarrollo de nuevos productos y cambios de formulación",
+  "area": "Manufacturing (Mfg) · PFM",
+  "entrega": "Escalamiento, validación de proceso, SOP, equipos",
+  "recibe": "Protocolo",
+  "plazo": "Gate 4"
+ },
+ {
+  "procedimiento": "PR-RD-01",
+  "titulo": "Desarrollo de nuevos productos y cambios de formulación",
+  "area": "Supply Chain Management (SCM)",
+  "entrega": "Materiales, proveedores, fraude",
+  "recibe": "Lista de ingredientes",
+  "plazo": "Gate 2"
+ },
+ {
+  "procedimiento": "PR-RD-01",
+  "titulo": "Desarrollo de nuevos productos y cambios de formulación",
+  "area": "Sales and Distribution (S&D)",
+  "entrega": "Requisitos del cliente, aprobación del cliente",
+  "recibe": "Brief y muestras",
+  "plazo": "Gates 1 y 5"
+ },
+ {
+  "procedimiento": "PR-RD-01",
+  "titulo": "Desarrollo de nuevos productos y cambios de formulación",
+  "area": "Executive Management (CEO)",
+  "entrega": "Aprobación de gates y recursos",
+  "recibe": "Informe por etapa",
+  "plazo": "Cada gate"
+ },
+ {
+  "procedimiento": "PR-EHS-01",
+  "titulo": "Identificación de aspectos e impactos ambientales",
+  "area": "Project & Facilities Management (PFM)",
+  "entrega": "Datos de servicios, equipos, consumos y emisiones",
+  "recibe": "Aspectos de sus instalaciones",
+  "plazo": "Anual y por cambio"
+ },
+ {
+  "procedimiento": "PR-EHS-01",
+  "titulo": "Identificación de aspectos e impactos ambientales",
+  "area": "Manufacturing (Mfg)",
+  "entrega": "Datos de proceso, residuos y mermas",
+  "recibe": "Aspectos significativos y controles",
+  "plazo": "Anual y por cambio"
+ },
+ {
+  "procedimiento": "PR-EHS-01",
+  "titulo": "Identificación de aspectos e impactos ambientales",
+  "area": "Supply Chain Management (SCM) · R&D",
+  "entrega": "Ciclo de vida de materias primas, envases y producto",
+  "recibe": "Criterios ambientales para compras y diseño",
+  "plazo": "Anual y por producto nuevo"
+ },
+ {
+  "procedimiento": "PR-EHS-01",
+  "titulo": "Identificación de aspectos e impactos ambientales",
+  "area": "Integrated Management System (IMS)",
+  "entrega": "Integración a riesgos, objetivos y matriz legal",
+  "recibe": "Aspectos significativos",
+  "plazo": "Tras cada revisión"
+ },
+ {
+  "procedimiento": "PR-EHS-01",
+  "titulo": "Identificación de aspectos e impactos ambientales",
+  "area": "Human Resources (HR)",
+  "entrega": "Capacitación y conciencia ambiental",
+  "recibe": "Aspectos significativos por puesto",
+  "plazo": "Inducción y anual"
+ },
+ {
+  "procedimiento": "PR-EHS-02",
+  "titulo": "Identificación de peligros y evaluación de riesgos de SST (IPERC)",
+  "area": "Human Resources (HR)",
+  "entrega": "Puestos, participación y consulta de trabajadores, capacitación",
+  "recibe": "Riesgos por puesto",
+  "plazo": "Anual y por cambio"
+ },
+ {
+  "procedimiento": "PR-EHS-02",
+  "titulo": "Identificación de peligros y evaluación de riesgos de SST (IPERC)",
+  "area": "Comisión de seguridad e higiene",
+  "entrega": "Participación en identificación y verificación",
+  "recibe": "Matriz y hallazgos",
+  "plazo": "Recorridos mensuales (NOM-019)"
+ },
+ {
+  "procedimiento": "PR-EHS-02",
+  "titulo": "Identificación de peligros y evaluación de riesgos de SST (IPERC)",
+  "area": "Manufacturing (Mfg) · PFM",
+  "entrega": "Actividades, equipos, implementación de controles de ingeniería",
+  "recibe": "Riesgos no aceptables y controles",
+  "plazo": "Según plan"
+ },
+ {
+  "procedimiento": "PR-EHS-02",
+  "titulo": "Identificación de peligros y evaluación de riesgos de SST (IPERC)",
+  "area": "Integrated Management System (IMS)",
+  "entrega": "Integración a riesgos del sistema y objetivos",
+  "recibe": "Riesgos no aceptables",
+  "plazo": "Tras cada revisión"
+ },
+ {
+  "procedimiento": "PR-EHS-03",
+  "titulo": "Preparación y respuesta a emergencias e incidentes",
+  "area": "Project & Facilities Management (PFM)",
+  "entrega": "Equipos de emergencia, servicios, paro seguro de calderas y refrigeración",
+  "recibe": "Escenarios y recursos requeridos",
+  "plazo": "Inspección mensual"
+ },
+ {
+  "procedimiento": "PR-EHS-03",
+  "titulo": "Preparación y respuesta a emergencias e incidentes",
+  "area": "Food Safety (FS)",
+  "entrega": "Evaluación del producto en emergencia; incidente de inocuidad",
+  "recibe": "Escenarios con producto",
+  "plazo": "Inmediato"
+ },
+ {
+  "procedimiento": "PR-EHS-03",
+  "titulo": "Preparación y respuesta a emergencias e incidentes",
+  "area": "Human Resources (HR)",
+  "entrega": "Brigadas, capacitación, control de personal evacuado",
+  "recibe": "Plan y roles",
+  "plazo": "Capacitación semestral"
+ },
+ {
+  "procedimiento": "PR-EHS-03",
+  "titulo": "Preparación y respuesta a emergencias e incidentes",
+  "area": "Integrated Management System (IMS)",
+  "entrega": "Comunicación con autoridades, clientes y certificador",
+  "recibe": "Datos del evento",
+  "plazo": "Según PR-IMS-04"
+ },
+ {
+  "procedimiento": "PR-EHS-03",
+  "titulo": "Preparación y respuesta a emergencias e incidentes",
+  "area": "Executive Management (CEO)",
+  "entrega": "Decisión y vocería",
+  "recibe": "Reporte del evento",
+  "plazo": "Inmediato"
+ },
+ {
+  "procedimiento": "PR-EHS-04",
+  "titulo": "Reporte e investigación de incidentes y accidentes",
+  "area": "Human Resources (HR)",
+  "entrega": "Atención médica, IMSS (ST-7), participación de trabajadores, pláticas",
+  "recibe": "Reporte y clasificación",
+  "plazo": "IMSS: plazo legal; pláticas: semanal"
+ },
+ {
+  "procedimiento": "PR-EHS-04",
+  "titulo": "Reporte e investigación de incidentes y accidentes",
+  "area": "Comisión de seguridad e higiene",
+  "entrega": "Participación en investigación y verificación",
+  "recibe": "Reporte",
+  "plazo": "Dentro de los 5 días hábiles"
+ },
+ {
+  "procedimiento": "PR-EHS-04",
+  "titulo": "Reporte e investigación de incidentes y accidentes",
+  "area": "Quality Control (QC)",
+  "entrega": "Registro de acciones en CAPA",
+  "recibe": "Acciones definidas",
+  "plazo": "Al definirlas"
+ },
+ {
+  "procedimiento": "PR-EHS-04",
+  "titulo": "Reporte e investigación de incidentes y accidentes",
+  "area": "Project & Facilities Management (PFM)",
+  "entrega": "Investigación de fallas de equipo; controles de ingeniería",
+  "recibe": "Hallazgos",
+  "plazo": "Según acción"
+ },
+ {
+  "procedimiento": "PR-EHS-04",
+  "titulo": "Reporte e investigación de incidentes y accidentes",
+  "area": "Integrated Management System (IMS)",
+  "entrega": "Notificación a autoridades; indicadores a la revisión por la dirección",
+  "recibe": "Eventos notificables e indicadores",
+  "plazo": "Plazo legal; mensual"
+ },
+ {
+  "procedimiento": "PR-EHS-05",
+  "titulo": "Gestión del cambio en seguridad y salud en el trabajo",
+  "area": "Integrated Management System (IMS)",
+  "entrega": "Flujo general del cambio y registro",
+  "recibe": "Evaluación de SST y ambiente",
+  "plazo": "5 días hábiles"
+ },
+ {
+  "procedimiento": "PR-EHS-05",
+  "titulo": "Gestión del cambio en seguridad y salud en el trabajo",
+  "area": "Project & Facilities Management (PFM)",
+  "entrega": "Diseño seguro de equipos e instalaciones; controles de ingeniería",
+  "recibe": "Requisitos de seguridad",
+  "plazo": "Antes de comprar o construir"
+ },
+ {
+  "procedimiento": "PR-EHS-05",
+  "titulo": "Gestión del cambio en seguridad y salud en el trabajo",
+  "area": "Human Resources (HR)",
+  "entrega": "Capacitación antes de operar; cambios de personal",
+  "recibe": "Personal afectado y contenidos",
+  "plazo": "Antes de implementar"
+ },
+ {
+  "procedimiento": "PR-EHS-05",
+  "titulo": "Gestión del cambio en seguridad y salud en el trabajo",
+  "area": "Comisión de seguridad e higiene",
+  "entrega": "Consulta sobre cambios que afectan a los trabajadores",
+  "recibe": "Cambios evaluados",
+  "plazo": "Reunión mensual"
+ },
+ {
+  "procedimiento": "PR-EHS-06",
+  "titulo": "Control operacional de seguridad y salud en el trabajo",
+  "area": "Manufacturing (Mfg) · PFM",
+  "entrega": "Ejecución de controles, permisos y condiciones seguras",
+  "recibe": "Controles definidos y permisos",
+  "plazo": "Diario; permisos antes de cada trabajo"
+ },
+ {
+  "procedimiento": "PR-EHS-06",
+  "titulo": "Control operacional de seguridad y salud en el trabajo",
+  "area": "Human Resources (HR)",
+  "entrega": "Entrega de EPP, inducciones, exámenes médicos, capacitación",
+  "recibe": "Programa de EPP, contenidos, exposición por puesto",
+  "plazo": "Ingreso y anual"
+ },
+ {
+  "procedimiento": "PR-EHS-06",
+  "titulo": "Control operacional de seguridad y salud en el trabajo",
+  "area": "Supply Chain Management (SCM)",
+  "entrega": "Requisitos a contratistas y compra de EPP",
+  "recibe": "Especificaciones",
+  "plazo": "Antes de contratar o comprar"
+ },
+ {
+  "procedimiento": "PR-EHS-06",
+  "titulo": "Control operacional de seguridad y salud en el trabajo",
+  "area": "Comisión de seguridad e higiene",
+  "entrega": "Recorridos y verificación",
+  "recibe": "Lista de verificación",
+  "plazo": "Mensual"
+ },
+ {
+  "procedimiento": "PR-EHS-07",
+  "titulo": "Control operacional ambiental y manejo de residuos",
+  "area": "Project & Facilities Management (PFM)",
+  "entrega": "Medición de consumos, operación de pretratamiento y calderas, muestreo de descargas",
+  "recibe": "Controles y límites",
+  "plazo": "Mensual; según permiso"
+ },
+ {
+  "procedimiento": "PR-EHS-07",
+  "titulo": "Control operacional ambiental y manejo de residuos",
+  "area": "Manufacturing (Mfg)",
+  "entrega": "Segregación en origen y control de mermas",
+  "recibe": "Contenedores, criterios y metas",
+  "plazo": "Diario"
+ },
+ {
+  "procedimiento": "PR-EHS-07",
+  "titulo": "Control operacional ambiental y manejo de residuos",
+  "area": "Supply Chain Management (SCM)",
+  "entrega": "Contratación de proveedores autorizados; compras de químicos y combustibles",
+  "recibe": "Requisitos de autorización",
+  "plazo": "Antes de contratar"
+ },
+ {
+  "procedimiento": "PR-EHS-07",
+  "titulo": "Control operacional ambiental y manejo de residuos",
+  "area": "Integrated Management System (IMS)",
+  "entrega": "Requisitos legales y comunicación con autoridades",
+  "recibe": "Estado de autorizaciones",
+  "plazo": "Mensual"
+ },
+ {
+  "procedimiento": "PR-EHS-07",
+  "titulo": "Control operacional ambiental y manejo de residuos",
+  "area": "Food Safety (FS)",
+  "entrega": "Coherencia con PPR de residuos y servicios (MN-FS-01)",
+  "recibe": "Controles de residuos en planta",
+  "plazo": "Anual"
+ },
+ {
+  "procedimiento": "PR-EHS-08",
+  "titulo": "Higiene personal y código de conducta en planta",
+  "area": "Human Resources (HR)",
+  "entrega": "Estado de salud, exámenes médicos, inducción, disciplina, uniformes",
+  "recibe": "Reglas y criterios",
+  "plazo": "Diario; exámenes según ley"
+ },
+ {
+  "procedimiento": "PR-EHS-08",
+  "titulo": "Higiene personal y código de conducta en planta",
+  "area": "Manufacturing (Mfg)",
+  "entrega": "Supervisión en línea y corrección",
+  "recibe": "Lista de inspección",
+  "plazo": "Cada turno"
+ },
+ {
+  "procedimiento": "PR-EHS-08",
+  "titulo": "Higiene personal y código de conducta en planta",
+  "area": "Project & Facilities Management (PFM)",
+  "entrega": "Mantenimiento de instalaciones para empleados",
+  "recibe": "Hallazgos de inspección",
+  "plazo": "7 días para hallazgos mayores"
+ },
+ {
+  "procedimiento": "PR-EHS-08",
+  "titulo": "Higiene personal y código de conducta en planta",
+  "area": "Food Safety (FS)",
+  "entrega": "Validación de criterios; uso en PPR 10",
+  "recibe": "Procedimiento",
+  "plazo": "Anual"
+ },
+ {
+  "procedimiento": "PR-EHS-09",
+  "titulo": "Control integral de plagas",
+  "area": "Proveedor certificado",
+  "entrega": "Servicio, reportes, mapa y recomendaciones",
+  "recibe": "Alcance, acceso y requisitos",
+  "plazo": "Mensual o quincenal"
+ },
+ {
+  "procedimiento": "PR-EHS-09",
+  "titulo": "Control integral de plagas",
+  "area": "Project & Facilities Management (PFM)",
+  "entrega": "Sellado y reparación de accesos y drenajes",
+  "recibe": "Hallazgos",
+  "plazo": "7 días hábiles"
+ },
+ {
+  "procedimiento": "PR-EHS-09",
+  "titulo": "Control integral de plagas",
+  "area": "Manufacturing (Mfg) · SCM",
+  "entrega": "Condiciones preventivas; reporte de avistamientos",
+  "recibe": "Criterios de almacén y limpieza",
+  "plazo": "Diario"
+ },
+ {
+  "procedimiento": "PR-EHS-09",
+  "titulo": "Control integral de plagas",
+  "area": "Food Safety (FS)",
+  "entrega": "Riesgo por zona; evaluación del producto ante evidencia de plagas",
+  "recibe": "Tendencias y hallazgos",
+  "plazo": "Inmediato ante evidencia en producción"
+ },
+ {
+  "procedimiento": "PR-EHS-09",
+  "titulo": "Control integral de plagas",
+  "area": "Supply Chain Management (SCM)",
+  "entrega": "Contratación y evaluación del proveedor",
+  "recibe": "Requisitos",
+  "plazo": "Anual"
+ },
+ {
+  "procedimiento": "PR-EHS-10",
+  "titulo": "Limpieza y desinfección",
+  "area": "Manufacturing (Mfg)",
+  "entrega": "Ejecución de limpieza y CIP con registro",
+  "recibe": "Programa, métodos y químicos",
+  "plazo": "Cada producción y cambio"
+ },
+ {
+  "procedimiento": "PR-EHS-10",
+  "titulo": "Limpieza y desinfección",
+  "area": "Quality Control (QC)",
+  "entrega": "Verificación preoperacional y analítica; liberación del arranque",
+  "recibe": "Puntos y límites",
+  "plazo": "Diario"
+ },
+ {
+  "procedimiento": "PR-EHS-10",
+  "titulo": "Limpieza y desinfección",
+  "area": "Food Safety (FS)",
+  "entrega": "Validación de métodos y de limpieza de alérgenos",
+  "recibe": "Métodos",
+  "plazo": "Antes de usar y ante cambios"
+ },
+ {
+  "procedimiento": "PR-EHS-10",
+  "titulo": "Limpieza y desinfección",
+  "area": "Project & Facilities Management (PFM)",
+  "entrega": "Mantenimiento del CIP, dosificadores y calibración",
+  "recibe": "Parámetros requeridos",
+  "plazo": "Según programa"
+ },
+ {
+  "procedimiento": "PR-EHS-10",
+  "titulo": "Limpieza y desinfección",
+  "area": "Supply Chain Management (SCM)",
+  "entrega": "Compra de químicos aprobados",
+  "recibe": "Lista de químicos aprobados",
+  "plazo": "Antes de comprar"
+ },
+ {
+  "procedimiento": "PR-EHS-11",
+  "titulo": "Reducción de pérdida y desperdicio de alimentos",
+  "area": "Manufacturing (Mfg)",
+  "entrega": "Registro de mermas; reproceso conforme a PL-MFG-02 y PL-MFG-04",
+  "recibe": "Metas y análisis",
+  "plazo": "Diario; mensual"
+ },
+ {
+  "procedimiento": "PR-EHS-11",
+  "titulo": "Reducción de pérdida y desperdicio de alimentos",
+  "area": "Quality Control (QC)",
+  "entrega": "Aptitud del producto donado y del reproceso",
+  "recibe": "Criterios de aptitud",
+  "plazo": "Por lote"
+ },
+ {
+  "procedimiento": "PR-EHS-11",
+  "titulo": "Reducción de pérdida y desperdicio de alimentos",
+  "area": "Sales and Distribution (S&D)",
+  "entrega": "Devoluciones, excedentes y entrega de donaciones",
+  "recibe": "Criterios y registro",
+  "plazo": "Por evento"
+ },
+ {
+  "procedimiento": "PR-EHS-11",
+  "titulo": "Reducción de pérdida y desperdicio de alimentos",
+  "area": "Supply Chain Management (SCM)",
+  "entrega": "Destino de subproductos; proveedores autorizados",
+  "recibe": "Volúmenes",
+  "plazo": "Mensual"
+ },
+ {
+  "procedimiento": "PR-EHS-11",
+  "titulo": "Reducción de pérdida y desperdicio de alimentos",
+  "area": "Integrated Management System (IMS) · CEO",
+  "entrega": "Objetivos y revisión por la dirección",
+  "recibe": "Indicadores",
+  "plazo": "Trimestral; anual"
+ },
+ {
+  "procedimiento": "PR-EHS-12",
+  "titulo": "Actuación ante rotura de vidrio, cerámica o plástico quebradizo",
+  "area": "Manufacturing (Mfg)",
+  "entrega": "Paro, aislamiento, recogida y limpieza",
+  "recibe": "Instrucciones y kit",
+  "plazo": "Inmediato"
+ },
+ {
+  "procedimiento": "PR-EHS-12",
+  "titulo": "Actuación ante rotura de vidrio, cerámica o plástico quebradizo",
+  "area": "Quality Control (QC)",
+  "entrega": "Retención, inspección y liberación",
+  "recibe": "Alcance del evento",
+  "plazo": "Antes de reanudar"
+ },
+ {
+  "procedimiento": "PR-EHS-12",
+  "titulo": "Actuación ante rotura de vidrio, cerámica o plástico quebradizo",
+  "area": "Food Safety (FS)",
+  "entrega": "Evaluación del riesgo con producto expuesto",
+  "recibe": "Datos del evento",
+  "plazo": "Inmediato"
+ },
+ {
+  "procedimiento": "PR-EHS-12",
+  "titulo": "Actuación ante rotura de vidrio, cerámica o plástico quebradizo",
+  "area": "Project & Facilities Management (PFM)",
+  "entrega": "Reparación y reposición protegida",
+  "recibe": "Elemento dañado",
+  "plazo": "Antes de reanudar o con protección temporal"
+ },
+ {
+  "procedimiento": "PR-FS-01",
+  "titulo": "Análisis de peligros y plan HACCP",
+  "area": "Manufacturing (Mfg)",
+  "entrega": "Monitoreo de PCC/PPRO y registros en tiempo real",
+  "recibe": "Plan HACCP, límites y criterios de acción, capacitación",
+  "plazo": "Antes de arrancar cada línea; registro inmediato"
+ },
+ {
+  "procedimiento": "PR-FS-01",
+  "titulo": "Análisis de peligros y plan HACCP",
+  "area": "Quality Control (QC)",
+  "entrega": "Verificación de registros, análisis de producto, especificaciones",
+  "recibe": "Peligros y límites a verificar",
+  "plazo": "Verificación: diaria por lote"
+ },
+ {
+  "procedimiento": "PR-FS-01",
+  "titulo": "Análisis de peligros y plan HACCP",
+  "area": "Research and Development (R&D)",
+  "entrega": "Fichas técnicas, formulaciones y cambios de producto",
+  "recibe": "Peligros de nuevas formulaciones",
+  "plazo": "Antes de cada lanzamiento o cambio"
+ },
+ {
+  "procedimiento": "PR-FS-01",
+  "titulo": "Análisis de peligros y plan HACCP",
+  "area": "Supply Chain Management (SCM)",
+  "entrega": "Información de materias primas y proveedores (CoA, origen)",
+  "recibe": "Peligros de materia prima y requisitos a proveedores",
+  "plazo": "Al aprobar cada proveedor o material"
+ },
+ {
+  "procedimiento": "PR-FS-01",
+  "titulo": "Análisis de peligros y plan HACCP",
+  "area": "Project & Facilities Management (PFM)",
+  "entrega": "Datos de equipos, servicios y mantenimiento",
+  "recibe": "PCC/PPRO que dependen de equipos; calibración requerida",
+  "plazo": "Antes de la validación"
+ },
+ {
+  "procedimiento": "PR-FS-01",
+  "titulo": "Análisis de peligros y plan HACCP",
+  "area": "Human Resources (HR)",
+  "entrega": "Capacitación de operadores de PCC/PPRO",
+  "recibe": "Lista de puestos y contenidos",
+  "plazo": "Antes del arranque y anualmente"
+ },
+ {
+  "procedimiento": "PR-FS-02",
+  "titulo": "Validación de medidas de control",
+  "area": "Quality Control (QC)",
+  "entrega": "Análisis, muestreo y calibración",
+  "recibe": "Plan de prueba",
+  "plazo": "Según protocolo"
+ },
+ {
+  "procedimiento": "PR-FS-02",
+  "titulo": "Validación de medidas de control",
+  "area": "Project & Facilities Management (PFM)",
+  "entrega": "Calificación de equipos (IQ/OQ) y mantenimiento",
+  "recibe": "Requisitos de equipo",
+  "plazo": "Antes de la validación"
+ },
+ {
+  "procedimiento": "PR-FS-02",
+  "titulo": "Validación de medidas de control",
+  "area": "Manufacturing (Mfg)",
+  "entrega": "Corridas de prueba",
+  "recibe": "Condiciones de prueba",
+  "plazo": "Programadas con FS"
+ },
+ {
+  "procedimiento": "PR-FS-02",
+  "titulo": "Validación de medidas de control",
+  "area": "Research and Development (R&D)",
+  "entrega": "Datos de formulación y cambios",
+  "recibe": "Necesidad de revalidación",
+  "plazo": "Antes de lanzar un cambio"
+ },
+ {
+  "procedimiento": "PR-FS-03",
+  "titulo": "Verificación del sistema de inocuidad",
+  "area": "Quality Control (QC)",
+  "entrega": "Revisión de registros, análisis, monitoreo ambiental, calibración",
+  "recibe": "Programa y criterios de verificación",
+  "plazo": "Diario / según programa"
+ },
+ {
+  "procedimiento": "PR-FS-03",
+  "titulo": "Verificación del sistema de inocuidad",
+  "area": "Environment, Health, and Safety (EHS)",
+  "entrega": "Inspecciones de higiene, limpieza y plagas",
+  "recibe": "Lista de verificación y hallazgos",
+  "plazo": "Mensual o según riesgo"
+ },
+ {
+  "procedimiento": "PR-FS-03",
+  "titulo": "Verificación del sistema de inocuidad",
+  "area": "Manufacturing (Mfg)",
+  "entrega": "Corrección de hallazgos en piso",
+  "recibe": "Hallazgos con responsable y fecha",
+  "plazo": "Según clasificación: crítico inmediato, mayor 7 días, menor 30 días"
+ },
+ {
+  "procedimiento": "PR-FS-03",
+  "titulo": "Verificación del sistema de inocuidad",
+  "area": "Integrated Management System (IMS)",
+  "entrega": "Informe anual para la revisión por la dirección",
+  "recibe": "Informe PR-FS-03-F02",
+  "plazo": "Antes de cada revisión por la dirección"
+ },
+ {
+  "procedimiento": "PR-FS-04",
+  "titulo": "Actualización del análisis de peligros y del sistema de inocuidad",
+  "area": "Integrated Management System (IMS)",
+  "entrega": "Requisitos legales, de clientes y del esquema nuevos o modificados",
+  "recibe": "Impacto sobre el sistema de inocuidad",
+  "plazo": "5 días hábiles tras el cambio"
+ },
+ {
+  "procedimiento": "PR-FS-04",
+  "titulo": "Actualización del análisis de peligros y del sistema de inocuidad",
+  "area": "Research and Development (R&D), Manufacturing (Mfg), Supply Chain Management (SCM), PFM",
+  "entrega": "Aviso de cambios de producto, proceso, materiales, proveedores y equipos",
+  "recibe": "Evaluación y documentos actualizados",
+  "plazo": "Antes de implementar el cambio"
+ },
+ {
+  "procedimiento": "PR-FS-04",
+  "titulo": "Actualización del análisis de peligros y del sistema de inocuidad",
+  "area": "Human Resources (HR)",
+  "entrega": "Capacitación sobre cambios",
+  "recibe": "Contenido y personal afectado",
+  "plazo": "10 días hábiles"
+ },
+ {
+  "procedimiento": "PR-FS-05",
+  "titulo": "Programa de prerrequisitos (PPR) y control operacional",
+  "area": "Project & Facilities Management (PFM)",
+  "entrega": "PPR de edificios, zonificación, servicios y equipos",
+  "recibe": "Riesgos y controles de su programa",
+  "plazo": "Según programa maestro"
+ },
+ {
+  "procedimiento": "PR-FS-05",
+  "titulo": "Programa de prerrequisitos (PPR) y control operacional",
+  "area": "Environment, Health, and Safety (EHS)",
+  "entrega": "PPR de residuos, limpieza, plagas, higiene y defensa alimentaria",
+  "recibe": "Riesgos y controles de su programa",
+  "plazo": "Según programa maestro"
+ },
+ {
+  "procedimiento": "PR-FS-05",
+  "titulo": "Programa de prerrequisitos (PPR) y control operacional",
+  "area": "Supply Chain Management (SCM)",
+  "entrega": "PPR de materiales comprados, almacenamiento y transporte",
+  "recibe": "Requisitos a proveedores y almacén",
+  "plazo": "Según programa maestro"
+ },
+ {
+  "procedimiento": "PR-FS-05",
+  "titulo": "Programa de prerrequisitos (PPR) y control operacional",
+  "area": "Manufacturing (Mfg)",
+  "entrega": "Ejecución de PPR operativos y reproceso",
+  "recibe": "Programa maestro y capacitación",
+  "plazo": "Diario"
+ },
+ {
+  "procedimiento": "PR-FS-05",
+  "titulo": "Programa de prerrequisitos (PPR) y control operacional",
+  "area": "Quality Control (QC) · S&D",
+  "entrega": "Información del producto, etiquetado, verificación analítica",
+  "recibe": "Controles de su programa",
+  "plazo": "Según programa maestro"
+ },
+ {
+  "procedimiento": "PR-FS-05",
+  "titulo": "Programa de prerrequisitos (PPR) y control operacional",
+  "area": "Human Resources (HR)",
+  "entrega": "Capacitación en PPR e higiene",
+  "recibe": "Contenidos por puesto",
+  "plazo": "Inducción y anual"
+ },
+ {
+  "procedimiento": "PR-FS-06",
+  "titulo": "Defensa alimentaria y prevención del fraude alimentario",
+  "area": "Environment, Health, and Safety (EHS)",
+  "entrega": "Evaluación TACCP y control de acceso",
+  "recibe": "Puntos vulnerables y medidas",
+  "plazo": "Evaluación anual; control diario"
+ },
+ {
+  "procedimiento": "PR-FS-06",
+  "titulo": "Defensa alimentaria y prevención del fraude alimentario",
+  "area": "Quality Control (QC)",
+  "entrega": "Evaluación VACCP y pruebas de autenticidad",
+  "recibe": "Materiales de alto riesgo",
+  "plazo": "Anual y por lote de alto riesgo"
+ },
+ {
+  "procedimiento": "PR-FS-06",
+  "titulo": "Defensa alimentaria y prevención del fraude alimentario",
+  "area": "Supply Chain Management (SCM)",
+  "entrega": "Plan de mitigación de fraude, CoA y aprobación de proveedores",
+  "recibe": "Materiales priorizados",
+  "plazo": "Antes de comprar materiales de alto riesgo"
+ },
+ {
+  "procedimiento": "PR-FS-06",
+  "titulo": "Defensa alimentaria y prevención del fraude alimentario",
+  "area": "Human Resources (HR)",
+  "entrega": "Control de personal, capacitación en conciencia",
+  "recibe": "Contenidos y lista de personal",
+  "plazo": "Inducción y anual"
+ },
+ {
+  "procedimiento": "PR-FS-06",
+  "titulo": "Defensa alimentaria y prevención del fraude alimentario",
+  "area": "Integrated Management System (IMS)",
+  "entrega": "Información de alertas y requisitos; resultados para la revisión por la dirección",
+  "recibe": "Resultados de las evaluaciones",
+  "plazo": "Anual"
+ },
+ {
+  "procedimiento": "PR-FS-07",
+  "titulo": "Gestión de alérgenos",
+  "area": "Quality Control (QC)",
+  "entrega": "Mapa de alérgenos, validación de limpieza, verificación de etiquetado",
+  "recibe": "Lista y riesgos",
+  "plazo": "Según matriz; cada cambio de producto"
+ },
+ {
+  "procedimiento": "PR-FS-07",
+  "titulo": "Gestión de alérgenos",
+  "area": "Manufacturing (Mfg)",
+  "entrega": "Secuencia de producción, limpieza entre cambios, control de reproceso",
+  "recibe": "Controles y mapa",
+  "plazo": "Diario"
+ },
+ {
+  "procedimiento": "PR-FS-07",
+  "titulo": "Gestión de alérgenos",
+  "area": "Supply Chain Management (SCM)",
+  "entrega": "Declaración de alérgenos de proveedores, segregación en almacén",
+  "recibe": "Requisitos de información",
+  "plazo": "Al aprobar materiales"
+ },
+ {
+  "procedimiento": "PR-FS-07",
+  "titulo": "Gestión de alérgenos",
+  "area": "Research and Development (R&D)",
+  "entrega": "Formulaciones y cambios",
+  "recibe": "Alérgenos a declarar",
+  "plazo": "Antes de cada cambio"
+ },
+ {
+  "procedimiento": "PR-FS-07",
+  "titulo": "Gestión de alérgenos",
+  "area": "Human Resources (HR)",
+  "entrega": "Capacitación",
+  "recibe": "Contenidos",
+  "plazo": "Inducción y anual"
+ },
+ {
+  "procedimiento": "PR-FS-08",
+  "titulo": "Control de cuerpos extraños",
+  "area": "Manufacturing (Mfg)",
+  "entrega": "Operación y verificación de detectores; retención de producto",
+  "recibe": "Sensibilidad validada, frecuencia y registro",
+  "plazo": "Inicio, cambio de turno y cierre"
+ },
+ {
+  "procedimiento": "PR-FS-08",
+  "titulo": "Control de cuerpos extraños",
+  "area": "Environment, Health, and Safety (EHS)",
+  "entrega": "Inventario y verificación de vidrio; actuación ante roturas",
+  "recibe": "Áreas de producto expuesto",
+  "plazo": "Verificación mensual"
+ },
+ {
+  "procedimiento": "PR-FS-08",
+  "titulo": "Control de cuerpos extraños",
+  "area": "Project & Facilities Management (PFM)",
+  "entrega": "Mantenimiento y calibración de equipos de detección; control de herramientas",
+  "recibe": "Requisitos de equipo",
+  "plazo": "Según programa de mantenimiento"
+ },
+ {
+  "procedimiento": "PR-FS-08",
+  "titulo": "Control de cuerpos extraños",
+  "area": "Quality Control (QC)",
+  "entrega": "Verificación de registros y liberación",
+  "recibe": "Registros de detección",
+  "plazo": "Por lote"
+ },
+ {
+  "procedimiento": "PR-FS-08",
+  "titulo": "Control de cuerpos extraños",
+  "area": "Supply Chain Management (SCM)",
+  "entrega": "Requisitos a proveedores; tamizado en recepción",
+  "recibe": "Materiales de riesgo",
+  "plazo": "Al aprobar materiales"
+ },
+ {
+  "procedimiento": "PR-FS-10",
+  "titulo": "Retiro y recuperación de producto",
+  "area": "Sales and Distribution (S&D)",
+  "entrega": "Notificación a clientes, localización y recuperación en el mercado",
+  "recibe": "Lotes, cantidades e instrucciones",
+  "plazo": "Notificación: ≤ 4 horas desde la decisión"
+ },
+ {
+  "procedimiento": "PR-FS-10",
+  "titulo": "Retiro y recuperación de producto",
+  "area": "Supply Chain Management (SCM)",
+  "entrega": "Trazabilidad hacia atrás y adelante, logística de recuperación",
+  "recibe": "Alcance del evento",
+  "plazo": "Trazabilidad: ≤ 4 horas"
+ },
+ {
+  "procedimiento": "PR-FS-10",
+  "titulo": "Retiro y recuperación de producto",
+  "area": "Quality Control (QC)",
+  "entrega": "Retención, identificación y disposición",
+  "recibe": "Producto localizado",
+  "plazo": "Inmediato"
+ },
+ {
+  "procedimiento": "PR-FS-10",
+  "titulo": "Retiro y recuperación de producto",
+  "area": "Integrated Management System (IMS)",
+  "entrega": "Comunicación con autoridad y organismo de certificación",
+  "recibe": "Decisión y datos del evento",
+  "plazo": "Plazo legal; certificador 3 días hábiles"
+ },
+ {
+  "procedimiento": "PR-FS-10",
+  "titulo": "Retiro y recuperación de producto",
+  "area": "Executive Management (CEO)",
+  "entrega": "Decisión y vocería",
+  "recibe": "Recomendación de FS",
+  "plazo": "Inmediato"
+ },
+ {
+  "procedimiento": "PR-IMS-05",
+  "titulo": "Contexto de la organización, partes interesadas y alcance del sistema",
+  "area": "Executive Management (CEO)",
+  "entrega": "Dirección estratégica, aprobación del alcance",
+  "recibe": "Análisis de contexto",
+  "plazo": "Anual"
+ },
+ {
+  "procedimiento": "PR-IMS-05",
+  "titulo": "Contexto de la organización, partes interesadas y alcance del sistema",
+  "area": "Sales and Distribution (S&D)",
+  "entrega": "Clientes, mercado, competencia",
+  "recibe": "Requisitos consolidados",
+  "plazo": "Anual"
+ },
+ {
+  "procedimiento": "PR-IMS-05",
+  "titulo": "Contexto de la organización, partes interesadas y alcance del sistema",
+  "area": "Supply Chain Management (SCM)",
+  "entrega": "Proveedores, disponibilidad, fraude",
+  "recibe": "Requisitos consolidados",
+  "plazo": "Anual"
+ },
+ {
+  "procedimiento": "PR-IMS-05",
+  "titulo": "Contexto de la organización, partes interesadas y alcance del sistema",
+  "area": "Food Safety (FS) · Quality Control (QC) · EHS",
+  "entrega": "Cuestiones técnicas, legales y de autoridad",
+  "recibe": "Riesgos derivados",
+  "plazo": "Anual"
+ },
+ {
+  "procedimiento": "PR-IMS-05",
+  "titulo": "Contexto de la organización, partes interesadas y alcance del sistema",
+  "area": "Human Resources (HR)",
+  "entrega": "Personal, sindicato, comunidad",
+  "recibe": "Requisitos consolidados",
+  "plazo": "Anual"
+ },
+ {
+  "procedimiento": "PR-IMS-06",
+  "titulo": "Gestión de riesgos y oportunidades del sistema",
+  "area": "Executive Management (CEO)",
+  "entrega": "Aceptación de riesgos críticos y recursos",
+  "recibe": "Matriz y plan",
+  "plazo": "Trimestral"
+ },
+ {
+  "procedimiento": "PR-IMS-06",
+  "titulo": "Gestión de riesgos y oportunidades del sistema",
+  "area": "Food Safety (FS) · EHS · QC",
+  "entrega": "Riesgos técnicos consolidados desde sus análisis específicos",
+  "recibe": "Nivel de sistema",
+  "plazo": "Anual"
+ },
+ {
+  "procedimiento": "PR-IMS-06",
+  "titulo": "Gestión de riesgos y oportunidades del sistema",
+  "area": "Todas las gerencias",
+  "entrega": "Identificación y tratamiento en su proceso",
+  "recibe": "Metodología y matriz",
+  "plazo": "Anual / trimestral"
+ },
+ {
+  "procedimiento": "PR-IMS-07",
+  "titulo": "Objetivos, indicadores y análisis de datos del sistema",
+  "area": "Executive Management (CEO)",
+  "entrega": "Aprobación de objetivos y recursos",
+  "recibe": "Propuesta y resultados",
+  "plazo": "Anual / trimestral"
+ },
+ {
+  "procedimiento": "PR-IMS-07",
+  "titulo": "Objetivos, indicadores y análisis de datos del sistema",
+  "area": "Todas las gerencias",
+  "entrega": "Objetivos e indicadores de su proceso; captura mensual",
+  "recibe": "Cuadro y análisis",
+  "plazo": "Mensual"
+ },
+ {
+  "procedimiento": "PR-IMS-07",
+  "titulo": "Objetivos, indicadores y análisis de datos del sistema",
+  "area": "Quality Control (QC)",
+  "entrega": "Datos de calidad, inocuidad y quejas",
+  "recibe": "Formato de captura",
+  "plazo": "Mensual"
+ },
+ {
+  "procedimiento": "PR-IMS-08",
+  "titulo": "Auditoría interna",
+  "area": "Human Resources (HR)",
+  "entrega": "Formación de auditores",
+  "recibe": "Perfil y calendario",
+  "plazo": "Anual"
+ },
+ {
+  "procedimiento": "PR-IMS-08",
+  "titulo": "Auditoría interna",
+  "area": "Todas las gerencias",
+  "entrega": "Disponibilidad, evidencia y acciones correctivas",
+  "recibe": "Plan e informe",
+  "plazo": "Por auditoría"
+ },
+ {
+  "procedimiento": "PR-IMS-08",
+  "titulo": "Auditoría interna",
+  "area": "Executive Management (CEO)",
+  "entrega": "Resultados y recursos para cierre",
+  "recibe": "Informes",
+  "plazo": "Trimestral"
+ },
+ {
+  "procedimiento": "PR-IMS-08",
+  "titulo": "Auditoría interna",
+  "area": "Quality Control (QC)",
+  "entrega": "Registro de NC y acciones correctivas",
+  "recibe": "Hallazgos",
+  "plazo": "Por auditoría"
+ },
+ {
+  "procedimiento": "PR-IMS-09",
+  "titulo": "Revisión por la dirección",
+  "area": "Executive Management (CEO)",
+  "entrega": "Presidir, decidir, asignar recursos",
+  "recibe": "Entradas consolidadas",
+  "plazo": "Anual"
+ },
+ {
+  "procedimiento": "PR-IMS-09",
+  "titulo": "Revisión por la dirección",
+  "area": "Todas las gerencias",
+  "entrega": "Entradas de su proceso 10 días antes",
+  "recibe": "Formato de entradas",
+  "plazo": "Anual"
+ },
+ {
+  "procedimiento": "PR-IMS-09",
+  "titulo": "Revisión por la dirección",
+  "area": "Food Safety (FS)",
+  "entrega": "Resultados de verificación del PHS y actualización",
+  "recibe": "Formato de entradas",
+  "plazo": "Anual"
+ },
+ {
+  "procedimiento": "PR-IMS-10",
+  "titulo": "Mejora continua",
+  "area": "Executive Management (CEO)",
+  "entrega": "Priorización, recursos, aprobación de tecnologías",
+  "recibe": "Cartera y evaluaciones",
+  "plazo": "Trimestral"
+ },
+ {
+  "procedimiento": "PR-IMS-10",
+  "titulo": "Mejora continua",
+  "area": "Todas las gerencias",
+  "entrega": "Liderar proyectos de su proceso",
+  "recibe": "Metodología",
+  "plazo": "Según plan"
+ },
+ {
+  "procedimiento": "PR-IMS-10",
+  "titulo": "Mejora continua",
+  "area": "Food Safety (FS) · QC · EHS · PFM",
+  "entrega": "Opinión técnica sobre nuevas tecnologías",
+  "recibe": "Evaluación PR-IMS-10-F02",
+  "plazo": "Por evaluación"
+ },
+ {
+  "procedimiento": "PR-IMS-10",
+  "titulo": "Mejora continua",
+  "area": "Research and Development (R&D)",
+  "entrega": "Tecnologías de producto y proceso",
+  "recibe": "Evaluación",
+  "plazo": "Por evaluación"
+ },
+ {
+  "procedimiento": "PR-IMS-02",
+  "titulo": "Identificación, comunicación y evaluación del cumplimiento de requisitos legales y otros requisitos",
+  "area": "Food Safety (FS)",
+  "entrega": "Requisitos legales y del esquema sobre inocuidad; confirmación de cumplimiento",
+  "recibe": "Cambios aplicables y programa de evaluación",
+  "plazo": "Confirmación: 10 días hábiles"
+ },
+ {
+  "procedimiento": "PR-IMS-02",
+  "titulo": "Identificación, comunicación y evaluación del cumplimiento de requisitos legales y otros requisitos",
+  "area": "Quality Control (QC)",
+  "entrega": "Requisitos de calidad, etiquetado y de clientes; confirmación de cumplimiento",
+  "recibe": "Cambios aplicables y programa de evaluación",
+  "plazo": "Confirmación: 10 días hábiles"
+ },
+ {
+  "procedimiento": "PR-IMS-02",
+  "titulo": "Identificación, comunicación y evaluación del cumplimiento de requisitos legales y otros requisitos",
+  "area": "Environment, Health, and Safety (EHS)",
+  "entrega": "Requisitos ambientales y de SST; vigencia de autorizaciones",
+  "recibe": "Cambios aplicables y programa de evaluación",
+  "plazo": "Confirmación: 10 días hábiles"
+ },
+ {
+  "procedimiento": "PR-IMS-02",
+  "titulo": "Identificación, comunicación y evaluación del cumplimiento de requisitos legales y otros requisitos",
+  "area": "Sales and Distribution (S&D)",
+  "entrega": "Requisitos de clientes y de Tiendas 3B",
+  "recibe": "Cambios aplicables y programa de evaluación",
+  "plazo": "Confirmación: 10 días hábiles"
+ },
+ {
+  "procedimiento": "PR-IMS-02",
+  "titulo": "Identificación, comunicación y evaluación del cumplimiento de requisitos legales y otros requisitos",
+  "area": "Todas las demás áreas",
+  "entrega": "Evidencia de cumplimiento en sus procesos",
+  "recibe": "Requisitos aplicables y cambios",
+  "plazo": "Comunicación: 5 días hábiles"
+ },
+ {
+  "procedimiento": "PR-IMS-02",
+  "titulo": "Identificación, comunicación y evaluación del cumplimiento de requisitos legales y otros requisitos",
+  "area": "Executive Management (CEO)",
+  "entrega": "Registro de resultados en la revisión por la dirección",
+  "recibe": "Informe consolidado de cumplimiento",
+  "plazo": "Antes de cada revisión por la dirección"
+ },
+ {
+  "procedimiento": "PR-IMS-03",
+  "titulo": "Gestión del cambio",
+  "area": "Todas las áreas (solicitantes)",
+  "entrega": "Solicitud de cambio con descripción y justificación",
+  "recibe": "Resultado de la evaluación y autorización",
+  "plazo": "Evaluación: 5 días hábiles"
+ },
+ {
+  "procedimiento": "PR-IMS-03",
+  "titulo": "Gestión del cambio",
+  "area": "Food Safety (FS)",
+  "entrega": "Análisis de riesgos previo; actualización de HACCP, PPR y validación",
+  "recibe": "Cambios que afectan inocuidad",
+  "plazo": "Antes de la autorización"
+ },
+ {
+  "procedimiento": "PR-IMS-03",
+  "titulo": "Gestión del cambio",
+  "area": "Environment, Health, and Safety (EHS)",
+  "entrega": "Evaluación de impacto ambiental y de SST",
+  "recibe": "Cambios en procesos, equipos e instalaciones",
+  "plazo": "Antes de la autorización"
+ },
+ {
+  "procedimiento": "PR-IMS-03",
+  "titulo": "Gestión del cambio",
+  "area": "Human Resources (HR)",
+  "entrega": "Capacitación y ajuste de competencias",
+  "recibe": "Cambios en roles y procesos",
+  "plazo": "10 días hábiles tras la autorización"
+ },
+ {
+  "procedimiento": "PR-IMS-03",
+  "titulo": "Gestión del cambio",
+  "area": "Executive Management (CEO)",
+  "entrega": "Autorización de equipos, infraestructura y automatizaciones",
+  "recibe": "Resumen de cambios para la revisión por la dirección",
+  "plazo": "Antes de cada revisión por la dirección"
+ },
+ {
+  "procedimiento": "PR-IMS-04",
+  "titulo": "Comunicación interna y externa",
+  "area": "Food Safety (FS)",
+  "entrega": "Evaluación del incidente y de qué informar",
+  "recibe": "Plan de comunicación y portavoz",
+  "plazo": "Aviso inmediato"
+ },
+ {
+  "procedimiento": "PR-IMS-04",
+  "titulo": "Comunicación interna y externa",
+  "area": "Sales and Distribution (S&D)",
+  "entrega": "Datos de clientes y requisitos de notificación de cada cliente",
+  "recibe": "Mensajes aprobados",
+  "plazo": "Antes de comunicar"
+ },
+ {
+  "procedimiento": "PR-IMS-04",
+  "titulo": "Comunicación interna y externa",
+  "area": "Supply Chain Management (SCM)",
+  "entrega": "Datos de proveedores y transportistas",
+  "recibe": "Mensajes aprobados",
+  "plazo": "Antes de comunicar"
+ },
+ {
+  "procedimiento": "PR-IMS-04",
+  "titulo": "Comunicación interna y externa",
+  "area": "Environment, Health, and Safety (EHS)",
+  "entrega": "Comunicación con autoridades ambientales y laborales; emergencias",
+  "recibe": "Matriz y portavoz",
+  "plazo": "Según la emergencia"
+ },
+ {
+  "procedimiento": "PR-IMS-04",
+  "titulo": "Comunicación interna y externa",
+  "area": "Human Resources (HR)",
+  "entrega": "Difusión interna y capacitación",
+  "recibe": "Contenido a difundir",
+  "plazo": "10 días hábiles"
+ },
+ {
+  "procedimiento": "PR-IMS-04",
+  "titulo": "Comunicación interna y externa",
+  "area": "Executive Management (CEO)",
+  "entrega": "Decisión de portavoz y autorización de comunicados externos",
+  "recibe": "Reporte de incidentes y notificaciones",
+  "plazo": "Mismo día del incidente"
+ },
+ {
+  "procedimiento": "PR-QC-01",
+  "titulo": "Control de producto no conforme",
+  "area": "Manufacturing (Mfg)",
+  "entrega": "Identificación, segregación, reproceso",
+  "recibe": "Disposición y criterios de reproceso",
+  "plazo": "Inmediato"
+ },
+ {
+  "procedimiento": "PR-QC-01",
+  "titulo": "Control de producto no conforme",
+  "area": "Supply Chain Management (SCM)",
+  "entrega": "Retención de materiales; devolución a proveedor",
+  "recibe": "Disposición",
+  "plazo": "Inmediato; devolución 5 días hábiles"
+ },
+ {
+  "procedimiento": "PR-QC-01",
+  "titulo": "Control de producto no conforme",
+  "area": "Food Safety (FS)",
+  "entrega": "Evaluación de producto potencialmente no inocuo; recall",
+  "recibe": "Datos de la desviación",
+  "plazo": "Inmediato"
+ },
+ {
+  "procedimiento": "PR-QC-01",
+  "titulo": "Control de producto no conforme",
+  "area": "Sales and Distribution (S&D)",
+  "entrega": "Devoluciones de clientes; concesiones con cliente",
+  "recibe": "Disposición y comunicación",
+  "plazo": "Según cliente"
+ },
+ {
+  "procedimiento": "PR-QC-01",
+  "titulo": "Control de producto no conforme",
+  "area": "Executive Management (CEO) / QMS",
+  "entrega": "Autorización de concesiones",
+  "recibe": "Evaluación de QC",
+  "plazo": "Antes de liberar"
+ },
+ {
+  "procedimiento": "PR-QC-02",
+  "titulo": "No conformidades y acciones correctivas (CAPA)",
+  "area": "Todas las áreas",
+  "entrega": "Corrección, causa raíz y acciones de sus NC",
+  "recibe": "Folio, clasificación, plazos",
+  "plazo": "Corrección: inmediata; causa raíz: 10 días hábiles; acciones: según riesgo"
+ },
+ {
+  "procedimiento": "PR-QC-02",
+  "titulo": "No conformidades y acciones correctivas (CAPA)",
+  "area": "Food Safety (FS) · EHS",
+  "entrega": "Causa raíz y acciones en su materia; disparadores de actualización",
+  "recibe": "NC de inocuidad, ambiente y SST",
+  "plazo": "10 días hábiles"
+ },
+ {
+  "procedimiento": "PR-QC-02",
+  "titulo": "No conformidades y acciones correctivas (CAPA)",
+  "area": "Integrated Management System (IMS)",
+  "entrega": "Hallazgos de auditorías y terceros; tendencias para la revisión por la dirección",
+  "recibe": "Informe de tendencias",
+  "plazo": "Mensual; según plazo del tercero"
+ },
+ {
+  "procedimiento": "PR-QC-02",
+  "titulo": "No conformidades y acciones correctivas (CAPA)",
+  "area": "Human Resources (HR)",
+  "entrega": "Capacitación derivada",
+  "recibe": "Acciones que la requieren",
+  "plazo": "15 días hábiles"
+ },
+ {
+  "procedimiento": "PR-QC-02",
+  "titulo": "No conformidades y acciones correctivas (CAPA)",
+  "area": "Management Systems (QMS)",
+  "entrega": "Escalación de acciones vencidas; aprobación de cierre de NC Críticas",
+  "recibe": "Estado semanal",
+  "plazo": "Semanal"
+ },
+ {
+  "procedimiento": "PR-QC-03",
+  "titulo": "Gestión de quejas y reclamaciones de clientes",
+  "area": "Sales and Distribution (S&D)",
+  "entrega": "Recepción, acuse, respuesta y gestión comercial",
+  "recibe": "Investigación y respuesta técnica aprobada",
+  "plazo": "Acuse: 1 día hábil; respuesta: ver criterios"
+ },
+ {
+  "procedimiento": "PR-QC-03",
+  "titulo": "Gestión de quejas y reclamaciones de clientes",
+  "area": "Food Safety (FS)",
+  "entrega": "Evaluación de quejas de inocuidad; recall",
+  "recibe": "Queja clasificada como inocuidad",
+  "plazo": "Inmediato"
+ },
+ {
+  "procedimiento": "PR-QC-03",
+  "titulo": "Gestión de quejas y reclamaciones de clientes",
+  "area": "Manufacturing (Mfg) · SCM · PFM",
+  "entrega": "Datos de producción, trazabilidad y causa raíz",
+  "recibe": "Folio y lote",
+  "plazo": "5 días hábiles"
+ },
+ {
+  "procedimiento": "PR-QC-03",
+  "titulo": "Gestión de quejas y reclamaciones de clientes",
+  "area": "Integrated Management System (IMS)",
+  "entrega": "Tendencias para la revisión por la dirección; comunicación con autoridad si aplica",
+  "recibe": "Informe mensual",
+  "plazo": "Mensual"
+ },
+ {
+  "procedimiento": "PR-QC-04",
+  "titulo": "Gestión de especificaciones de materias primas, materiales y producto",
+  "area": "Research and Development (R&D)",
+  "entrega": "Formulación, parámetros de producto, vida de anaquel",
+  "recibe": "Formato y requisitos legales",
+  "plazo": "Antes de lanzar o cambiar un producto"
+ },
+ {
+  "procedimiento": "PR-QC-04",
+  "titulo": "Gestión de especificaciones de materias primas, materiales y producto",
+  "area": "Supply Chain Management (SCM)",
+  "entrega": "Acuerdo con proveedores; CoA por lote",
+  "recibe": "Especificación de materiales",
+  "plazo": "Antes de la primera compra"
+ },
+ {
+  "procedimiento": "PR-QC-04",
+  "titulo": "Gestión de especificaciones de materias primas, materiales y producto",
+  "area": "Sales and Distribution (S&D)",
+  "entrega": "Acuerdo con clientes",
+  "recibe": "Especificación de producto",
+  "plazo": "Antes del primer embarque"
+ },
+ {
+  "procedimiento": "PR-QC-04",
+  "titulo": "Gestión de especificaciones de materias primas, materiales y producto",
+  "area": "Food Safety (FS)",
+  "entrega": "Validación de parámetros de inocuidad",
+  "recibe": "Especificación en borrador",
+  "plazo": "5 días hábiles"
+ },
+ {
+  "procedimiento": "PR-QC-04",
+  "titulo": "Gestión de especificaciones de materias primas, materiales y producto",
+  "area": "Manufacturing (Mfg) · laboratorio",
+  "entrega": "Uso en producción y liberación",
+  "recibe": "Especificaciones vigentes",
+  "plazo": "Al liberar cada revisión"
+ },
+ {
+  "procedimiento": "PR-QC-05",
+  "titulo": "Calibración de equipos y aprobación de laboratorios",
+  "area": "Project & Facilities Management (PFM)",
+  "entrega": "Contratación y ejecución de calibraciones; mantenimiento de instrumentos",
+  "recibe": "Programa y tolerancias",
+  "plazo": "Según programa; equipo fuera de tolerancia: inmediato"
+ },
+ {
+  "procedimiento": "PR-QC-05",
+  "titulo": "Calibración de equipos y aprobación de laboratorios",
+  "area": "Manufacturing (Mfg)",
+  "entrega": "Verificación de equipos en uso",
+  "recibe": "Instrucciones y patrones",
+  "plazo": "Según programa"
+ },
+ {
+  "procedimiento": "PR-QC-05",
+  "titulo": "Calibración de equipos y aprobación de laboratorios",
+  "area": "Food Safety (FS)",
+  "entrega": "Evaluación de impacto en inocuidad por equipo fuera de tolerancia",
+  "recibe": "Desviación detectada",
+  "plazo": "Inmediato"
+ },
+ {
+  "procedimiento": "PR-QC-05",
+  "titulo": "Calibración de equipos y aprobación de laboratorios",
+  "area": "Supply Chain Management (SCM)",
+  "entrega": "Contratación de laboratorios y servicios de calibración",
+  "recibe": "Laboratorios aprobados",
+  "plazo": "Antes de contratar"
+ },
+ {
+  "procedimiento": "PR-QC-05",
+  "titulo": "Calibración de equipos y aprobación de laboratorios",
+  "area": "Human Resources (HR)",
+  "entrega": "Competencia del personal de laboratorio",
+  "recibe": "Perfil requerido",
+  "plazo": "Anual"
+ },
+ {
+  "procedimiento": "PR-QC-06",
+  "titulo": "Monitoreo ambiental de patógenos",
+  "area": "Food Safety (FS)",
+  "entrega": "Riesgo del producto, decisiones sobre producto ante positivos",
+  "recibe": "Resultados y tendencias",
+  "plazo": "Positivo zona 1: inmediato"
+ },
+ {
+  "procedimiento": "PR-QC-06",
+  "titulo": "Monitoreo ambiental de patógenos",
+  "area": "Environment, Health, and Safety (EHS)",
+  "entrega": "Limpieza y desinfección correctiva",
+  "recibe": "Puntos positivos",
+  "plazo": "Mismo turno"
+ },
+ {
+  "procedimiento": "PR-QC-06",
+  "titulo": "Monitoreo ambiental de patógenos",
+  "area": "Manufacturing (Mfg)",
+  "entrega": "Acceso a equipos; medidas en piso",
+  "recibe": "Programa y acciones",
+  "plazo": "Según programa"
+ },
+ {
+  "procedimiento": "PR-QC-06",
+  "titulo": "Monitoreo ambiental de patógenos",
+  "area": "Laboratorio aprobado",
+  "entrega": "Análisis",
+  "recibe": "Muestras con cadena de custodia",
+  "plazo": "Según método"
+ },
+ {
+  "procedimiento": "PR-QC-06",
+  "titulo": "Monitoreo ambiental de patógenos",
+  "area": "Project & Facilities Management (PFM)",
+  "entrega": "Reparación de nichos (grietas, equipos)",
+  "recibe": "Hallazgos de investigación",
+  "plazo": "15 días hábiles"
+ },
+ {
+  "procedimiento": "PR-QC-07",
+  "titulo": "Etiquetado y control del material gráfico",
+  "area": "Research and Development (R&D)",
+  "entrega": "Contenido, instrucciones de conservación y uso, cambios de formulación",
+  "recibe": "Requisitos legales y formato",
+  "plazo": "Antes de cada arte"
+ },
+ {
+  "procedimiento": "PR-QC-07",
+  "titulo": "Etiquetado y control del material gráfico",
+  "area": "Sales and Distribution (S&D)",
+  "entrega": "Requisitos de cliente y marketing; aprobación del cliente",
+  "recibe": "Arte verificado",
+  "plazo": "Antes de imprimir"
+ },
+ {
+  "procedimiento": "PR-QC-07",
+  "titulo": "Etiquetado y control del material gráfico",
+  "area": "Supply Chain Management (SCM)",
+  "entrega": "Compra, almacén y destrucción de material gráfico",
+  "recibe": "Arte aprobado; lista de obsoletos",
+  "plazo": "Antes de comprar; destrucción 30 días"
+ },
+ {
+  "procedimiento": "PR-QC-07",
+  "titulo": "Etiquetado y control del material gráfico",
+  "area": "Manufacturing (Mfg)",
+  "entrega": "Verificación en línea",
+  "recibe": "Muestra maestra y criterios",
+  "plazo": "Cada corrida y cambio"
+ },
+ {
+  "procedimiento": "PR-QC-07",
+  "titulo": "Etiquetado y control del material gráfico",
+  "area": "Integrated Management System (IMS)",
+  "entrega": "Cambios normativos de etiquetado",
+  "recibe": "Impacto en artes",
+  "plazo": "5 días hábiles"
+ },
+ {
+  "procedimiento": "PL-QC-01",
+  "titulo": "Criterios mínimos de control de calidad en recepción y proceso",
+  "area": "Manufacturing (Mfg)",
+  "entrega": "Ejecución de controles en línea (contenido neto, sellado, SPC)",
+  "recibe": "Criterios, muestras y frecuencias",
+  "plazo": "Cada lote"
+ },
+ {
+  "procedimiento": "PL-QC-01",
+  "titulo": "Criterios mínimos de control de calidad en recepción y proceso",
+  "area": "Food Safety (FS)",
+  "entrega": "Validación de criterios de inocuidad; uso de resultados en verificación",
+  "recibe": "SOP en borrador y resultados",
+  "plazo": "Antes de emitir cada SOP"
+ },
+ {
+  "procedimiento": "PL-QC-01",
+  "titulo": "Criterios mínimos de control de calidad en recepción y proceso",
+  "area": "Research and Development (R&D)",
+  "entrega": "Vida de anaquel e instrucciones de cocinado",
+  "recibe": "Diseño de estudio",
+  "plazo": "Antes de lanzar cada producto"
+ },
+ {
+  "procedimiento": "PL-QC-01",
+  "titulo": "Criterios mínimos de control de calidad en recepción y proceso",
+  "area": "Project & Facilities Management (PFM)",
+  "entrega": "Muestreo de agua y mantenimiento de instrumentos",
+  "recibe": "Programa de agua",
+  "plazo": "Según programa"
+ }
+]

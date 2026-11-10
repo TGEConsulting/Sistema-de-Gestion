@@ -1,0 +1,1073 @@
+[
+ {
+  "procedimiento": "PR-CEO-01",
+  "indicador": "Cumplimiento del plan de cultura",
+  "formula": "Actividades realizadas ÷ planificadas",
+  "meta": "≥ 90%",
+  "frecuencia": "Trimestral"
+ },
+ {
+  "procedimiento": "PR-CEO-01",
+  "indicador": "Reuniones de liderazgo realizadas",
+  "formula": "Reuniones con acta ÷ 12",
+  "meta": "100%",
+  "frecuencia": "Anual"
+ },
+ {
+  "procedimiento": "PR-CEO-01",
+  "indicador": "Índice de cultura (encuesta)",
+  "formula": "Puntuación promedio",
+  "meta": "Mejora anual; meta en PR-IMS-07",
+  "frecuencia": "Anual"
+ },
+ {
+  "procedimiento": "PR-PFM-01",
+  "indicador": "Inspecciones de integridad realizadas",
+  "formula": "Realizadas ÷ programadas",
+  "meta": "100%",
+  "frecuencia": "Trimestral"
+ },
+ {
+  "procedimiento": "PR-PFM-01",
+  "indicador": "Hallazgos de infraestructura con riesgo de contaminación cerrados en plazo",
+  "formula": "Cerrados ÷ hallazgos",
+  "meta": "≥ 90%",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-PFM-02",
+  "indicador": "Cumplimiento del mantenimiento preventivo",
+  "formula": "Órdenes preventivas cerradas en fecha ÷ programadas",
+  "meta": "≥ 95%",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-PFM-02",
+  "indicador": "Correctivos con liberación de QC registrada",
+  "formula": "Con liberación ÷ correctivos en área de producto",
+  "meta": "100%",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-PFM-02",
+  "indicador": "Disponibilidad de equipos críticos (TPM)",
+  "formula": "Tiempo disponible ÷ tiempo programado",
+  "meta": "Meta en PR-MFG-16",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-PFM-03",
+  "indicador": "Proyectos con especificación aprobada antes de compra",
+  "formula": "Conformes ÷ proyectos",
+  "meta": "100%",
+  "frecuencia": "Trimestral"
+ },
+ {
+  "procedimiento": "PR-PFM-03",
+  "indicador": "Equipos con IQ/OQ antes de producir",
+  "formula": "Conformes ÷ equipos nuevos",
+  "meta": "100%",
+  "frecuencia": "Trimestral"
+ },
+ {
+  "procedimiento": "PR-PFM-03",
+  "indicador": "Proyectos cerrados en plazo y presupuesto",
+  "formula": "Conformes ÷ cerrados",
+  "meta": "≥ 80%",
+  "frecuencia": "Anual"
+ },
+ {
+  "procedimiento": "PR-MFG-01",
+  "indicador": "Señales con reacción registrada",
+  "formula": "Reacciones ÷ señales",
+  "meta": "100%",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-MFG-01",
+  "indicador": "Puntos fuera de especificación por 1,000 mediciones",
+  "formula": "Fuera de especificación × 1,000 ÷ mediciones",
+  "meta": "Tendencia a la baja",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PL-MFG-01",
+  "indicador": "BPR completos y firmados",
+  "formula": "Lotes con BPR completo ÷ lotes",
+  "meta": "100%",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PL-MFG-01",
+  "indicador": "Liberaciones de línea registradas",
+  "formula": "Registradas ÷ cambios de producto",
+  "meta": "100%",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PL-MFG-01",
+  "indicador": "Errores de mezcla de etiquetas o envases",
+  "formula": "Número",
+  "meta": "Cero",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PL-MFG-02",
+  "indicador": "Reproceso",
+  "formula": "kg reprocesados ÷ kg producidos",
+  "meta": "Meta en PR-IMS-07",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PL-MFG-02",
+  "indicador": "Reprocesos fuera de matriz",
+  "formula": "Número",
+  "meta": "Cero",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PL-MFG-03",
+  "indicador": "Verificaciones de detectores realizadas y conformes",
+  "formula": "Conformes ÷ requeridas",
+  "meta": "100%",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PL-MFG-03",
+  "indicador": "Inventarios de utensilios con faltantes",
+  "formula": "Número",
+  "meta": "Cero",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PL-MFG-04",
+  "indicador": "Merma total por línea",
+  "formula": "kg de merma ÷ kg procesados",
+  "meta": "Meta en PR-IMS-07",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PL-MFG-04",
+  "indicador": "Subproductos con destino registrado",
+  "formula": "Entregas registradas ÷ entregas",
+  "meta": "100%",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-HR-01",
+  "indicador": "Actas de la comisión",
+  "formula": "Actas ÷ 12",
+  "meta": "100%",
+  "frecuencia": "Anual"
+ },
+ {
+  "procedimiento": "PR-HR-01",
+  "indicador": "Propuestas respondidas en plazo",
+  "formula": "En plazo ÷ propuestas",
+  "meta": "≥ 90%",
+  "frecuencia": "Trimestral"
+ },
+ {
+  "procedimiento": "PR-HR-01",
+  "indicador": "Reportes de condiciones inseguras / inocuidad recibidos",
+  "formula": "Número por mes",
+  "meta": "Tendencia al alza",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-HR-02",
+  "indicador": "Cumplimiento del plan de capacitación",
+  "formula": "Horas o cursos realizados ÷ planificados",
+  "meta": "≥ 90%",
+  "frecuencia": "Trimestral"
+ },
+ {
+  "procedimiento": "PR-HR-02",
+  "indicador": "Eficacia de la capacitación",
+  "formula": "Evaluaciones aprobadas ÷ evaluaciones",
+  "meta": "≥ 90%",
+  "frecuencia": "Trimestral"
+ },
+ {
+  "procedimiento": "PR-HR-02",
+  "indicador": "Puestos críticos cubiertos por personal competente",
+  "formula": "Puestos con titular y suplente competentes ÷ puestos críticos",
+  "meta": "100%",
+  "frecuencia": "Semestral"
+ },
+ {
+  "procedimiento": "PR-SCM-01",
+  "indicador": "Proveedores críticos con estatus Aprobado",
+  "formula": "Aprobados ÷ críticos",
+  "meta": "≥ 90%",
+  "frecuencia": "Semestral"
+ },
+ {
+  "procedimiento": "PR-SCM-01",
+  "indicador": "Lotes rechazados por proveedor",
+  "formula": "Rechazados ÷ recibidos",
+  "meta": "Tendencia a la baja",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-SCM-01",
+  "indicador": "Contratistas con requisitos verificados antes del ingreso",
+  "formula": "Conformes ÷ contratistas",
+  "meta": "100%",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-SCM-02",
+  "indicador": "Compras de emergencia",
+  "formula": "Número por trimestre",
+  "meta": "Tendencia a cero",
+  "frecuencia": "Trimestral"
+ },
+ {
+  "procedimiento": "PR-SCM-02",
+  "indicador": "Regularizadas en 30 días",
+  "formula": "Regularizadas ÷ compras de emergencia",
+  "meta": "100%",
+  "frecuencia": "Trimestral"
+ },
+ {
+  "procedimiento": "PR-SCM-03",
+  "indicador": "Tiempo de trazabilidad en simulacro",
+  "formula": "Horas",
+  "meta": "≤ 4 h",
+  "frecuencia": "Semestral"
+ },
+ {
+  "procedimiento": "PR-SCM-03",
+  "indicador": "Balance de masa en simulacro",
+  "formula": "Localizado ÷ producido",
+  "meta": "100%",
+  "frecuencia": "Semestral"
+ },
+ {
+  "procedimiento": "PR-SCM-03",
+  "indicador": "Lotes sin registro completo detectados",
+  "formula": "Número",
+  "meta": "Cero",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PL-SCM-01",
+  "indicador": "Recepciones con verificación de transporte registrada",
+  "formula": "Registradas ÷ recepciones",
+  "meta": "100%",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PL-SCM-01",
+  "indicador": "Lotes rechazados o retenidos",
+  "formula": "Retenidos ÷ recibidos",
+  "meta": "Tendencia a la baja",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-SD-01",
+  "indicador": "Pedidos nuevos con revisión registrada",
+  "formula": "Revisados ÷ pedidos nuevos",
+  "meta": "100%",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-SD-01",
+  "indicador": "Cambios de requisitos comunicados en plazo",
+  "formula": "En plazo ÷ cambios",
+  "meta": "100%",
+  "frecuencia": "Trimestral"
+ },
+ {
+  "procedimiento": "PR-SD-01",
+  "indicador": "Entregas a tiempo y completas",
+  "formula": "Entregas conformes ÷ entregas",
+  "meta": "Meta en PR-IMS-07",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-SD-02",
+  "indicador": "Devoluciones",
+  "formula": "kg devueltos ÷ kg vendidos",
+  "meta": "Meta en PR-IMS-07",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-SD-02",
+  "indicador": "Devoluciones con disposición registrada",
+  "formula": "Registradas ÷ devoluciones",
+  "meta": "100%",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-SD-03",
+  "indicador": "Satisfacción (encuesta)",
+  "formula": "Promedio de calificación 1-5",
+  "meta": "≥ 4.0; meta en PR-IMS-07",
+  "frecuencia": "Anual"
+ },
+ {
+  "procedimiento": "PR-SD-03",
+  "indicador": "OTIF",
+  "formula": "Entregas a tiempo y completas ÷ entregas",
+  "meta": "Meta en PR-IMS-07",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-SD-03",
+  "indicador": "Clientes con estatus de proveedor «Aprobado»",
+  "formula": "Aprobados ÷ clientes que califican",
+  "meta": "100%",
+  "frecuencia": "Anual"
+ },
+ {
+  "procedimiento": "PL-SD-01",
+  "indicador": "Desviaciones de temperatura en cámaras",
+  "formula": "Número por mes",
+  "meta": "Cero",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PL-SD-01",
+  "indicador": "Inspecciones de vehículo registradas",
+  "formula": "Registradas ÷ embarques",
+  "meta": "100%",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PL-SD-01",
+  "indicador": "Producto vencido en almacén detectado",
+  "formula": "Número",
+  "meta": "Cero",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-RD-01",
+  "indicador": "Lanzamientos con aprobación del equipo de inocuidad previa",
+  "formula": "Conformes ÷ lanzamientos",
+  "meta": "100%",
+  "frecuencia": "Por lanzamiento"
+ },
+ {
+  "procedimiento": "PR-RD-01",
+  "indicador": "Cambios de formulación con evaluación de impacto",
+  "formula": "Conformes ÷ cambios",
+  "meta": "100%",
+  "frecuencia": "Trimestral"
+ },
+ {
+  "procedimiento": "PR-RD-01",
+  "indicador": "Quejas en los primeros 90 días post-lanzamiento",
+  "formula": "Quejas por millón",
+  "meta": "Meta en PR-IMS-07",
+  "frecuencia": "Por lanzamiento"
+ },
+ {
+  "procedimiento": "PR-EHS-01",
+  "indicador": "Aspectos significativos con control definido",
+  "formula": "Significativos con control ÷ significativos",
+  "meta": "100%",
+  "frecuencia": "Anual"
+ },
+ {
+  "procedimiento": "PR-EHS-01",
+  "indicador": "Revisión anual de la matriz",
+  "formula": "Matriz revisada en 12 meses",
+  "meta": "Sí",
+  "frecuencia": "Anual"
+ },
+ {
+  "procedimiento": "PR-EHS-02",
+  "indicador": "Riesgos no aceptables con control implementado",
+  "formula": "Riesgos Alto/Crítico con control ÷ riesgos Alto/Crítico",
+  "meta": "100%",
+  "frecuencia": "Trimestral"
+ },
+ {
+  "procedimiento": "PR-EHS-02",
+  "indicador": "Puestos con IPERC vigente",
+  "formula": "Puestos con evaluación < 12 meses ÷ puestos",
+  "meta": "100%",
+  "frecuencia": "Anual"
+ },
+ {
+  "procedimiento": "PR-EHS-03",
+  "indicador": "Simulacros realizados",
+  "formula": "Simulacros en el año",
+  "meta": "≥ 2",
+  "frecuencia": "Anual"
+ },
+ {
+  "procedimiento": "PR-EHS-03",
+  "indicador": "Tiempo de evacuación",
+  "formula": "Minutos hasta el punto de reunión",
+  "meta": "≤ 3 min (meta a confirmar por EHS)",
+  "frecuencia": "Por simulacro"
+ },
+ {
+  "procedimiento": "PR-EHS-03",
+  "indicador": "Hallazgos de simulacro cerrados en plazo",
+  "formula": "Cerrados en 30 días ÷ hallazgos",
+  "meta": "100%",
+  "frecuencia": "Por simulacro"
+ },
+ {
+  "procedimiento": "PR-EHS-04",
+  "indicador": "Índice de frecuencia",
+  "formula": "Accidentes con tiempo perdido × 1,000,000 ÷ horas-hombre",
+  "meta": "Tendencia a la baja; meta en PR-IMS-07",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-EHS-04",
+  "indicador": "Índice de gravedad",
+  "formula": "Días perdidos × 1,000,000 ÷ horas-hombre",
+  "meta": "Tendencia a la baja",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-EHS-04",
+  "indicador": "Cuasi accidentes reportados",
+  "formula": "Número por mes",
+  "meta": "Tendencia al alza (cultura de reporte)",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-EHS-05",
+  "indicador": "Cambios con evaluación de SST previa",
+  "formula": "Cambios evaluados antes de implementar ÷ cambios con impacto SST/ambiente",
+  "meta": "100%",
+  "frecuencia": "Trimestral"
+ },
+ {
+  "procedimiento": "PR-EHS-05",
+  "indicador": "Incidentes relacionados con cambios recientes",
+  "formula": "Número",
+  "meta": "Cero",
+  "frecuencia": "Trimestral"
+ },
+ {
+  "procedimiento": "PR-EHS-06",
+  "indicador": "Permisos de trabajo emitidos ÷ trabajos de alto riesgo",
+  "formula": "Permisos ÷ trabajos ejecutados",
+  "meta": "100%",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-EHS-06",
+  "indicador": "Uso de EPP en inspecciones",
+  "formula": "Trabajadores con EPP completo ÷ observados",
+  "meta": "≥ 98%",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-EHS-06",
+  "indicador": "Hallazgos de recorridos cerrados en plazo",
+  "formula": "Cerrados en plazo ÷ hallazgos",
+  "meta": "≥ 90%",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-EHS-07",
+  "indicador": "Agua por tonelada producida",
+  "formula": "m³ ÷ t",
+  "meta": "Meta anual en PR-IMS-07",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-EHS-07",
+  "indicador": "Residuos por tonelada producida",
+  "formula": "kg ÷ t",
+  "meta": "Meta anual en PR-IMS-07",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-EHS-07",
+  "indicador": "Autorizaciones vigentes",
+  "formula": "Vigentes ÷ requeridas",
+  "meta": "100%",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-EHS-07",
+  "indicador": "Descargas dentro de límite",
+  "formula": "Muestreos conformes ÷ muestreos",
+  "meta": "100%",
+  "frecuencia": "Por muestreo"
+ },
+ {
+  "procedimiento": "PR-EHS-08",
+  "indicador": "Cumplimiento de higiene en inspecciones",
+  "formula": "Observaciones conformes ÷ observaciones",
+  "meta": "≥ 98%",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-EHS-08",
+  "indicador": "Instalaciones para empleados conformes",
+  "formula": "Puntos conformes ÷ puntos inspeccionados",
+  "meta": "≥ 95%",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-EHS-09",
+  "indicador": "Capturas en estaciones interiores",
+  "formula": "Capturas por mes por zona",
+  "meta": "Tendencia a la baja; umbral definido por EHS",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-EHS-09",
+  "indicador": "Avistamientos en áreas de producción",
+  "formula": "Número",
+  "meta": "Cero",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-EHS-09",
+  "indicador": "Cumplimiento del servicio e inspecciones",
+  "formula": "Realizadas ÷ programadas",
+  "meta": "100%",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-EHS-10",
+  "indicador": "Verificaciones preoperacionales conformes a la primera",
+  "formula": "Conformes ÷ realizadas",
+  "meta": "≥ 95%",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-EHS-10",
+  "indicador": "Resultados de ATP conformes",
+  "formula": "Conformes ÷ pruebas",
+  "meta": "≥ 95%",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-EHS-10",
+  "indicador": "Ciclos de CIP dentro de parámetros",
+  "formula": "Conformes ÷ ciclos",
+  "meta": "100%",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-EHS-11",
+  "indicador": "Pérdida total",
+  "formula": "kg de pérdida ÷ kg producidos",
+  "meta": "Meta anual en PR-IMS-07",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-EHS-11",
+  "indicador": "Aprovechamiento",
+  "formula": "kg aprovechados (reproceso, subproducto, donación, animal) ÷ kg de pérdida",
+  "meta": "Tendencia al alza",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-EHS-11",
+  "indicador": "Donaciones conformes",
+  "formula": "Donaciones con verificación y acuerdo ÷ donaciones",
+  "meta": "100%",
+  "frecuencia": "Por evento"
+ },
+ {
+  "procedimiento": "PR-EHS-12",
+  "indicador": "Roturas en áreas de producto expuesto",
+  "formula": "Número por mes",
+  "meta": "Tendencia a cero",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-EHS-12",
+  "indicador": "Eventos con registro completo y liberación de QC",
+  "formula": "Eventos conformes ÷ eventos",
+  "meta": "100%",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-FS-01",
+  "indicador": "Diagramas verificados en planta",
+  "formula": "Líneas con diagrama verificado en los últimos 12 meses ÷ líneas",
+  "meta": "100%",
+  "frecuencia": "Anual"
+ },
+ {
+  "procedimiento": "PR-FS-01",
+  "indicador": "Cumplimiento de monitoreo de PCC",
+  "formula": "Registros de monitoreo completos ÷ registros requeridos",
+  "meta": "100%",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-FS-01",
+  "indicador": "Desviaciones de límite crítico",
+  "formula": "Número de desviaciones",
+  "meta": "Tendencia a cero",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-FS-02",
+  "indicador": "PCC/PPRO validados",
+  "formula": "PCC/PPRO con protocolo cerrado ÷ PCC/PPRO del plan",
+  "meta": "100%",
+  "frecuencia": "Semestral"
+ },
+ {
+  "procedimiento": "PR-FS-02",
+  "indicador": "Revalidaciones en plazo",
+  "formula": "Revalidaciones cerradas antes de implementar el cambio ÷ cambios que la requerían",
+  "meta": "100%",
+  "frecuencia": "Trimestral"
+ },
+ {
+  "procedimiento": "PR-FS-03",
+  "indicador": "Cumplimiento del programa de verificación",
+  "formula": "Actividades realizadas ÷ programadas",
+  "meta": "≥ 95%",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-FS-03",
+  "indicador": "Hallazgos cerrados en plazo",
+  "formula": "Hallazgos cerrados en plazo ÷ hallazgos",
+  "meta": "≥ 90%",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-FS-03",
+  "indicador": "Informe anual de verificación",
+  "formula": "Informe emitido antes de la revisión por la dirección",
+  "meta": "Sí",
+  "frecuencia": "Anual"
+ },
+ {
+  "procedimiento": "PR-FS-04",
+  "indicador": "Revisión anual realizada",
+  "formula": "Análisis de peligros y PPR revisados en los últimos 12 meses",
+  "meta": "Sí",
+  "frecuencia": "Anual"
+ },
+ {
+  "procedimiento": "PR-FS-04",
+  "indicador": "Actualizaciones en plazo",
+  "formula": "Actualizaciones cerradas antes de implementar el cambio ÷ cambios que la requerían",
+  "meta": "100%",
+  "frecuencia": "Trimestral"
+ },
+ {
+  "procedimiento": "PR-FS-05",
+  "indicador": "PPR con análisis de riesgos vigente",
+  "formula": "Programas con análisis revisado en 12 meses ÷ 16",
+  "meta": "100%",
+  "frecuencia": "Anual"
+ },
+ {
+  "procedimiento": "PR-FS-05",
+  "indicador": "Cumplimiento del programa maestro",
+  "formula": "Controles ejecutados y registrados ÷ controles programados",
+  "meta": "≥ 98%",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-FS-05",
+  "indicador": "Hallazgos de PPR en verificación",
+  "formula": "Número de hallazgos mayores por mes",
+  "meta": "Tendencia a cero",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-FS-06",
+  "indicador": "Revisión anual de TACCP y VACCP",
+  "formula": "Evaluaciones revisadas en 12 meses",
+  "meta": "Sí",
+  "frecuencia": "Anual"
+ },
+ {
+  "procedimiento": "PR-FS-06",
+  "indicador": "Materiales de alto riesgo con mitigación",
+  "formula": "Materiales con plan ÷ materiales de alto riesgo",
+  "meta": "100%",
+  "frecuencia": "Semestral"
+ },
+ {
+  "procedimiento": "PR-FS-06",
+  "indicador": "Incidentes de acceso no autorizado",
+  "formula": "Número de eventos",
+  "meta": "Cero",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-FS-07",
+  "indicador": "Verificaciones de limpieza conformes",
+  "formula": "Resultados conformes ÷ verificaciones",
+  "meta": "100%",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-FS-07",
+  "indicador": "Quejas o incidentes por alérgenos",
+  "formula": "Número de eventos",
+  "meta": "Cero",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-FS-07",
+  "indicador": "Revisión anual del plan",
+  "formula": "Plan revisado en 12 meses",
+  "meta": "Sí",
+  "frecuencia": "Anual"
+ },
+ {
+  "procedimiento": "PR-FS-08",
+  "indicador": "Verificaciones de detectores conformes",
+  "formula": "Verificaciones conformes ÷ realizadas",
+  "meta": "100%",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-FS-08",
+  "indicador": "Verificaciones de detectores realizadas",
+  "formula": "Realizadas ÷ requeridas (3 por turno-línea)",
+  "meta": "100%",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-FS-08",
+  "indicador": "Quejas por cuerpos extraños",
+  "formula": "Número de quejas",
+  "meta": "Tendencia a cero",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-FS-10",
+  "indicador": "Tiempo de trazabilidad en simulacro",
+  "formula": "Horas desde el inicio hasta localizar el 100% del lote",
+  "meta": "≤ 4 h",
+  "frecuencia": "Por simulacro"
+ },
+ {
+  "procedimiento": "PR-FS-10",
+  "indicador": "Balance de masa en simulacro",
+  "formula": "Cantidad localizada ÷ cantidad producida",
+  "meta": "100%",
+  "frecuencia": "Por simulacro"
+ },
+ {
+  "procedimiento": "PR-FS-10",
+  "indicador": "Simulacro anual realizado",
+  "formula": "Simulacro en los últimos 12 meses",
+  "meta": "Sí",
+  "frecuencia": "Anual"
+ },
+ {
+  "procedimiento": "PR-IMS-05",
+  "indicador": "Revisión del contexto en plazo",
+  "formula": "Revisado en los últimos 12 meses",
+  "meta": "Sí",
+  "frecuencia": "Anual"
+ },
+ {
+  "procedimiento": "PR-IMS-05",
+  "indicador": "Requisitos de partes interesadas con seguimiento",
+  "formula": "Con responsable y estado ÷ total",
+  "meta": "100%",
+  "frecuencia": "Semestral"
+ },
+ {
+  "procedimiento": "PR-IMS-06",
+  "indicador": "Acciones del plan en plazo",
+  "formula": "Cerradas en fecha ÷ vencidas",
+  "meta": "≥ 90%",
+  "frecuencia": "Trimestral"
+ },
+ {
+  "procedimiento": "PR-IMS-06",
+  "indicador": "Riesgos Altos/Críticos sin acción",
+  "formula": "Número",
+  "meta": "0",
+  "frecuencia": "Trimestral"
+ },
+ {
+  "procedimiento": "PR-IMS-07",
+  "indicador": "Objetivos cumplidos",
+  "formula": "Cumplidos ÷ objetivos del año",
+  "meta": "≥ 80%",
+  "frecuencia": "Anual"
+ },
+ {
+  "procedimiento": "PR-IMS-07",
+  "indicador": "KPI capturados en fecha",
+  "formula": "Capturados ÷ programados",
+  "meta": "≥ 95%",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-IMS-08",
+  "indicador": "Cumplimiento del programa",
+  "formula": "Auditorías realizadas ÷ programadas",
+  "meta": "≥ 95%",
+  "frecuencia": "Trimestral"
+ },
+ {
+  "procedimiento": "PR-IMS-08",
+  "indicador": "Hallazgos cerrados en plazo",
+  "formula": "Cerrados en plazo ÷ hallazgos",
+  "meta": "≥ 90%",
+  "frecuencia": "Trimestral"
+ },
+ {
+  "procedimiento": "PR-IMS-08",
+  "indicador": "Hallazgos repetidos",
+  "formula": "Repetidos ÷ hallazgos",
+  "meta": "≤ 10%",
+  "frecuencia": "Anual"
+ },
+ {
+  "procedimiento": "PR-IMS-09",
+  "indicador": "Revisión realizada en plazo",
+  "formula": "Realizada en los últimos 12 meses",
+  "meta": "Sí",
+  "frecuencia": "Anual"
+ },
+ {
+  "procedimiento": "PR-IMS-09",
+  "indicador": "Acciones de la revisión cerradas en plazo",
+  "formula": "Cerradas en fecha ÷ acciones",
+  "meta": "≥ 90%",
+  "frecuencia": "Trimestral"
+ },
+ {
+  "procedimiento": "PR-IMS-10",
+  "indicador": "Cumplimiento del plan de mejora",
+  "formula": "Proyectos cerrados ÷ planificados",
+  "meta": "≥ 80%",
+  "frecuencia": "Trimestral"
+ },
+ {
+  "procedimiento": "PR-IMS-10",
+  "indicador": "Proyectos eficaces",
+  "formula": "Eficaces ÷ cerrados",
+  "meta": "≥ 80%",
+  "frecuencia": "Semestral"
+ },
+ {
+  "procedimiento": "PR-IMS-10",
+  "indicador": "Tecnologías adoptadas con evaluación previa",
+  "formula": "Con evaluación ÷ adoptadas",
+  "meta": "100%",
+  "frecuencia": "Anual"
+ },
+ {
+  "procedimiento": "PR-IMS-02",
+  "indicador": "Requisitos evaluados en el periodo",
+  "formula": "Requisitos evaluados ÷ requisitos programados",
+  "meta": "100%",
+  "frecuencia": "Semestral"
+ },
+ {
+  "procedimiento": "PR-IMS-02",
+  "indicador": "Cumplimiento legal",
+  "formula": "Requisitos en estado Cumple ÷ requisitos aplicables",
+  "meta": "100%",
+  "frecuencia": "Semestral"
+ },
+ {
+  "procedimiento": "PR-IMS-02",
+  "indicador": "Oportunidad de comunicación",
+  "formula": "Cambios comunicados en 5 días hábiles ÷ cambios totales",
+  "meta": "100%",
+  "frecuencia": "Trimestral"
+ },
+ {
+  "procedimiento": "PR-IMS-03",
+  "indicador": "Cambios con autorización previa",
+  "formula": "Cambios autorizados antes de implementar ÷ cambios implementados",
+  "meta": "100%",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-IMS-03",
+  "indicador": "Cambios verificados en plazo",
+  "formula": "Cambios verificados en 30 días ÷ cambios implementados",
+  "meta": "100%",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-IMS-03",
+  "indicador": "Cambios con efecto no deseado",
+  "formula": "Cambios que generaron una no conformidad ÷ cambios implementados",
+  "meta": "0%",
+  "frecuencia": "Trimestral"
+ },
+ {
+  "procedimiento": "PR-IMS-04",
+  "indicador": "Comunicaciones de incidentes en plazo",
+  "formula": "Comunicaciones en plazo ÷ comunicaciones requeridas",
+  "meta": "100%",
+  "frecuencia": "Por evento"
+ },
+ {
+  "procedimiento": "PR-IMS-04",
+  "indicador": "Notificaciones al organismo de certificación en 3 días hábiles",
+  "formula": "Notificaciones en plazo ÷ notificaciones requeridas",
+  "meta": "100%",
+  "frecuencia": "Por evento"
+ },
+ {
+  "procedimiento": "PR-IMS-04",
+  "indicador": "Revisión anual de la matriz",
+  "formula": "Matriz revisada en los últimos 12 meses",
+  "meta": "Sí",
+  "frecuencia": "Anual"
+ },
+ {
+  "procedimiento": "PR-QC-01",
+  "indicador": "Producto no conforme",
+  "formula": "kg o unidades no conformes ÷ producción del mes",
+  "meta": "Tendencia a la baja",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-QC-01",
+  "indicador": "NC con disposición en plazo",
+  "formula": "NC con disposición en 5 días hábiles ÷ NC",
+  "meta": "100%",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-QC-01",
+  "indicador": "NC Críticas",
+  "formula": "Número",
+  "meta": "Cero",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-QC-02",
+  "indicador": "NC cerradas en plazo",
+  "formula": "NC cerradas en el plazo definido ÷ NC cerradas",
+  "meta": "≥ 90%",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-QC-02",
+  "indicador": "Acciones eficaces",
+  "formula": "Acciones verificadas eficaces ÷ acciones verificadas",
+  "meta": "≥ 95%",
+  "frecuencia": "Trimestral"
+ },
+ {
+  "procedimiento": "PR-QC-02",
+  "indicador": "Recurrencia",
+  "formula": "NC repetidas de la misma causa ÷ NC",
+  "meta": "≤ 5%",
+  "frecuencia": "Trimestral"
+ },
+ {
+  "procedimiento": "PR-QC-03",
+  "indicador": "Quejas por millón de unidades (o por tonelada)",
+  "formula": "Quejas ÷ unidades vendidas × 1,000,000",
+  "meta": "Tendencia a la baja; meta anual fijada en PR-IMS-07",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-QC-03",
+  "indicador": "Respuesta en plazo",
+  "formula": "Quejas respondidas en plazo ÷ quejas",
+  "meta": "100%",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-QC-03",
+  "indicador": "Quejas de inocuidad",
+  "formula": "Número",
+  "meta": "Cero",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-QC-04",
+  "indicador": "Especificaciones vigentes con revisión < 12 meses",
+  "formula": "Vigentes revisadas ÷ vigentes",
+  "meta": "100%",
+  "frecuencia": "Trimestral"
+ },
+ {
+  "procedimiento": "PR-QC-04",
+  "indicador": "Lotes recibidos con CoA conforme",
+  "formula": "Lotes con CoA conforme ÷ lotes que lo requieren",
+  "meta": "100%",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-QC-05",
+  "indicador": "Cumplimiento del programa de calibración",
+  "formula": "Calibraciones realizadas en fecha ÷ programadas",
+  "meta": "100%",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-QC-05",
+  "indicador": "Equipos fuera de tolerancia",
+  "formula": "Número por mes",
+  "meta": "Tendencia a cero",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-QC-05",
+  "indicador": "Laboratorios aprobados vigentes",
+  "formula": "Laboratorios con evaluación < 12 meses ÷ laboratorios en uso",
+  "meta": "100%",
+  "frecuencia": "Anual"
+ },
+ {
+  "procedimiento": "PR-QC-06",
+  "indicador": "Positivos de Listeria spp. en zonas 2-3",
+  "formula": "Positivos ÷ muestras",
+  "meta": "Tendencia a la baja; meta anual en PR-IMS-07",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-QC-06",
+  "indicador": "Positivos en zona 1",
+  "formula": "Número",
+  "meta": "Cero",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-QC-06",
+  "indicador": "Cumplimiento del programa",
+  "formula": "Muestras tomadas ÷ programadas",
+  "meta": "100%",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-QC-07",
+  "indicador": "Errores de etiquetado detectados en línea o en cliente",
+  "formula": "Número",
+  "meta": "Cero",
+  "frecuencia": "Mensual"
+ },
+ {
+  "procedimiento": "PR-QC-07",
+  "indicador": "Artes vigentes con revisión < 12 meses",
+  "formula": "Artes revisados ÷ artes vigentes",
+  "meta": "100%",
+  "frecuencia": "Anual"
+ },
+ {
+  "procedimiento": "PL-QC-01",
+  "indicador": "SOP de QC conformes con esta política",
+  "formula": "SOP que cumplen los criterios ÷ SOP requeridos (10)",
+  "meta": "100%",
+  "frecuencia": "Semestral"
+ },
+ {
+  "procedimiento": "PL-QC-01",
+  "indicador": "Cpk de variables críticas",
+  "formula": "Variables con Cpk ≥ 1.33 ÷ variables controladas",
+  "meta": "≥ 90%",
+  "frecuencia": "Trimestral"
+ }
+]

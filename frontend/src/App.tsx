@@ -14,6 +14,9 @@ import { ProveedoresPage } from "@/pages/proveedores/ProveedoresPage";
 import { ComunicacionesPage } from "@/pages/comunicaciones/ComunicacionesPage";
 import { PermisosPage } from "@/pages/permisos/PermisosPage";
 import { CambiosPage } from "@/pages/cambios/CambiosPage";
+import { RequisitosPage } from "@/pages/requisitos/RequisitosPage";
+import { MatrizComunicacionPage } from "@/pages/matriz-comunicacion/MatrizComunicacionPage";
+import { PaqueteEsquemaPage } from "@/pages/documentos/PaqueteEsquemaPage";
 
 export default function App() {
   return (
@@ -33,6 +36,9 @@ export default function App() {
           <Route path="/proveedores" element={<ProveedoresPage />} />
           <Route path="/comunicaciones" element={<ComunicacionesPage />} />
           <Route path="/cambios" element={<CambiosPage />} />
+          <Route path="/requisitos" element={<RequisitosPage />} />
+          <Route path="/matriz-comunicacion" element={<MatrizComunicacionPage />} />
+          <Route path="/paquete-esquema" element={<PaqueteEsquemaPage />} />
           <Route path="/permisos" element={<PermisosPage />} />
         </Route>
       </Route>

@@ -168,6 +168,7 @@ enum TipoNotificacion {
   RIESGO_SIN_TRATAMIENTO
   CAMBIO_COMUNICADO
   CAMBIO_TRANSICION_PROXIMA
+  REQUISITO_POR_EVALUAR
 }
 
 enum EstadoTarea {
@@ -195,6 +196,9 @@ model Area {
   documentos  Documento[]
   objetivos   Objetivo[]
   procesos    Proceso[]
+  requisitos  Requisito[]
+  interfacesDuenas       ComunicacionInterfaz[] @relation("InterfazAreaDuena")
+  interfacesContraparte  ComunicacionInterfaz[] @relation("InterfazAreaContraparte")
 
   @@map("areas")
 }
@@ -237,6 +241,8 @@ enum ModuloSistema {
   PROVEEDORES
   COMUNICACIONES
   GESTION_CAMBIOS
+  REQUISITOS
+  MATRIZ_COMUNICACION
 }
 
 enum NivelPermiso {
@@ -312,6 +318,7 @@ model Usuario {
   evaluacionesProveedor      EvaluacionProveedor[]    @relation("EvaluacionRealizadaPor")
   notificaciones             Notificacion[]
   tareasAsignadas            Tarea[]                  @relation("TareaAsignada")
+  requisitosResponsable      Requisito[]             @relation("RequisitoResponsable")
   cambiosSolicitados         GestionCambio[]          @relation("CambioSolicitante")
   cambiosComunicados         GestionCambio[]          @relation("CambioComunicadoPor")
 
@@ -345,6 +352,18 @@ model Documento {
   versionVigenteId    String?         @unique
   versionVigente      VersionDocumento? @relation("VersionVigente", fields: [versionVigenteId], references: [id])
   proximaRevision     DateTime?
+  // --- Metadatos del sistema documental (Norma Integrada / Lista Maestra PR-IMS-01-F01) ---
+  documentoPadreId    String?
+  documentoPadre      Documento?      @relation("DocumentoPadre", fields: [documentoPadreId], references: [id])
+  documentosHijos     Documento[]     @relation("DocumentoPadre")
+  nivel               Int?            // 1 manual/política, 2 procedimiento, 3 anexo/instructivo, 4 formato
+  revision            String?         // "00", "01"...
+  clausulas           String?         // cláusulas de la Norma Integrada que cubre
+  evidencias          String?         // n° de evidencias del Anexo B
+  participa           String?         // gerencias que participan (P)
+  autoriza            String?         // gerencia que autoriza (A)
+  carpeta             String?         // carpeta destino en el repositorio controlado
+  critico             Boolean         @default(false)
   createdAt           DateTime        @default(now())
   updatedAt           DateTime        @updatedAt
   deletedAt           DateTime?
@@ -354,6 +373,7 @@ model Documento {
 
   @@index([estado])
   @@index([areaId])
+  @@index([documentoPadreId])
   @@map("documentos")
 }
 
@@ -848,4 +868,100 @@ model Tarea {
 
   @@index([asignadoAId, estado])
   @@map("tareas")
+}
+
+// ----------------------------------------------------------------------------
+// REQUISITOS LEGALES, DE ESQUEMA Y DE CLIENTE (PR-IMS-02-F01)
+// ----------------------------------------------------------------------------
+
+enum TipoRequisito {
+  LEGAL
+  ESQUEMA
+  CLIENTE
+  OTRO
+}
+
+enum EstadoCumplimientoRequisito {
+  POR_EVALUAR
+  CUMPLE
+  PARCIAL
+  NO_CUMPLE
+  NO_APLICA
+}
+
+model Requisito {
+  id                 String                      @id @default(cuid())
+  tipo               TipoRequisito
+  sistema            String?                     // Inocuidad, Calidad, Ambiental, SST, Cliente...
+  requisito          String                      // norma, ley, cláusula del esquema o requisito del cliente
+  fuente             String?                     // autoridad / organismo / cliente emisor
+  apartado           String?                     // apartado o cláusula aplicable
+  comoSeCumple       String?                     // cómo lo cumple la organización
+  documentos         String?                     // códigos de documentos del sistema que lo cubren
+  areaId             String?
+  area               Area?                       @relation(fields: [areaId], references: [id])
+  responsableId      String?
+  responsable        Usuario?                    @relation("RequisitoResponsable", fields: [responsableId], references: [id])
+  fechaVigor         DateTime?
+  vigenciaConfirmada String?                     // nota de confirmación (fecha, fuente, cambios)
+  estado             EstadoCumplimientoRequisito @default(POR_EVALUAR)
+  evidencia          String?
+  proximaEvaluacion  DateTime?
+  createdAt          DateTime                    @default(now())
+  updatedAt          DateTime                    @updatedAt
+  deletedAt          DateTime?
+
+  @@index([tipo])
+  @@index([estado])
+  @@map("requisitos")
+}
+
+// ----------------------------------------------------------------------------
+// MATRIZ DE COMUNICACIÓN ENTRE GERENCIAS (PR-IMS-04-F02)
+// ----------------------------------------------------------------------------
+
+enum EstadoInterfaz {
+  PROPUESTA
+  ACEPTADA
+  CON_AJUSTE
+  RECHAZADA
+}
+
+model ComunicacionInterfaz {
+  id                 String         @id @default(cuid())
+  documentoCodigo    String         // procedimiento que define la interfaz
+  documentoTitulo    String?
+  areaDuenaId        String
+  areaDuena          Area           @relation("InterfazAreaDuena", fields: [areaDuenaId], references: [id])
+  areaContraparteId  String?
+  areaContraparte    Area?          @relation("InterfazAreaContraparte", fields: [areaContraparteId], references: [id])
+  contraparteTexto   String         // nombre de la contraparte tal como lo cita el procedimiento (incluye externos)
+  entrega            String?        // qué entrega la contraparte al proceso
+  recibe             String?        // qué recibe la contraparte del proceso
+  plazo              String?
+  estado             EstadoInterfaz @default(PROPUESTA)
+  observacion        String?
+  createdAt          DateTime       @default(now())
+  updatedAt          DateTime       @updatedAt
+  deletedAt          DateTime?
+
+  @@index([documentoCodigo])
+  @@index([areaDuenaId])
+  @@index([areaContraparteId])
+  @@map("comunicacion_interfaces")
+}
+
+// ----------------------------------------------------------------------------
+// REFERENCIAS DE ESQUEMAS GFSI / NORMAS ↔ CLÁUSULAS DE LA NORMA INTEGRADA (paquete por esquema)
+// ----------------------------------------------------------------------------
+
+model EsquemaReferencia {
+  id         String @id @default(cuid())
+  esquema    String // FSSC 22000 v7, BRCGS FS v9, IFS Food V8, SQF Ed. 9, Tiendas 3B V2025, ISO 9001:2015...
+  referencia String // cláusula o requisito del esquema
+  clausula   String // cláusula de la Norma Integrada que lo cubre
+
+  @@unique([esquema, referencia, clausula])
+  @@index([esquema])
+  @@map("esquema_referencias")
 }

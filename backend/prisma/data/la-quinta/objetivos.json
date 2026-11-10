@@ -1,0 +1,90 @@
+[
+ {
+  "codigo": "OBJ-2027-01",
+  "sistema": "Inocuidad",
+  "objetivo": "Obtener la certificación FSSC 22000 v7 sin NC mayores",
+  "indicador": "Auditoría de certificación aprobada",
+  "unidad": "Sí/No",
+  "meta": "Sí",
+  "responsable": "IMS",
+  "plazo": "2027-12-31 00:00:00",
+  "plan": "Implementar el sistema documental; auditoría interna completa; preauditoría; cierre de hallazgos"
+ },
+ {
+  "codigo": "OBJ-2027-02",
+  "sistema": "Inocuidad",
+  "objetivo": "Cero desviaciones de PCC no detectadas y cero recalls",
+  "indicador": "Desviaciones no detectadas; recalls",
+  "unidad": "Número",
+  "meta": 0,
+  "responsable": "FS",
+  "plazo": "2027-12-31 00:00:00",
+  "plan": "Verificación diaria; calibración; simulacros de recall semestrales"
+ },
+ {
+  "codigo": "OBJ-2027-03",
+  "sistema": "Calidad",
+  "objetivo": "Reducir las quejas de cliente por millón de piezas",
+  "indicador": "Quejas por millón",
+  "unidad": "QPM",
+  "meta": "≤ meta por definir con línea base 2026",
+  "responsable": "QC",
+  "plazo": "2027-12-31 00:00:00",
+  "plan": "Análisis de causa de quejas; cartas de control; PR-MFG-01"
+ },
+ {
+  "codigo": "OBJ-2027-04",
+  "sistema": "Calidad",
+  "objetivo": "Mantener el estatus Aprobado en todos los clientes clave",
+  "indicador": "Clientes con estatus Aprobado",
+  "unidad": "%",
+  "meta": "100%",
+  "responsable": "S&D",
+  "plazo": "2027-12-31 00:00:00",
+  "plan": "Cumplir requisitos de cliente (PR-SD-01); OTIF ≥ 95%"
+ },
+ {
+  "codigo": "OBJ-2027-05",
+  "sistema": "Ambiente",
+  "objetivo": "Reducir el consumo de agua por tonelada de producto",
+  "indicador": "m³ / t producto",
+  "unidad": "m³/t",
+  "meta": "−10% vs. línea base 2026",
+  "responsable": "EHS",
+  "plazo": "2027-12-31 00:00:00",
+  "plan": "Medición por área; optimización de CIP; reparación de fugas"
+ },
+ {
+  "codigo": "OBJ-2027-06",
+  "sistema": "Desperdicio",
+  "objetivo": "Reducir la merma de producto y valorizar el suero (PL-CEO-05)",
+  "indicador": "% merma; % suero valorizado",
+  "unidad": "%",
+  "meta": "−15% merma; ≥ 80% suero valorizado",
+  "responsable": "Mfg",
+  "plazo": "2027-12-31 00:00:00",
+  "plan": "Proyecto de mejora; PL-MFG-04"
+ },
+ {
+  "codigo": "OBJ-2027-07",
+  "sistema": "SST",
+  "objetivo": "Cero accidentes con incapacidad; 100% de cuasi accidentes investigados",
+  "indicador": "Accidentes con incapacidad; % investigados",
+  "unidad": "Número; %",
+  "meta": "0; 100%",
+  "responsable": "EHS",
+  "plazo": "2027-12-31 00:00:00",
+  "plan": "IPERC; permisos de trabajo; comisión; reportes de empleados"
+ },
+ {
+  "codigo": "OBJ-2027-08",
+  "sistema": "Cultura",
+  "objetivo": "Índice de cultura de inocuidad ≥ 4.0/5 con participación ≥ 80%",
+  "indicador": "Encuesta anual",
+  "unidad": "Índice",
+  "meta": "≥ 4.0",
+  "responsable": "HR",
+  "plazo": "2027-12-31 00:00:00",
+  "plan": "Plan de cultura PR-CEO-01-A01"
+ }
+]

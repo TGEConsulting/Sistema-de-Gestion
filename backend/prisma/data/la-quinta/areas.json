@@ -1,0 +1,62 @@
+[
+ {
+  "sigla": "CEO",
+  "nombre": "Executive Management (CEO)",
+  "descripcion": "Dirección general: liderazgo, cultura, recursos, revisión por la dirección"
+ },
+ {
+  "sigla": "IMS",
+  "nombre": "Integrated Management System (IMS)",
+  "descripcion": "Gestión documental y del sistema integrado"
+ },
+ {
+  "sigla": "QMS",
+  "nombre": "Quality Management System (QMS)",
+  "descripcion": "Gerencia de Sistema de Calidad: integra FS, QC y EHS"
+ },
+ {
+  "sigla": "FS",
+  "nombre": "Food Safety (FS)",
+  "descripcion": "Inocuidad: HACCP, PPR, alérgenos, defensa, fraude, recall"
+ },
+ {
+  "sigla": "QC",
+  "nombre": "Quality Control (QC)",
+  "descripcion": "Control de calidad, laboratorio, quejas, especificaciones"
+ },
+ {
+  "sigla": "EHS",
+  "nombre": "Environment, Health, and Safety (EHS)",
+  "descripcion": "Ambiente, seguridad y salud en el trabajo, higiene y saneamiento"
+ },
+ {
+  "sigla": "PFM",
+  "nombre": "Project & Facilities Management (PFM)",
+  "descripcion": "Instalaciones, servicios, mantenimiento y proyectos"
+ },
+ {
+  "sigla": "MFG",
+  "nombre": "Manufacturing (Mfg)",
+  "descripcion": "Producción"
+ },
+ {
+  "sigla": "HR",
+  "nombre": "Human Resources (HR)",
+  "descripcion": "Recursos humanos, competencia, consulta y participación"
+ },
+ {
+  "sigla": "SCM",
+  "nombre": "Supply Chain Management (SCM)",
+  "descripcion": "Proveedores, recepción, almacén de insumos, trazabilidad"
+ },
+ {
+  "sigla": "SD",
+  "nombre": "Sales and Distribution (S&D)",
+  "descripcion": "Clientes, producto terminado, distribución"
+ },
+ {
+  "sigla": "RD",
+  "nombre": "Research and Development (R&D)",
+  "descripcion": "Desarrollo de productos, formulaciones, envase"
+ }
+]
